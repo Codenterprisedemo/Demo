@@ -1,0 +1,289 @@
+.rightBanner{margin-left: 997px;}
+.CalendarArea{ clear: both; width: 826px; height:472px;overflow: hidden; margin: 0px auto 50px auto;}
+.CalLeafCol01{ background-color: #ed693f; }
+.CalLeafCol02{ background-color: #308a40; }
+.CalLeafCol03{ background-color: #2d7253; }
+
+.advent-calendar {
+	position:relative;
+	margin: 0px auto;
+}
+.advent-calendar-entry {
+	position: absolute;
+	display: block;
+}
+.advent-calendar-door-left-wrapper, .advent-calendar-door-right-wrapper {
+	-moz-perspective: 400px;
+	-webkit-perspective: 400px;
+	-ms-perspective: 400px;
+	-o-perspective: 400px;
+	perspective: 400px;
+}
+.advent-calendar-door {
+	-webkit-transition:-webkit-transform 1s;
+    -moz-transition:-moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    transition: transform 1s;
+}
+.advent-calendar-door-left-wrapper {
+	float: left;
+}
+.advent-calendar-door-right-wrapper {
+	float: right;
+}
+.advent-calendar-door-left-wrapper .advent-calendar-door {
+	-moz-transform-origin: 0% 50%;
+	-o-transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+}
+.advent-calendar-door-right-wrapper .advent-calendar-door {
+	-moz-transform-origin: 100% 50%;
+	-o-transform-origin: 100% 50%;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+a.advent-calendar-entry:hover {
+	z-index: 99;
+}
+a.advent-calendar-entry:hover .advent-calendar-door-left-wrapper .advent-calendar-door {
+	-webkit-transform: rotateY(-70deg);
+    -moz-transform: rotateY(-70deg);
+    -ms-transform: rotateY(-70deg);
+    -o-transform: rotateY(-70deg);
+    transform: rotateY(-70deg);
+}
+a.advent-calendar-entry:hover .advent-calendar-door-right-wrapper .advent-calendar-door {
+	-webkit-transform: rotateY(70deg);
+    -moz-transform: rotateY(70deg);
+    -ms-transform: rotateY(70deg);
+    -o-transform: rotateY(70deg);
+    transform: rotateY(70deg);
+}
+.advent-calendar-background {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.advent-calendar {
+	position:relative;
+	margin: 0px auto;
+}
+.advent-calendar-entry {
+	position: absolute;
+	display: block;
+}
+.advent-calendar-door-left-wrapper, .advent-calendar-door-right-wrapper {
+	-moz-perspective: 400px;
+	-webkit-perspective: 400px;
+	-ms-perspective: 400px;
+	-o-perspective: 400px;
+	perspective: 400px;
+}
+.advent-calendar-door {
+	-webkit-transition:-webkit-transform 1s;
+    -moz-transition:-moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    transition: transform 1s;
+}
+.advent-calendar-door-left-wrapper {
+	float: left;
+}
+.advent-calendar-door-right-wrapper {
+	float: right;
+}
+.advent-calendar-door-left-wrapper .advent-calendar-door {
+	-moz-transform-origin: 0% 50%;
+	-o-transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+}
+.advent-calendar-door-right-wrapper .advent-calendar-door {
+	-moz-transform-origin: 100% 50%;
+	-o-transform-origin: 100% 50%;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+a.advent-calendar-entry:hover {
+	z-index: 99;
+}
+a.advent-calendar-entry:hover .advent-calendar-door-left-wrapper .advent-calendar-door {
+	-webkit-transform: rotateY(-70deg);
+    -moz-transform: rotateY(-70deg);
+    -ms-transform: rotateY(-70deg);
+    -o-transform: rotateY(-70deg);
+    transform: rotateY(-70deg);
+}
+a.advent-calendar-entry:hover .advent-calendar-door-right-wrapper .advent-calendar-door {
+	-webkit-transform: rotateY(70deg);
+    -moz-transform: rotateY(70deg);
+    -ms-transform: rotateY(70deg);
+    -o-transform: rotateY(70deg);
+    transform: rotateY(70deg);
+}
+.advent-calendar-background {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+.CalItemPos0{width:118px; left:0px; top:0;}
+
+.CalItemPos1{width:118px; left:118px; top:0;}
+
+.CalItemPos2{width:118px;left:236px; top:0;}
+
+.CalItemPos3{width:118px;left:354px; top:0;}
+
+.CalItemPos4{width:236px;left:472px; top:0;}
+
+.CalItemPos5{width:118px;left:708px; top:0;}
+
+.CalItemPos6{width:118px;left:0px; top:119px;}
+
+.CalItemPos7{width:236px;left:118px; top:119px;}
+
+.CalItemPos8{width:118px;left:354px; top:119px;}
+
+.CalItemPos9{width:118px;left:472px; top:119px;}
+
+.CalItemPos10{width:118px;left:591px; top:119px;}
+
+.CalItemPos11{width:118px;left:708px; top:119px;}
+
+.CalItemPos12{width:118px;left:0px; top:238px;}
+
+.CalItemPos13{width:118px;left:354px; top:238px;}
+
+.CalItemPos14{width:118px;left:472px; top:238px;}
+
+.CalItemPos15{width:118px;left:590px; top:238px;}
+
+.CalItemPos16{width:118px;left:708px; top:238px;}
+
+.CalItemPos17{width:118px;left:0px; top:357px;}
+
+.CalItemPos18{width:118px;left:118px; top:357px;}
+
+.CalItemPos19{width:118px;left:236px; top:357px;}
+
+.CalItemPos20{width:118px;left:354px; top:357px;}
+
+.CalItemPos21{width:118px;left:472px; top:357px;}
+
+.CalItemPos22{width:118px;left:590px; top:357px;}
+
+.CalItemPos23{width:118px;left:708px; top:357px;}
+
+
+
+
+
+
+/* Responsive classes for Advent Calendar */
+
+
+@media only screen and (max-width:840px){
+
+	.CalendarArea{ clear: both; width: 472px; height:834px;}
+
+
+	.CalItemPos2{width:118px;left:236px; top:0;}
+
+    .CalItemPos3{width:118px;left:354px; top:0;}
+	
+	.CalItemPos4{width:236px;left:0px; top:119px;}
+
+	.CalItemPos5{width:118px;left:236px; top:119px;}
+
+	.CalItemPos6{width:118px;left:354px; top:119px;}
+
+	.CalItemPos7{width:236px;left:0px; top:238px;}
+
+	.CalItemPos8{width:118px;left:236px; top:238px;}
+
+	.CalItemPos9{width:118px;left:354px; top:238px;}
+
+	.CalItemPos10{width:118px;left:236px; top:357px;}
+
+	.CalItemPos11{width:118px;left:354px; top:357px;}
+
+	.CalItemPos12{width:118px;left:0px; top:476px;}
+
+	.CalItemPos13{width:118px;left:118px; top:476px;}
+
+	.CalItemPos14{width:118px;left:236px; top:476px;}
+
+	.CalItemPos15{width:118px;left:354px; top:476px;}
+
+	.CalItemPos16{width:118px;left:0px; top:595px;}
+
+	.CalItemPos17{width:118px;left:118px; top:595px;}
+
+	.CalItemPos18{width:118px;left:236px; top:595px;}
+
+	.CalItemPos19{width:118px;left:354px; top:595px;}
+
+	.CalItemPos20{width:118px;left:0px; top:714px;}
+
+	.CalItemPos21{width:118px;left:118px; top:714px;}
+
+	.CalItemPos22{width:118px;left:236px; top:714px;}
+
+	.CalItemPos23{width:118px;left:354px; top:714px;}
+
+}
+
+@media only screen and (max-width:488px){
+
+	.CalendarArea{ clear: both; width:236px; height:1670px;}
+
+	.CalItemPos2{width:118px;left:0px; top:119px;}
+
+	.CalItemPos3{width:118px;left:118px; top:119px;}
+
+	.CalItemPos4{width:236px;left:0px; top:238px;}
+
+	.CalItemPos5{width:118px;left:0px; top:357px;}
+
+	.CalItemPos6{width:118px;left:118px; top:357px;}
+
+	.CalItemPos7{width:236px;left:0px; top:476px;}
+
+	.CalItemPos8{width:118px;left:0px; top:714px;}
+
+	.CalItemPos9{width:118px;left:118px; top:714px;}
+
+	.CalItemPos10{width:118px;left:0px; top:833px;}
+
+	.CalItemPos11{width:118px;left:118px; top:833px;}
+
+	.CalItemPos12{width:118px;left:0px; top:952px;}
+
+	.CalItemPos13{width:118px;left:118px; top:952px;}
+
+	.CalItemPos14{width:118px;left:0px; top:1071px;}
+
+	.CalItemPos15{width:118px;left:118px; top:1071px;}
+
+	.CalItemPos16{width:118px;left:0px; top:1190px;}
+
+	.CalItemPos17{width:118px;left:118px; top:1190px;}
+
+	.CalItemPos18{width:118px;left:0px; top:1309px;}
+
+	.CalItemPos19{width:118px;left:118px; top:1309px;}
+
+	.CalItemPos20{width:118px;left:0px; top:1428px;}
+
+	.CalItemPos21{width:118px;left:118px; top:1428px;}
+
+	.CalItemPos22{width:118px;left:0px; top:1547px;}
+
+	.CalItemPos23{width:118px;left:118px; top:1547px;}
+
+}
