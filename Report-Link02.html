@@ -1,0 +1,537 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+<meta name="robots" content="noindex">
+<meta name="robots" content="nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="https://bam.nr-data.net/1/ed9f964576?a=2523744&amp;v=1044.a6554e7&amp;to=YVxXNhAAXhJXWxYMV1gWYBALTlQIUVEWBFRpWkARFg5dBEQWEg1I&amp;rst=877&amp;ref=file:///E:/rabab/001%2520CodeEnterprise/CRM-Template/Menu/ReportMenu.html&amp;ap=23&amp;be=706&amp;fe=857&amp;dc=844&amp;af=err,xhr&amp;perf=%7B%22timing%22:%7B%22of%22:1507611370852,%22n%22:0,%22u%22:9,%22ue%22:9,%22f%22:2,%22dn%22:2,%22dne%22:2,%22c%22:2,%22ce%22:2,%22rq%22:2,%22rp%22:2,%22rpe%22:8,%22dl%22:26,%22di%22:844,%22ds%22:844,%22de%22:844,%22dc%22:854,%22l%22:854,%22le%22:857%7D,%22navigation%22:%7B%22ty%22:1%7D%7D&amp;at=TRtUQFgaTRw%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1044.min.js"></script><script type="text/javascript" src="https://bam.nr-data.net/1/ed9f964576?a=2523744&amp;v=1044.a6554e7&amp;to=YVxXNhAAXhJXWxYMV1gWYBALTlQIUVEWBFRpWkARFg5dBEQWEg1I&amp;rst=288&amp;ref=file:///E:/rabab/001%2520CodeEnterprise/CRM-Template/Menu/ReportMenu.html&amp;ap=23&amp;be=48&amp;fe=240&amp;dc=225&amp;af=err,xhr&amp;perf=%7B%22timing%22:%7B%22of%22:1507609961413,%22n%22:0,%22u%22:17,%22ue%22:17,%22f%22:4,%22dn%22:4,%22dne%22:4,%22c%22:4,%22ce%22:4,%22rq%22:4,%22rp%22:4,%22rpe%22:15,%22dl%22:36,%22di%22:225,%22ds%22:225,%22de%22:225,%22dc%22:235,%22l%22:235,%22le%22:240%7D,%22navigation%22:%7B%22ty%22:1%7D%7D&amp;at=TRtUQFgaTRw%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1044.min.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQAHWVNQGwEFVlJVAwU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(12),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,s.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,s.now()])}var i=t("handle"),a=t(13),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(5),t(4),"addEventListener"in window&&t(3),s.xhrWrappable&&t(6),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(15)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){var r=t("ee").get("raf"),o=t(15)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],5:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(15)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],6:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){g.push(t),h&&(b?b.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t(15)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,y="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(y,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===y||a()})},{}],7:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(8),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(11),h=t(10),m=window.XMLHttpRequest;a.features.xhr=!0,t(6),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],8:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],9:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(12),c=t(13),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],10:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],11:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],12:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],13:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],14:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],15:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(13),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!l.aborted||i){t&&t(n,r,o);for(var a=e(o),c=h(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[w[n]];return d&&d.push([g,n,r,a]),a}}function p(t,e){y[t]=h(t).concat(e)}function h(t){return y[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",w[n]=e,e in u||(u[e]=[])})}var y={},w={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:v,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(12),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(w,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+x.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){s("mark",["domContent",a()+x.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-x.offset}var c=(new Date).getTime(),s=t("handle"),f=t(12),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},g=m&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:c,now:a,origin:y,features:{},xhrWrappable:g};t(9),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),s("mark",["firstbyte",c],null,"api");var b=0,E=t(14)},{}]},{},["loader",2,7]);</script>
+<meta http-equiv="Content-Language" content="nl">
+<title>OrangeBuddies Media BV Admin</title>
+
+<!-- CSS -->
+<link href="/css/transdmin.css" rel="stylesheet" type="text/css" media="screen">
+<!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="/css/ie6.css" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href="/css/ie7.css" /><![endif]-->
+<!-- JavaScripts-->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/general.js"></script>
+
+<!-- sider bar and header menu fixed scroll start-->
+<script type="text/javascript" src="/js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript">
+
+		$(document).ready(function() {
+			
+			$("#mainNav").scrollToFixed();
+
+			//-------------- side bar fixed start -------------------------------
+			// Dock each summary as it arrives just below the docked header, pushing the
+			// previous summary up the page.
+	/*
+			var summaries = $(".sideNav");
+			summaries.each(function(i) {
+				var summary = $(summaries[i]);
+				var next = summaries[i + 1];
+	
+				summary.scrollToFixed({
+					marginTop: $(".mainNav").outerHeight(true) + 49,
+					limit: function() {
+						var limit = 0;
+						if (next) {
+							limit = $(next).offset().top - $(this).outerHeight(true) - 10;
+						}
+						return limit;
+					},
+					zIndex: 999
+				});
+			});
+			*/
+			//-------------- table tr header fixed start -------------------------------
+			// Dock each summary as it arrives just below the docked header, pushing the
+			// previous summary up the page.
+	
+			var fixedTableHead = $(".table_fixed_head");
+			fixedTableHead.each(function(i) {
+				var summary = $(fixedTableHead[i]);
+				var next = fixedTableHead[i + 1];
+	
+				summary.scrollToFixed({
+					marginTop: $(".mainNav").outerHeight(true) + 49,
+					limit: function() {
+						var limit = 0;
+						if (next) {
+							limit = $(next).offset().top - $(this).outerHeight(true) - 10;
+						}
+						return limit;
+					},
+					zIndex: 999
+				});
+			});
+			//-------------- table tr header fixed end -------------------------------
+			
+			
+		});
+	</script>
+<!-- sider bar and header menu fixed scroll end-->
+
+<link href="layout.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper"> 
+  <!-- h1 tag stays for the logo, you can use the a tag for linking the index page -->
+  <div style="width:50%; float:left;">
+    <h1><img src="https://www.orangebuddies.com/wp-content/themes/OB/img/OrangeBuddies-logo.png" alt="OrangeBuddies" class="logo"></h1>
+  </div>
+  <div style="width: 40%;float: left; margin-top: 20px;text-align: right;"><a style="text-decoration:blink;color:orangered" href="request_competitors_shops.php">10 Requested Shops</a><br>
+    <a style="text-decoration:blink;color:green" href="request_competitors_deals.php">18 Requested Deals </a></div>
+  <div style="clear:both"></div>
+  <!-- You can name the links with lowercase, they will be transformed to uppercase by CSS, we prefered to name them with uppercase to 
+	have the same effect with disabled stylesheet -->
+  <ul id="mainNav">
+    <li><a href="admin.php">Dashboard</a></li>
+    <li><a href="/homepage_takeover.php">Banners</a>
+      <ul class="submenu1">
+        <li><a href="/homepage_takeover.php">Homepage Takeover</a></li>
+        <li><a href="/website_new_banners.php">Banners</a></li>
+        <li><a href="/banner_kliks.php">Bannerkliks</a></li>
+        <li><a href="/referral_banners.php">Referral Banners</a></li>
+        <li><a href="/banners_calendar.php">Banners Calendar</a></li>
+        <li><a href="/website_messages.php">Message Bar</a></li>
+      </ul>
+    </li>
+    <li><a href="/cashout_overview.php">Cashouts</a>
+      <ul class="submenu1">
+        <li><a href="/cashout_overview.php">cashouts Overview</a></li>
+        <li><a href="/pending_cadeus.php">Giftcard pending cashouts</a></li>
+        <li><a href="/pending_payments.php">Payment pending cashouts</a></li>
+        <li><a href="/cashout_requests.php">Pending cashouts </a></li>
+        <li><a href="/master_card_users.php">OB MasterCard orders</a></li>
+        <li><a href="/new_cashout.php">New cashouts</a></li>
+        <li><a href="/allcashouts.php">Paid cashouts</a></li>
+        <li><a href="/cashback_emails.php">Cashback Emails </a></li>
+        <li><a href="/donation_requests.php">Pending Donations</a></li>
+        <li><a href="/pending_partner_cashout_request.php">Bank Cashouts</a></li>
+        <li><a href="/pending_partner_cashout_paypal_request.php">Paypal Cashouts</a></li>
+        <li><a href="/pending_master_card_cashouts.php">MasterCard Cashouts</a></li>
+      </ul>
+    </li>
+    <li><a href="/leads.php">Customer Service</a>
+      <ul class="submenu1">
+        <li><a href="/leads.php">Leads</a></li>
+        <li><a href="/user_tickets.php">User tickets</a></li>
+        <li><a href="/friend_referral_report_new.php">Referral Friends</a></li>
+        <li><a href="/exit_clicks.php">Exit Clicks</a></li>
+        <li><a href="/whitelist.php">Ip Whitelist</a></li>
+        <li><a href="/blocklist_email.php">Email Blocklist</a></li>
+        <li><a href="/blacklist_domain.php">Blacklist Domains</a></li>
+        <li><a href="/blacklist_email.php">Email Blacklist</a></li>
+        <li><a href="/digital_customer.php">Digital Customer</a></li>
+        <li><a href="/blacklist.php">Ip Blacklist</a></li>
+      </ul>
+    </li>
+    <li><a href="/allbusinesses.php">Marketing</a>
+      <ul class="submenu1">
+        <li><a href="/allbusinesses.php">Businesses</a></li>
+        <li><a href="/business_types.php">Business Types</a></li>
+        <li><a href="/business_banners.php">Business Banners</a></li>
+        <li><a href="/business_access.php">Business Access</a></li>
+        <li><a href="/business_donations.php">Business Donations</a></li>
+        <li><a href="/newsletter_campaigns.php">Newsletter Campaigns</a></li>
+        <li><a href="/partner_subscribers.php">Partner Subscribers</a></li>
+      </ul>
+    </li>
+    <li><a href="/partners.php">Partners</a>
+      <ul class="submenu1">
+        <li><a href="/partners.php">Partners</a></li>
+        <li><a href="/view_sub_partner.php">Sub-Partner</a></li>
+        <li><a href="/partner_payments.php">Payments</a></li>
+        <li><a href="/partner_helpdesk.php">Helpdesk</a></li>
+        <li><a href="/partners_mail.php">Mail settings</a></li>
+        <li><a href="/allcharity.php">Charities</a></li>
+        <li><a href="/partner_cashout_modules.php">Partner Cashout Modules</a></li>
+        <li><a href="/whitelabel_invoices.php">WhiteLabel Invoices</a></li>
+        <li><a href="/generate_tracking_url.php">Generate Tracking URL</a></li>
+        <li><a href="/charity_transactions.php">Charity Transactions</a></li>
+        <li><a href="/template_module_new.php">Monthly Account</a></li>
+        <li><a href="/store_group_categories.php">Store Group Category</a></li>
+        <li><a href="/partner_invoices.php">Partner Invoices</a></li>
+        <li><a href="/partner_email_template.php">Partner Email Templates</a></li>
+        <li><a href="/partner_modules.php">Partner Modules</a></li>
+        <li><a href="/partner_site_content.php">Partner Content Manager</a></li>
+        <li><a href="/partner_ip_whitelist.php">Partner IP White List</a></li>
+      </ul>
+    </li>
+    <li><a href="/prediction_banners.php">Price Win</a>
+      <ul class="submenu1">
+        <li><a href="/prediction_banners.php">Prediction Banners</a></li>
+        <li><a href="/partners_campaigns.php">Campaigns</a></li>
+        <li><a href="/select_partners_campaigns.php">Setup Campaign</a></li>
+        <li><a href="/send_campaign_vouchers.php">Campaign Winners</a></li>
+        <li><a href="/cadeus_btw_calculate.php">Cadeus BTW Calculate</a></li>
+        <li><a href="/cadeaus_shipped_report.php">Shipped Cadeaus Report</a></li>
+        <li><a href="/voucher_codes.php">Voucher Codes</a></li>
+        <li><a href="/allvouchersend.php">Voucher Send</a></li>
+        <li><a href="/Predict.php">Predict Campaigns</a></li>
+        <li><a href="/predict_setup.php">Predict Joiners</a></li>
+        <li><a href="/predict_winner.php">Predict Winner</a></li>
+        <li><a href="/lottery.php">Add Lottery Campaign</a></li>
+        <li><a href="/allLotnumbes.php">Draw Lot Numbers</a></li>
+        <li><a href="/moneygrab_pending_cashback.php">Moneygrab Prize</a></li>
+        <li><a href="/lotCampaignWinner.php">Lot Campaign Winner</a></li>
+      </ul>
+    </li>
+    <li><a href="/cashout_statement.php" class="active">Reports</a>
+      <ul class="submenu1">
+        <li><a href="/pages_analytics_report.php">App Reports</a></li>
+        <li><a href="/partner_cashout_report.php">Cashback reports</a></li>
+        <li><a href="/cashmail_report.php">Cashmail Reports</a></li>
+        <li><a href="/request_competitors_deals.php">Competitor Reports</a></li>
+        <li><a href="/twinfield_stats.php">Credit Control</a></li>
+        <li><a href="/top_customers.php">Customer Service</a></li>
+        <li><a href="/cm_dashboard.php">Dashboards</a></li>
+        <li><a href="/de_dashboard_fc.php">FashionCo Reports</a></li>
+        <li><a href="/followup_template_report.php">Follow up Reports</a></li>
+        <li><a href="/negative_culture_saldo_report.php">Management Reports</a></li>
+        <li><a href="/browser_push_subscribers_report.php">Members reports</a></li>
+        <li><a href="/special_deals_revenue_report.php">Network reports</a></li>
+        <li><a href="/invoiced_order.php">Sales reports</a></li>
+        <li><a href="/duplicate_stores_list.php">Store/Voucher Reports</a></li>
+        <li><a href="/channel_per_banner_report.php">Website Reports</a></li>
+        <li><a href="/cashout_statement.php">Cashout Statement</a></li>
+      </ul>
+    </li>
+    <li><a href="/system_alert_settings.php">Settings</a>
+      <ul class="submenu1">
+        <li><a href="/system_alert_settings.php">System Alerts Settings</a></li>
+        <li><a href="/admin_users.php">Admin Users</a></li>
+        <li><a href="/admin_roles.php">Admin Roles</a></li>
+        <li><a href="/advertising_products.php">Advertising Products</a></li>
+        <li><a href="/view_admin_module.php">Admin Menu Pages</a></li>
+        <li><a href="/allcountries.php">Countries</a></li>
+        <li><a href="/allculture.php">Cultures</a></li>
+        <li><a href="/currency_settings.php">Currency settings </a></li>
+        <li><a href="/currency_conversion.php">Currency Conversion</a></li>
+        <li><a href="/allnetworks.php">Affiliate Networks </a></li>
+        <li><a href="/users_log.php">Users log</a></li>
+        <li><a href="/admin_css.php">Admin CSS </a></li>
+        <li><a href="/email_templates.php">Email Templates</a></li>
+        <li><a href="/payment_types.php">Payment Types </a></li>
+        <li><a href="/website_settings.php">Website Settings </a></li>
+        <li><a href="/fc_targets.php">FashionCo Targets</a></li>
+        <li><a href="/culture_targets.php">Content Targets</a></li>
+        <li><a href="/sale_targets.php">Sale Targets</a></li>
+        <li><a href="/alluserteams.php">User Teams</a></li>
+      </ul>
+    </li>
+    <li><a href="/cadeus_orders.php">Shop</a>
+      <ul class="submenu1">
+        <li><a href="/cadeus_orders.php">Orders</a></li>
+        <li><a href="/cadeaus.php">Products</a></li>
+        <li><a href="/cadeaus_categories.php">Categories</a></li>
+        <li><a href="/allshipping.php">Shipping</a></li>
+        <li><a href="/allmargin_range.php">Margin % Range</a></li>
+        <li><a href="/daily_action.php">Daily Actions</a></li>
+        <li><a href="/deals.php">City Deals</a></li>
+        <li><a href="/allcities.php">All Cities</a></li>
+        <li><a href="/milestones.php">Milestones</a></li>
+        <li><a href="/outfits.php">Outfits</a></li>
+        <li><a href="/alloutfitevents.php">Outfit Events</a></li>
+      </ul>
+    </li>
+    <li><a href="/view_cbk_collection.php">Store/Vouchers</a>
+      <ul class="submenu1">
+        <li><a href="/view_cbk_collection.php">PF</a></li>
+        <li><a href="/manufacturer_brands.php">Stores</a></li>
+        <li><a href="/blogs.php">Blogs</a></li>
+        <li><a href="/network_feeds.php">Network Feeds</a></li>
+        <li><a href="/allcategories_new.php">Top stores</a></li>
+        <li><a href="/network_vouchers.php">In-Active Vouchers</a></li>
+        <li><a href="/allvouchers.php">Vouchers</a></li>
+        <li><a href="/allvouchers_archieve.php">Archive Vouchers</a></li>
+        <li><a href="/allstoredeals.php">Deals</a></li>
+        <li><a href="/allcategories.php">Categories</a></li>
+        <li><a href="/allexceptiondeals.php">Exception Deals</a></li>
+        <li><a href="/pf_categories.php">Pf Categories</a></li>
+        <li><a href="/resource_browser.php">Resource Browser</a></li>
+        <li><a href="/replication.php">Replication</a></li>
+        <li><a href="/allfaqcategories.php">FAQ Categories</a></li>
+        <li><a href="/allfaqs.php">FAQs</a></li>
+        <li><a href="/shops_collections.php">Shops Collections</a></li>
+        <li><a href="/allthemecollections.php">Theme Collection</a></li>
+        <li><a href="/cashback_day_calendar.php">Cashback of the Day</a></li>
+      </ul>
+    </li>
+    <li><a href="/coreg_report_data.php">Supplier Data</a>
+      <ul class="submenu1">
+        <li><a href="/coreg_report_data.php">Supplier Data</a></li>
+        <li><a href="/coreg_networks.php">Supplier Campaigns </a></li>
+        <li><a href="/coreg_aggr.php">Supplier Performance </a></li>
+        <li><a href="/process_coreg_leads.php">Process Co-reg Leads</a></li>
+        <li><a href="/supplier_dashboard.php">Supplier Dashboard</a></li>
+        <li><a href="/coreg_sup_report.php">Coreg Supplier Report</a></li>
+      </ul>
+    </li>
+    <li><a href="/resolved_transactions.php">Transactions</a>
+      <ul class="submenu1">
+        <li><a href="/network_api_new.php">API</a></li>
+        <li><a href="/allcashbacks.php">Cashback</a></li>
+        <li><a href="/partner_deal_earning_new.php">Deals</a></li>
+        <li><a href="/generate_new_order.php">Orders</a></li>
+        <li><a href="/partner_store_reviews_reply.php">Stores</a></li>
+        <li><a href="/transaction_dashboard.php">Transactions</a></li>
+        <li><a href="/resolved_transactions.php">Resolved Transactions</a></li>
+        <li><a href="/add_multi_callback.php">Add multiple callbacks</a></li>
+        <li><a href="/partner_testimonial.php">Testimonials</a></li>
+        <li><a href="/twinfield_customers.php">Twinfield Customers</a></li>
+      </ul>
+    </li>
+    <li class="logout"><a href="/index.php?logout">LOGOUT</a></li>
+  </ul>
+
+<div class="SubMenuBox">
+	<div class="OnPageHead">App Reports</div>
+	<ul class="OnPageMenu01">
+		<li><a href="#" class="active">Pages Report</a></li>
+		<li><a href="#">Traffic Report</a></li>
+		<li><a href="#">App Installs</a></li>
+	</ul>
+</div>
+
+  <!-- // #end mainNav -->
+  <div id="containerHolder">
+    <div id="container"><!-- h2 stays for breadcrumbs -->
+      
+      <h2>Pages Analytics Report</h2>
+      <div id="main">
+        <p class="short_desc">Pages Analytics Report</p>
+        <h3>Select account to view google analytics report.</h3>
+        <style>
+    td{
+        word-break: break-all;
+    }
+</style>
+        <form id="form1" name="form1" method="get" action="" onSubmit="return checkNetwork();">
+          <fieldset>
+            <table width="100%" border="0" cellspacing="0" cellpadding="2" id="filtertbl">
+              <tbody>
+                <tr>
+                  <td style="text-align:right"> Select Date : </td>
+                  <td><select name="date-filter" id="date-filter">
+                      <option value="none">Select Date</option>
+                      <option value="yesterday">Yesterday</option>
+                      <option value="7daysAgo" selected="">Last 7 days</option>
+                      <option value="30daysAgo">Last 30 days</option>
+                    </select></td>
+                  <td style="text-align:right"> Select Platform : </td>
+                  <td><select name="platform-filter" id="platform-filter">
+                      <option value="both">Select Platform</option>
+                      <option value="web">Web</option>
+                      <option value="app">App</option>
+                    </select></td>
+                  <td style="text-align:right"> Select Account : </td>
+                  <td><select name="gaAccounts" id="gaAccounts">
+                      <option value="45187893">CashbackDeals.de</option>
+                      <option value="45188282">fr-be.cashbackdeals.be</option>
+                      <option value="45189585">nl-be.cashbackdeals.be</option>
+                      <option value="45190884">StudentenCashback.nl</option>
+                      <option value="45191672">Cashbackkorting App</option>
+                      <option value="45192563">iPay.nl</option>
+                      <option value="45192861">CashbackKorting.nl</option>
+                      <option value="45195512">LadyCashback.be</option>
+                      <option value="45196801">LadyCashback.nl</option>
+                      <option value="45196901">CashbackReduction.fr</option>
+                      <option value="45805149">OrangeBuddies Media</option>
+                      <option value="50262762">Cashback.nl</option>
+                      <option value="50399438">CashSparen.de</option>
+                      <option value="56494046">NuCash.be</option>
+                      <option value="56494683">Meinungsclub.de</option>
+                      <option value="56494946">NuCash.nl</option>
+                      <option value="56498518">LadyCashback.de</option>
+                      <option value="56510743">Enqueteclub.nl</option>
+                      <option value="56513652">MyFlavours.nl</option>
+                      <option value="56519751">LadyCashback.fr</option>
+                      <option value="56521555">Enqueteclub.be</option>
+                      <option value="56568472">CashbackDeals.ch</option>
+                      <option value="56568560">CashbackDeals.it</option>
+                      <option value="56569562">LadyCashback.es</option>
+                      <option value="56570466">CashbackEarners.co.uk</option>
+                      <option value="56572552">CashbackRabat.pl</option>
+                      <option value="56572554">LadyCashback.it</option>
+                      <option value="56573046">CashbackDeals.es</option>
+                      <option value="56573431">LadyCashback.pl</option>
+                      <option value="56573835">CashbackDeals.se</option>
+                      <option value="56577114">CashbackSparen.at</option>
+                      <option value="56904276">ladycashback.pl App</option>
+                      <option value="56904450">iPay App</option>
+                      <option value="56904462">ladycashback.it App</option>
+                      <option value="56904571">ladycashback.es App</option>
+                      <option value="56906156">nl-be.Cashbackdeals.be App</option>
+                      <option value="56906160">Ladycashback.fr App</option>
+                      <option value="56906250">Cashbackdeals.de App</option>
+                      <option value="56906258">cashbacksparen.at App</option>
+                      <option value="56906553">CashSparen.de App</option>
+                      <option value="56907436">fr-be.cashbackdeals.be App</option>
+                      <option value="56908159">Cashbackdeals.es App</option>
+                      <option value="56908242">Ladycashback.be App</option>
+                      <option value="56909041">LadyCashback App</option>
+                      <option value="56909052">CashbackReduction.fr</option>
+                      <option value="56909055">Ladycashback.de App</option>
+                      <option value="56909730">Studentencashback App</option>
+                      <option value="56909736">Cashbackdeals.it App</option>
+                      <option value="56910025">CashbackRabat.pl</option>
+                      <option value="57096823">NuCash.nl App</option>
+                      <option value="57099726">NuCash.be App</option>
+                      <option value="57375249">MyFlavours.nl App</option>
+                      <option value="57378643">Cashbackdeals.se App</option>
+                      <option value="57378646">Enqueteclub.be App</option>
+                      <option value="57378744">Enqueteclub.nl App</option>
+                      <option value="57378745">Cashbackdeals.ch App</option>
+                      <option value="57386049">Meinungsclub.de App</option>
+                      <option value="57387648">CashbackKazan.com App</option>
+                      <option value="57447384">CashbackDeals.fi</option>
+                      <option value="58153551">Cashback.nl App</option>
+                      <option value="60361415">CashbackDeals.fi</option>
+                      <option value="66934191">CashbackDiscount.co.uk</option>
+                      <option value="66941557">LadyCashback.co.uk</option>
+                      <option value="73251668">CashbackEarners.co.uk App</option>
+                      <option value="73263548">CashbackEarners.com.au</option>
+                      <option value="73302952">LadyCashback.co.uk App</option>
+                      <option value="90235769">Cashbackdeals.cz</option>
+                      <option value="90239141">Cashbackdeals.dk</option>
+                      <option value="90241270">FacileCash.it</option>
+                      <option value="90246644">Gekkengoud.nl</option>
+                      <option value="92542415">Shopbuddies.nl</option>
+                      <option value="92550412">Shopbuddies.be</option>
+                    </select></td>
+                </tr>
+                <tr>
+                  <td colspan="6" style="text-align:center"><input type="button" value="Run Reports" id="btn-run" onClick="pagesReport()"></td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+        </form>
+        <table width="100%" id="pages-report-table" border="0" cellpadding="5" cellspacing="0">
+          <thead>
+            <tr>
+              <td width="30%" align="center"><strong>Page</strong></td>
+              <td width="10%" align="center"><strong>Page Views</strong></td>
+              <td width="10%" align="center"><strong>Unique Pageviews</strong></td>
+              <td width="10%" align="center"><strong>Avg. Time on Page</strong></td>
+              <td width="10%" align="center"><strong>Entrances</strong></td>
+              <td width="10%" align="center"><strong>Bounce Rate</strong></td>
+              <td width="10%" align="center"><strong>% Exit</strong></td>
+              <td width="10%" align="center"><strong>Page Value</strong></td>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <div id="pages-loading" class="text-center" style="display:none;text-align:center"><img src="analytics-reporting/loading.gif"></div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+                // $("#select-account").text("Loading Accounts");
+                $('#btn-run').prop('disabled', true);
+                getAccounts();
+        });
+
+        function getAccounts(){
+            $.get("analytics-reporting/api.php",{action: "getAccounts"}, function(res){
+                console.log(res);
+                var obj = $.parseJSON(res)
+                $.each(obj.gaAccounts, function(i,val){
+                    if(val.name != 'CasboMedia')
+                    {
+                        $("#gaAccounts").append(
+                            '<option value="'+val.id+'">'+val.name+'</option>'
+                            );
+                    }
+                });
+                $('#btn-run').prop('disabled', false);
+            });
+        }
+
+        function pagesReport(){
+            $('#pages-report-table tbody').children().remove();
+            $('#pages-loading').css('display', 'block');
+            var accountid = $('#gaAccounts').val();
+            var dateFilter = $('#date-filter').val();
+            var datasource = $('#platform-filter').val();
+            if(dateFilter == 'none' ){
+                dateFilter = '7daysAgo';
+            }
+            getPagesReport(accountid,dateFilter,datasource);
+        }
+
+
+            function getPagesReport(accountid,dateFilter,datasource){
+                   var jqxhr= $.get("analytics-reporting/api.php",{action: "getPagesReport", accountId: accountid,dateFilter: dateFilter,datasource: datasource}, function(res){
+                    // alert(res);
+                    var obj = $.parseJSON(res);
+                    if(obj.gaReport.rows == null){
+                        var row="<tr><td class='text-danger' colspan='8'>No record found.</td></tr>";
+                        $('#pages-report-table tbody').append(row);
+                        $('#pages-loading').css('display', 'none');
+                    }
+                    $.each(obj.gaReport.rows, function(i,val){
+                        var row= '<tr>';
+                        for(var i=0; i < val.length; i++){
+                            if($.isNumeric(val[i]) && val[i].indexOf('.') != -1){
+                                var v=parseFloat(val[i]).toFixed(2);
+                            }else{
+                                var v=val[i];
+                            }
+                            if(i==0){
+                                row +='<td>'+v+'</td>';
+                            }else{
+                                row +='<td  align="center">'+v+'</td>';
+                            }
+                        }
+                        row += '</tr>';
+                        $('#pages-report-table tbody').append(row);
+                    });
+
+                    $('#pages-loading').css('display', 'none');
+                });
+            }
+        </script> 
+        <script>
+            function formatDate(date) {
+                var monthNames = [
+                    "January", "February", "March",
+                    "April", "May", "June", "July",
+                    "August", "September", "October",
+                    "November", "December"
+                ];
+
+                var year = date.substring(0,4);
+                var month = date.substring(4,6);
+                var day = date.substring(6,8);
+                month = month.replace(/^0+/, '');
+                return monthNames[month-1]+' '+day+', '+ year;
+            }
+
+            function ReplaceNumberWithCommas(num) {
+                    //Seperates the components of the number
+                    var n= num.toString().split(".");
+                    //Comma-fies the first part
+                    n[0] = n[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                    //Combines the two sections
+                    return n.join(".");
+                }
+
+        </script> 
+      </div>
+      <!-- // #main -->
+      <div class="clear"></div>
+    </div>
+    <!-- // #container --> 
+  </div>
+  <!-- // #containerHolder -->
+  <p id="footer">Copyright © 2009- 2016, CASCONCEPTS BV&nbsp;&nbsp;&nbsp;<a href="#">Top</a></p>
+  <p id="footer1">Logged in as: Jamil</p>
+</div>
+<!-- // #wrapper --> 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ed9f964576","applicationID":"2523744","transactionName":"YVxXNhAAXhJXWxYMV1gWYBALTlQIUVEWBFRpWkARFg5dBEQWEg1I","queueTime":0,"applicationTime":23,"ttGuid":"","agentToken":"","atts":"TRtUQFgaTRw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+</body>
+</html>
