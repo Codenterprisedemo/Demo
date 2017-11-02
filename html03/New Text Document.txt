@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Museo Sans";
+    src: /* Multiple url() and format() follow */;
+
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Museo Sans";
+    src: /* Multiple url() and format() follow */;
+
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Museo Sans";
+    src: /* Multiple url() and format() follow */;
+
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Museo Sans";
+    src: /* Multiple url() and format() follow */;
+
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Museo Sans";
+    src: /* Multiple url() and format() follow */;
+
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+body {
+  font-family: "Museo Sans";
+font-family: "museo-sans","Verdana","Gill Sans","Lucida Grande","Arial","Helvetica",sans-serif;
+}
