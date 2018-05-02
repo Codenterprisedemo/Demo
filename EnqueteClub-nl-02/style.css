@@ -152,7 +152,7 @@ h2{ font-size: 20px; font-weight: 400; color: #333; line-height: 48px;}
 
 /*==== CashBackDay Tabs ====*/
 .nav-tabs { width: 100%; overflow: hidden; border: 1px solid #ccc; border-bottom: none;}
-.tab-content { clear: both; padding-top: 6px; border: 1px solid #CCC; text-align: center;}
+.tab-content { clear: both; padding-top: 6px; border: 1px solid #CCC; }
 .nav-tabs.COD-tabs li a{ background:none; border:none; padding:9px 10px; border: none; font-weight: bold; color:#444; font-size: 13px;}
 .nav-tabs.COD-tabs li {  padding:4px 0;}
 .nav-tabs.COD-tabs li.active a,.nav-tabs.COD-tabs li a:hover,.nav-tabs.COD-tabs li a:focus{
@@ -686,6 +686,85 @@ ul.shoptools {
 }
 
 
+
+/* Accordian Menu */
+
+.panel-heading.accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family:'Glyphicons Halflings';
+    /* essential for enabling glyphicon */
+    content:"\e114";
+    /* adjust as needed, taken from bootstrap.css */
+    float: right;
+    position: relative;
+    bottom: 23px;
+    font-size: 15pt;
+    /* adjust as needed */
+    color: grey;
+    /* adjust as needed */
+}
+.panel-heading.accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content:"\e080";
+    /* adjust as needed, taken from bootstrap.css */
+}
+.panel-heading:hover {cursor: pointer;}
+
+
+/* Hide and seek Module */
+.HideSeek{ clear: both; height: auto; overflow-x: hidden; margin: 40px auto;}
+.HideSeek .nav-tabs { border:none; border-bottom: 2px solid #333; }
+.HideSeek .nav > li > a { background-color: #333; color: #fff; padding:9px 18px;  border-radius: 7px 7px 0px 0px; }
+.HideSeek .nav > li.active > a { background-color: #8acbd9; color: #fff;}
+.HideSeek .tab-content{border:none;height: auto; overflow: hidden;margin: 10px auto;}
+.GameStatusBar {position: relative; clear: both;height: 52px;background-color: #59aec0;margin: 4px auto 10px auto;
+    border-radius: 28px; margin-top: 30px;}
+.StatusBarIcon {position: absolute;top: -33px; left: -1px;}
+.StatusBarTxt {float: left;font-size: 17px; color: #fff; margin-top: 12px; margin-left: 80px;}
+.GameBigTxt {font-size: 29px; font-weight: bold;}
+.Attempts {float: right; width: 38px; height: 38px;border-radius: 50%;background-color:#fff; color:#59aec0;text-align: center; font-size: 31px; margin-top: 5px; padding-top: 10px;}
+a.start-hs-btn {padding: 10px; background: #333; border-radius: 5px; color: #ffffff !important; text-decoration: none;
+    display: block;  width: 200px; float: right;margin-top: 5px; font-size: 18px;margin-right: 10px; text-align: center;}
+.GreenHead {float: left;  color: #59aec0;  font-size: 19px; line-height: 39px;margin-top: 22px;}
+.GameTimer{ float:right; text-align:left; background-color: #ff0000}
+.CounterNum {display: inline-block; font-weight: bold; background-color: #3468b2; padding: 2px 6px;border-radius: 4px;
+    color: #fff; margin:20px auto;}
+.CounterGap {display: inline-block; padding-top: 4px; color: #3468b2; font-size: 22px; font-weight: bold;}
+/*** SRART GAME GRID CSS ***/
+.game-container{width: 100%;  overflow: hidden;  border:1px solid #eaeaea; border-bottom: none; border-left: none;
+  box-sizing: border-box;  background-color:#eaeaea;}
+.game-grid{  background:#fff;  width: 12.5% ;  box-sizing: border-box;  display: block;  overflow: hidden;  float: left;
+  height: 102px;  text-align:center;   position: relative;  border-bottom:1px solid #eaeaea;   border-left:1px solid #eaeaea;
+  cursor: url('https://static.orangebuddies.nl/templates/www.enqueteclub.nl/march16/assets/hide-seek/pointer.png'), auto;}
+.game-grid:nth-child(odd){  background: #f9f9f9; }
+.sotre-grid{  display: none;  position: relative;  width: 100%;  height: 100%;}
+.game-grid img{  max-width: 100%; position: absolute; top: 0; bottom: 0; left: 0; right:0; margin:auto;}
+/* My Reward Board */
+.ImgHeading{ color:#59aec0; font-size: 19px; line-height: 39px; text-align: center;}
+.LightGreyBg{ background-color:#f9f9f9; }
+.RewardBoard{ clear: both; height: auto; overflow:hidden;border: 1px solid #eee;}
+.RewardCard{ float: left; width: 50%; height:auto; overflow: hidden; padding-bottom: 12px;}
+.RewardAmount{ position: relative; float: left; width:64px; height:34px; margin-left: 24px; margin-top:40px; margin-bottom: 20px; text-align: center;padding-top: 6px; color:#e63421; font-weight: bold;}
+.RewardImg{ position: absolute; top:0; }
+.RewardDetail{ float: left; margin-left: 24px; margin-top:40px; margin-bottom: 20px;}
+.CoinActive{ float: left; margin-left: 7px; margin-top: 12px;}
+.CoinUnActive{ float: left; margin-left: 7px; opacity:0.2; margin-top: 12px;}
+.LuckyDraw{ clear: both; height: auto; overflow:hidden; margin: 40px; border-bottom:1px solid #eaeaea; padding-bottom:20px;}
+#main .LuckyDraw h1 { color:#333; }
+.luckDrawImg{ float: left; width:120px;}
+.LuckyDrawDetail{ float: left; width: 70%;}
+.GainCoin{ clear: both; padding: 3px 33px; height: auto; overflow: hidden; }
+.LotteryIcon2{ position: relative; float: left; }
+.TickImg{ position: absolute; bottom: 0;right: 0; }
+.Drop18{ padding-top: 18px; }
+.OnRight{ float:right; margin: 12px 36px;}
+.HideSeek thead.cf{ background: #f9f9f9; color:#333; line-height: 30px;}
+.HideSeek table th { border-right: 1px solid #ddd}
+.TableStyle02 {border: 1px solid #ddd; height: auto; overflow: hidden;}
+.Stars{ display: inline; }
+.Stars:after, .Stars:before{ content:url(https://static.orangebuddies.nl/templates/www.enqueteclub.nl/march16/assets/hide-seek/star.png); padding:6px; }
+.TdRed{ color:#ff0000; font-weight: bold; }
+
 /* --------------------------------------------
     Responsive  css
 -------------------------------------------- */
@@ -711,7 +790,13 @@ ul.shoptools {
   .AppInfoBanner { background:#f3f3f3;}
   .AppArrow{ display: none; }
 }
+@media (max-width:949px){
+  .game-grid{ width:16.5%; }
+}
 
+@media (max-width:991px){
+.container{ width: 98%; box-sizing: border-box;}
+}
 @media only screen and (max-width:767px){
 .navbar-default .navbar-nav > li > a {border-bottom: 1px dotted #2593f3;}
 .SearchBarTop { float:none; clear: both;}
@@ -763,6 +848,19 @@ ul.shoptools {
 
   /*  Label the data  */
   #no-more-tables td:before { content: attr(data-title); }
+  .game-grid{width:25%;}
+  .RewardCard{ float: none; width:100%; text-align: center; }
+  .RewardDetail{ float: none; clear: both; margin-left: 0 }
+  .CoinActive{ float: none; display: inline-block; margin-left: -1px;}
+  .CoinUnActive{ float: none; display: inline-block; margin-left: -1px;}
+  .LuckyDrawDetail{ padding-top: 20px;}
+}
+@media (max-width: 542px){
+  .GameStatusBar .col-xs-12{ width: 100%;}
+  .Attempts{ display: none; }
+  a.start-hs-btn{ width: 100%; margin:22px auto 0px auto;border-radius: 22px;}
+  .GreenHead{ float: none; line-height:26px;}
+  .game-grid{width:50%;}
 }
 
 @media (max-width: 515px){
@@ -780,6 +878,14 @@ ul.shoptools {
 
 @media (max-width: 487px){
  .storeDeals .col-xs-12{ width: 100%; float: none; }
+}
+@media (max-width: 464px){
+  .nav-tabs > li {width: 50%;text-align: center;margin: 1px auto;}
+}
+
+@media (max-width: 400px){
+  .Stars{  display: block; }
+  .ImgHeading img{ display: block; text-align: center;}
 }
 
 @media (max-width: 380px){
