@@ -1,0 +1,3605 @@
+@charset "utf-8";
+/*RESPONSIVE CSS Document */
+.burgermenu{
+	display:none;
+}
+.resp_banner{
+	display:none !important;
+}
+
+
+/********** NEW TEMPLATES 2015 *********/
+/***********  TABLETS + iphone 6 landscape: Min width: 650px / Max width: 991px  **********/
+
+@media all and (max-width : 1100px) {
+.hidemetable tr td:nth-child(2), th:nth-child(2), td:nth-child(5), th:nth-child(5)  {
+    display:none;
+}
+.datepick-month tr td:nth-child(2),.datepick-month th:nth-child(2),.datepick-month td:nth-child(5),.datepick-month th:nth-child(5){
+	display: table-cell;
+}
+.table-responsive { margin-right:15px; }
+.HideBtn01{ display:block;}
+span.table-cc{ margin-bottom: 10px; }
+}
+@media all and (max-width : 494px) {
+
+}
+@media only screen and (min-width: 650px) and (max-width: 991px) {
+	/* main content */
+	#header #search {
+    float: right;
+    margin: 10px 10px 0 0;
+	}
+	#header #subscribe {
+		margin-right:10px;
+	}
+	#main #main-content{
+	width:98%;
+	margin:0 1%;
+	}
+	/* top container with usps */
+	#top{
+	width:96%;
+	padding:0 2%;
+	}
+	.search-tips{
+	display:none;
+	}
+	/* 2 block */
+	.exclusive_box, .content-new .exclusive_box:nth-of-type(3), .content-new .exclusive_box:nth-of-type(6){
+	width:42%;
+	margin:8px 2%;
+	padding:10px 2%;
+	}
+	/* 4 blocks */
+	.product-section, .product-section:nth-of-type(5){
+	width:23%;
+	margin:0px 1% 15px 1%;
+	}
+	.shop, .brand,
+	.content-new .shop, .content-new .brand{
+	width:23%;
+	margin: 5px 1% 10px 1%;
+	}
+	/* 3 block*/
+	.categorie-overview-list li, .icons-list li, .present_box{
+	width:31%;
+	margin-right:1%;
+	margin-left:1%;
+	}
+	.dailydeal_box{
+	width:29%;
+	padding:10px 1%;
+	margin-right:1%;
+	margin-left:1%;
+	}
+	.product-section img{
+	width:100%;
+	}
+	.icons-list li:nth-of-type(4n+0), .present_box:nth-of-type(6n+0){
+	margin-right:1%;
+	}
+	.dailydeal_box.first{
+	margin-left:1%;
+	}
+	span.presentdeal img{
+	max-width:200px
+	}
+	span.presentdeal{
+	text-align:center;
+	}
+	span.presentdeal img{
+	width:200px;
+	}
+	/* free table */
+	.free-table-td3{
+		width:50%
+	}
+	.free-table-td4{
+		width:20%
+	}
+	/* home */
+	.homeslider{
+	width:100%;
+	text-align:center;	
+	}
+	.homeslider img{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	}
+	.homehome-banners, .home-part, .home-part.first, .fb_content_left, .fb_content_right, #account-block{
+	width:96%; 
+	float:left; 
+	margin-left:2%;
+	margin-right:2%;
+	}
+	.homehome-banners-padding{
+	padding:10px 1% 0 1%;
+	}
+	.homehome-banners img{
+	width:10%;
+	margin:0 0.5% 10px 0.5%;
+	height:auto;
+	}
+	#dailydeal_welcomepage .dailydeal_box.first{
+	display:none;	
+	}
+	.shop-category-trends .product-section:nth-of-type(5){
+	display:none;
+	}
+	/* welcome page */
+	#main-sidebar{
+	display:none;
+	}
+	.content-new .dailydeal_box.first{
+	display:none;
+	}
+	.content-new .home-part{
+		width:48%;
+		margin-left:0;
+	}
+	.blog-overview{
+		clear:left;
+	}
+}
+@media (max-width:900px){
+.jackpot-bg-container input, .claim-prise-button-down, .claim-prise-button-down,.claim-prise-button-down:hover, .claim-prise-button:hover{
+	background-size:100%;
+	width:180px;
+	float: none !important;
+	margin: auto !important;
+	display: block;
+}
+.jackpot-bottom-heading{
+    width:100%;
+}
+span.sidebar_dailydeal span.price {
+    width: 90px;
+}
+.box-price-orange {
+    width: 120px;
+}
+.shop_table .shop_details {
+    width: 31%;
+}
+.footerbanner img {
+    width: 100%;
+}
+#footer #footer-menu li {
+    width: 75px;
+}
+#menu{
+	display:none;
+}
+.burgermenu{
+	display:block;
+	width:100%;
+	float:left;
+	background:#84A628 url(../assets/menu-bg.gif) repeat-x;
+	position:relative;
+}
+#menu_icon,.burger_menu
+{
+	color:#fff;
+	margin:auto;
+	padding:10px;
+	
+	}
+.burger_menu
+{
+	padding:0px;
+	display:none;
+	background:#333;
+	position:absolute;
+	top:45px;
+	z-index:9999;
+	width:65%;
+}
+.burger_menu ul li{
+	list-style:none;	
+	margin:auto;
+}
+
+.burger_menu ul li ul li ul li a{
+	display:block;
+	color:#fff;	
+	text-decoration:none;
+	padding-left:45px;}
+
+			
+.burger_menu ul li ul li ul li a:last-child {
+	display:block;
+	color:#fff;	
+	text-decoration:none;
+	padding-left:45px;
+	box-shadow: inset 0 -1px #f1f9f8;}
+#menu_icon{
+	font-size:20px;
+	float:left;
+}	
+.resp-app-button {
+    float: right;
+    height: 45px;
+    width:25% ;
+    min-width:160px;
+}
+li a .download-app {
+    display: none !important;
+}
+.resp-app-button .download-app{
+	float:right;
+	margin-right:10px;
+	color:#fff;
+}
+.alert-bar{
+	margin-top:-5px;
+}
+.resp-app-button > a {
+    float: left;
+    margin-top: 13px;
+}
+.burger_menu{
+	padding:0px;
+	display:none;
+	background:#333;
+	position:absolute;
+	top:45px;
+	z-index:9999;
+	width:65%;
+}
+.burger_menu ul li{
+	list-style:none;
+	margin:auto;
+}
+.burger_menu ul li:last-child{
+	border:none;
+} 		
+.burger_menu ul li a:hover {
+	color:#ccc;
+}			
+.popular-shop {
+    margin-left: 25px !important;
+}
+
+div.contentbox {
+    width: 100%;
+}
+.win a{
+	margin-right:10px !important;
+}
+.win a img {
+	width:195px !important;
+	height:auto !important; 
+}
+.detail {
+    width: 30%;
+}
+.share_details {
+    width:56%;
+}
+/*.exclusive_box{
+	margin:5px !important;
+}*/
+#welcome_popular_shops img {
+    margin-left: 5px !important;
+}
+.discount-coupon .shop_table_links {
+    width: 28%;
+}
+.dealdesc{
+	text-align:left;
+}
+.shop_btn {
+    margin-left: 5px;
+    width: 31%;
+}
+.account_box{
+	float:none;
+	margin:auto;
+}
+#app-text {
+    width: 47%;
+}
+.fancybox-close{
+	right:15px;
+	top: 5px ;
+}
+.product-discription img{
+	min-height:unset !important;
+	height:130px !important;
+	}
+.search_deals .shop_table_text {
+    width: 37%;
+}
+.lottery-item, .lottery-item-right {
+    width: 80%;
+}
+.signup-container, .login-container{
+    margin-left:20px !important; 
+}
+span.campaign-text{
+    width: 50%;
+}
+.buy-ticket-button{
+    margin-left:20%;
+}
+a.app-icon{
+	padding:0px !important;
+}
+/* new 2015 */
+ .blog_post{/* blog overview */
+	width:46%;
+	margin:5px 2% 10px 2%;
+}
+.dropdown-login{ top: 34px;}
+.homehome-banners{ min-height:70px; overflow:hidden;}
+.BarCont {
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.crossBtn{
+	top: 5px;
+	right: 10px;
+}
+}
+@media (max-width:767px){
+.autoImg{ width:100%; height:auto;}
+
+}
+@media (max-width:694px){ #header{ height:120px;}}
+
+/***********  PHONES: Min width: 480px / Max width: 650px  **********/
+@media only screen and (min-width:480px) and (max-width:650px)
+{
+	/* 3 blocks */
+	.shop, .brand,
+	.content-new .shop, .content-new .brand{
+	width:31%;
+	margin: 5px 1% 5px 1%;
+	}
+	/* 2 blocks*/
+	
+	.dailydeal_box, .enquete-box, .exclusive_box, .content-new .exclusive_box:nth-of-type(3), .content-new .exclusive_box:nth-of-type(6){
+	width:40%;
+	margin:5px 1%;
+	padding:10px 2%;
+	}
+	.product-section img{
+	width:100%;
+	}
+	.product-section:nth-of-type(5), .icons-list li:nth-of-type(4n+0), .present_box:nth-of-type(6n+0){
+	margin-right:1%;
+	}
+	.mod-3collist ol{
+	margin:0px 2%;
+	}
+	.overview-search-popular span{
+	clear:left;
+	padding:10px;
+	}
+	.overview-search-popular li a{
+	margin-top:8px;
+	}
+	.alphabet{
+	padding:5px 2%;
+	}
+	.dailydeal_box.first{
+	margin-left:1%;
+	}
+	.gift-text{
+	float:left;
+	overflow:auto;
+	clear:left;
+	}
+	span.presentdeal{
+	text-align:center;
+	}
+	span.presentdeal img{
+	width:200px;
+	}
+	.enquete-boxes{
+	margin-top:15px;
+	margin-bottom:10px;
+	}
+	.enquete-current-img img{
+	width:100%;
+	height:auto;
+	}
+	/* home */
+	.homehome-banners-padding{
+	padding:10px 1% 0 1%;
+	}
+	.homehome-banners img{
+	width:18%;
+	margin:0 1% 10px 1%;
+	height:auto;
+	}
+	.home .blog_post.last, .shop-category-trends .product-section:nth-of-type(5){
+	display:none;
+	}
+	/* welcome */
+	.content-new .brand:nth-of-type(4),
+	.content-new .blog_post:nth-of-type(3){
+	display:none;
+	}
+}
+
+/***********  PHONES: Min width: 320px / Max width: 480px  **********/
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+	/* 2 blocks */
+	.shop, .brand,
+	.content-new .shop, .content-new .brand{
+	width:48%;
+	margin: 5px 1% 5px 1%;
+	}
+	/* 1 block*/
+	.categorie-overview-list li, .product-section, .mod-3collist ol, .icons-list li, .present_box{
+	width:96%;
+	margin:5px 2%;
+	}
+	.dailydeal_box, .enquete-box, .enquete-box.last, .dailydeal_box.first, .present_box:nth-of-type(6n+0), .exclusive_box{
+	width:92%;
+	margin:8px 2%;
+	padding:10px 2%;
+	}
+	/*.product-section,  .dailydeal_box, .present_box{
+	width:240px;
+	margin:5px auto;
+	float:none;
+	}*/
+	.product-section img{
+	width:100%;
+	}
+	.product-section:nth-of-type(5), .icons-list li:nth-of-type(4n+0){
+	margin-right:2%;
+	}
+	.mod-3collist ol{
+	margin:0px 2%;
+	}
+	#overview-search input#content_search_input{
+	width:200px;
+	}
+	.overview-search-popular{
+	display:none;
+	}
+	.alphabet{
+	padding:5px 2%;
+	}
+	.gift-text{
+	float:left;
+	overflow:auto;
+	clear:left;
+	}
+	.enquete-boxes{
+	margin-top:15px;
+	margin-bottom:15px;
+	}
+	.enquete-current-img img{
+	width:100%;
+	height:auto;
+	}
+	/* free table */
+	.free-table-row  .free-table-td2{
+	float:left;
+	text-align:left;
+	}
+	/* home */
+	.homehome-banners-padding{
+	padding:10px 1% 0 1%;
+	}
+	.homehome-banners img{
+	width:30%;
+	margin:0 1.5% 10px 1.5%;
+	height:auto;
+	}
+	/* top container with usps */
+	#top-subscribe .t-user{
+	}
+	input.search-field{
+	width:220px !important;
+	}
+	#top-subscribe .t-cashback{
+	border:0;
+	padding-left:0;
+	}
+}
+/***********  PHONES: Min width: 320px / Max width: 650px (rules for both horizontal and landscape)   **********/
+@media only screen and (min-width:320px) and (max-width:650px)
+{
+	#header #search {
+	    float: left;    
+	    width: 97%;
+	}
+	#header #search {
+	    float: left;
+	    width: 100% !important;
+	    margin: 23px 0 !important;
+	    padding: 0 5px !important;
+	    box-sizing: border-box;
+	}
+	input.search-field {
+	    width: 80% !important;
+	    background-size: 100% 45px !important;
+	    box-sizing: border-box;
+	}
+	.searc-selection {
+		width: 10% !important;
+	}
+	.search-submit {
+	    width: 10% !important;
+	    height: 43px;
+	    border-radius: 0 5px 5px 0 !important;
+	    background-color: #3468b2;
+	    background-repeat: no-repeat;
+	    background-position: center 0;
+	}
+	#header #subscribe {
+		margin-right:10px;
+	}
+	/* main content */
+	#main #main-content,
+	#main #main-content.content-new{
+	width:96%;
+	margin:0 2%;
+	}
+	/* top container with usps */
+	#top-container{
+	padding:14px 0;
+	}
+	#top{
+	width:96%;
+	padding:0 2%;
+	}
+	#top-subscribe{
+	float:left
+	}
+	.search-tips{
+	display:none;
+	}
+	/* free table */
+	#free-table-search input{
+	width:250px;
+	}
+	.free-table-row{
+	height:auto;
+	}
+	.free-table-heading{
+	display:none;
+	}
+	.free-table{
+	border-top:1px solid #d6d6d6;
+	}
+	.free-table-td1, .free-table-td2, .free-table-td3, .free-table-td4{
+	float:left;
+	padding:5px 0;
+	}
+	.free-table-row  .free-table-td1,
+	.free-table-row  .free-table-td2{
+	width:50%;
+	}
+	.free-table-row .free-table-td3,
+	.free-table-row .free-table-td4{
+		width:100%;
+	}
+	.free-table-row .free-table-td3{
+	height:auto;
+	max-height:58px;
+	}
+	.free-table-td4{
+	float:left;
+	text-align:left
+	}
+	.free-table-row .free-table-td2{
+	float:right;
+	text-align:right;
+	}
+	/* home */
+	.homeslider{
+	width:100%;
+	text-align:center;	
+	}
+	.homeslider img{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	}
+	.homehome-banners, .home-part, .content-new .home-part, .home-part.first, .content-new .home-part.first, .fb_content_left, .fb_content_right{
+	width:96%; 
+	float:left; 
+	margin-left:2%;
+	margin-right:2%;
+	}
+	#home-parts{
+	padding-bottom:10px;
+	}
+	.home-readmore{
+	padding:0 0 15px 0;
+	}
+	#dailydeal_welcomepage .home-readmore{
+	padding:10px 0 15px 2%;
+	}
+	.fb_content_left{
+	margin-bottom:15px;
+	}
+	/* welcome page */
+	#main-sidebar{
+	display:none;
+	}
+	.content-new .dailydeal_box.first{
+	display:none;
+	}
+	/* welcome */
+	#account-block{
+		width:96%;
+		margin-left:2%;
+	}
+	.account-block-1,
+	.account-block-2,
+	.account-block-3,
+	.account-block-4{
+		width:96%;
+		background:none;
+	}
+}
+
+/********** CURRENT TEMPLATES *********/
+
+@media (max-width:1024px){
+.bodyWrapper {
+    float: left;
+    width: 100%;
+}
+.mainContainer{
+	width:850px;
+	overflow:visible;
+	margin-left:85px;
+}
+#main{
+	clear:both;
+	padding:20px 0;
+	}
+.leftBanner, .rightBanner{
+	width:75px;
+	}
+.leftBanner img, .rightBanner img{
+	width:100% !important;
+	height:auto !important;
+}
+.rightBanner {
+    margin-left: 935px;
+}
+#container{
+	width:100%;
+}
+#header{	
+	border:none;
+	width:100%;
+}
+#menu{
+	width:100%;
+	background-repeat:repeat;
+}
+
+/*#main #main-content{
+	width:630px;
+	margin-right:15px;
+}*/
+#ranking_left, #ranking_right{
+	width:48%;
+}
+.shop_table{
+	width:100%;
+}
+.shop_table .shop_details{
+	width:47%;
+}
+.home-partnerlogos img{
+	width:100% !important;
+	max-width:705px !important;
+	height:auto !important;
+}
+.flags{
+	width:100%;
+	/*line-height:30px;*/
+}
+#footer{
+	width:100%;
+}
+#footer #footer-menu{
+	width:40%;
+}
+#footer #footer-menu li{
+	width:120px;
+}
+#footer .footer-icons{/* changed 2015 */
+	width:58%;
+	padding:10px 0;
+}
+.main_banner{
+	display:none;
+}
+.resp_banner{
+	display:none !important;
+}
+.box-cat-desc{
+	width:100%;
+	float:left;
+}
+/***********BX-SLIDER***************/
+.home-visuals{
+	padding-bottom:25px;
+	height:auto !important; 
+}
+.home-visuals .bx-wrapper .bx-viewport{
+	width:100% !important;
+}
+.bxslider-cbkslider > div{}
+.bxslider-cbkslider img {
+    height: auto !important;
+    width: 100% !important;
+}
+.bx-wrapper .bx-viewport,.home-visuals .bx-wrapper .bx-viewport{
+	height:auto !important;
+}
+/****** ******/
+.pages{
+	  word-wrap: break-word;
+	  line-height:30px;
+}
+.popular-shop .first{
+	margin-left:15px ;
+}
+.popular-shop .last{
+	margin-right:0 ;
+}
+.popular-shop{
+	margin-left:15px!important;
+}
+.popular-shop.last{
+    margin-right: 15px;
+}
+.home-shopbanners{
+	width:100% !important;
+	box-sizing: border-box;
+}
+.bx-wrapper .bx-controls-direction a{
+	width:33px;
+}
+.bx-wrapper .bx-viewport{
+	height:auto !important;
+}
+div.contentbox{
+	width:100%;
+}
+.email_detail,.email_heading{
+	overflow:hidden;
+	display: flex;
+}
+.email_detail span,.email_heading span{
+	height:auto;
+	overflow: hidden;
+	padding:5px !important;
+	box-sizing: border-box;
+}
+
+.email_heading .post_date{
+	width:25%;
+}
+.email_heading .post_subject{
+	width:40%;
+}
+.email_heading .Compensation{
+	width:20%;
+}
+.to_read{
+	width:15%;
+}
+.email_detail .post_date{
+	width:25%;
+}
+.email_detail .post_subject{
+	width:40%;
+}
+.email_detail .Compensation{
+	width:20%;
+}
+.win a:nth-child(3), .win a:nth-child(6), .win a:nth-child(9){
+	margin-right:15px;
+}
+.banner-click{
+	width:96%;
+}
+.rubriek{
+	width:98%;
+}
+.detail{
+	width:46%;
+}
+.rubriek center img{
+	width:100% !important;
+	max-width:467px !important;
+	height:auto !important;
+	
+}
+.share_details{
+	
+}
+/*.exclusive_box {
+    margin: 15px !important;
+	height:250px;
+}*/
+.dds .dailydealbox_share{
+	width:95px;
+}
+.win a{
+	width:195px;	
+	}		
+.win a img{
+	width:100% !important;
+	height:auto !important;
+	}
+.detail_container #detail-left{
+	width:435px;
+	}	
+.shop_table.detail{
+	width:96%;
+	}	
+.discount_detail{
+	width:60%;	
+	}	
+.delivery_detail{
+	width:64%;	
+	}
+.mroediscount_detail{
+	width:28%;
+	text-align:left !important;
+	}	
+#welcome_popular_shops img.first{
+	margin-left:22px;
+	}
+.footerbanner {
+	width:96%;
+	}
+.reviews_input {
+    float: right;
+    width: 75%;
+}	
+#comments_v > textarea {
+    width: 70%;
+	max-width:350px;
+}
+.product-container{
+	width:100% !important;	
+	}
+.section-product:nth-child(4), .section-product:nth-child(8), .section-product:nth-child(12), .section-product:nth-child(16), .section-product:nth-child(20){
+	margin:10px 13px 5px 0;
+	}
+.section-product span img{
+	max-width:170px;
+	}	
+#main #main-sidebar{
+	margin-right:5px;
+	}	
+.details-pro{
+	width:50%;	
+	}	
+.details-pro p{
+	width:auto;	
+	}	
+.testimonialbox {
+	width:96%;	
+	}	
+.testimonialcontent{
+	width:68%
+	}
+.testimonial_label{
+	width:25%;	
+}
+.testimonial_input{
+	width:70%;
+}
+.testimonial_input > textarea{
+	width:80%;	
+	}		
+.testimonial_input > input{
+	width:80%;
+	max-width:300px
+	}	
+.discount-coupon .shop_table_links{
+	width:25%;	
+	}	
+.discount-coupon-text{
+	width:75%;
+	}
+.contect_label{
+	width:20%;
+	}		
+.contect_input{
+	width:75%;
+	}		
+.bank_label{
+	width:45%;
+	}	
+.bank_input{
+	width:45%;
+	}
+input.input_login{
+	width:83%;
+	max-width:250px;
+	}	
+.email-label, .pass_label{
+	width:25%;
+	}	
+.pass_input{
+	width:70%;
+}
+.account_category .cashback_total_lable{
+	width:60%;
+	}
+.account_category .cashback_saldo{
+	width:25%;
+	}
+.account_heading_cashback .cashback,.account_category .cashback{
+	width:18% !important;
+	}
+.winner_heading span,.winners_details span{
+	width:25%;
+	}	
+.click_heading .click_shop{
+	width:23%;
+	}	
+.click_heading span{
+	width:16%;
+	word-wrap: break-word;
+	}	
+.click_details .click_shop{
+	width:23%;
+	}	
+.click_details span{
+	width:16%;
+	word-wrap: break-word;
+	}	
+.sohp_logo{
+	width:20%;
+	}	
+.shop_disc{
+	width:30%;
+	}	
+.shop_table_discount{
+	width:10%;
+	}	
+.shop_btn{
+	width:21%;
+	}	
+.wishlist{
+	width:10%;
+	}	
+.help_heading,.help-detail{
+	word-wrap:break-word;
+	display: flex;
+	}	
+.help_heading span,.help-detail span{
+	box-sizing: border-box;
+	padding:5px !important;
+	}	
+.help_heading .help_subject,.help-detail .help_subject{
+	width:20%;
+	}	
+.help_heading .help_shop,.help-detail .help_shop{
+	width:25%;
+	}	
+.help_heading .help_date,.help-detail .help_date{
+	width:25%;
+	}	
+.help_heading .help_status,.help-detail .help_status{
+	width:15%;
+	}
+.help_heading .help_detail,.help_heading .help_replay{
+	width:10%;
+	}	
+.help-detail .help_detail{
+	width:20%; 
+}
+.pay_info{
+	width:50%;
+	}	
+a.buddy_cashout img,a.buddy_cadeaus img {
+	width:100% !important;
+	max-width:280px;
+	height:auto !important;
+	}
+.account_heading span, .account_heading_cashback span{
+	width:20% !important;
+	}		
+.referways{
+	width:195px;
+	margin-left:5px;
+	}	
+.referways.two input {
+    width: 175px !important;
+}
+img.referways-icons{
+	margin-left:2px;
+}	
+.referways span{
+	padding:0 5px 10px;
+	}	
+.claim-label {
+    width: 35%;
+	word-wrap:break-word;
+}	
+.claim-input {
+    width: 60%;
+}	
+#menu li.first a{
+	padding-bottom:7px;
+}	
+.claim-input textarea,.claim-input input{
+	max-height:250px;
+	width:90%;
+}
+.shop_cart .product_results .product_remove{
+	padding-left:15px;
+}
+.home-shopbanners .bx-wrapper img {
+    height: 60px !important;
+    width: 120px !important;
+}
+.shop_cart .product_results .product_name {
+    width: 80%;
+}	
+.shop_cart .product_results .product_remove{
+	padding-left:25px;
+	}	
+.delivery_address_info,.delivery_details{
+	width:100%;
+	}		
+.delivery_label {
+    float: left;
+    width: 25%;
+}	
+.delivery_input {
+    float: left;
+    width: 65%;
+}	
+#home-tabs{
+	width:100%;
+	}
+#home-tabs .tabs-headers{
+	width:100%;
+	}	
+.search_web_shops .shop_table_text{
+	width:55%;
+	}	
+.shop_table_button{
+	width:22%;
+	}
+.coupon_actions_text {
+    width: 75%;
+}
+#btn_49673 > span {
+    font-size: 12px;
+}
+#app-text {
+    float: left;
+    width: 400px;
+}	
+.collection_pagi{
+	float:right;
+	margin:10px;
+	}
+.collection_pagi a.pagi_next{
+	margin-left:0;
+	}
+.search_deals .shop_table_text{
+	width:55%;
+	}		
+.search_deals .shop_table_button,.search_web_shops .shop_table_button{
+	width:22% !important;
+	float:right;
+	}	
+.button.code.various {
+    font-size: 12px;
+}
+.dailydeal_share .share_text{
+	width:100%;
+	}
+.mobile_app_img{
+	padding:15px 0;
+	}
+.transactie_cont{
+	float:none;
+	margin:auto;
+	max-width:620px;
+	width:100% !important;
+	}
+a.green-btn span, a.green-btn{
+	font-size:14px;
+	}
+.dealdesc{
+	text-align:left;
+	}	
+.lottery-item, .lottery-item-right{
+	width:48%;
+	}
+#signup-form{
+    width: 100%;
+}	
+#errorbox{
+    width: 60%;
+}
+.transactie_details .transactie_shop ,.transactie_heading .transactie_shop{
+	width:155px !important;
+}
+.click_overview{
+    width:98%; 
+}
+.dailydealbox_share{
+    width:98%;
+}
+	/*******blog page css******/
+#shoppage-info-box1 img{
+ max-width:100% !important;
+ height:auto !important;
+ } 
+#main-content textarea{
+ width:90% !important;
+ max-width:350px;
+ }
+.voucher_img{
+    width: 100% !important;
+    height:auto !important;
+}
+.cashmail_display_box .various > img {
+    height: auto !important;
+    width: 98% !important;
+} 
+span.campaign-text{
+    width: 50%;
+}
+#shoppage-left .shop_table, #detail-left .shop_table{
+	width:100% !important;
+}
+.home-banners{
+	width:100%;
+}
+.dob_image{
+    width:98%;
+    height:auto;  
+}
+
+.competition_image{
+    width:98%;
+    height:auto;  
+}
+.bg_flat {
+    background: none repeat scroll 0 0 #fff;
+    border:5px solid #f16996;
+    width: 85% !important;
+}
+#confirmBrokenLink{
+    width:85% !important;
+}
+.buy-ticket-button{
+	margin-left:25%;
+}
+.bingo-winnerprice{
+	float:none;
+	display:inline-block;
+}
+.bordered-div{
+	text-align:center;
+	width:98%;
+}
+.couter-container{
+	position:static;
+	margin:20px auto;
+	clear:both;
+}
+.counter-heading{
+	width:auto;	
+}
+.bordered-div .btn{
+	float:none;
+	display:inline-block;
+}
+.bingotabel-bg{
+	width:99%;
+	margin-left:0;
+}
+.bingobutton-bg{
+	width:100%;
+	background-size:100%;
+	margin:0;
+	text-align:center;
+}
+ 
+.homehome-banners{
+	width: 100%;
+	margin:10px 0;
+}
+.searc-SDC{
+	left: auto;
+	right: 0;
+}
+}
+@media (max-width:980px){
+.shop-main-deals-wrapper li{
+	width: 450px;
+}	
+.leftBanner img, .rightBanner img {
+    height: auto;
+    max-width: 100%;
+    width: auto !important;
+}
+
+.resp_sidebanner {
+    display: block;
+    height: auto;
+    margin: 10px auto;
+    max-width: 100%;
+    width: auto;
+}
+.leftBanner, .rightBanner {
+    height: auto;
+    margin: 0;
+    position: static;
+    text-align: center;
+    width: 100%;
+}
+.main_sidebanner {
+    display: none;
+}
+.bodyWrapper {
+    float: left;
+    width: 100%;
+}
+.mainContainer{
+	width:805px;
+	overflow:hidden;
+}
+.rightBanner {
+    margin-left: 890px;
+}
+#container{
+	width:100%;
+}
+#header {    
+    background-repeat: no-repeat;    
+}
+#menu{
+	height:auto;
+	background-repeat:repeat;
+	float:left;
+}
+#menu a{
+	padding:10px 5px;
+}
+/*#main #main-content{
+	width:585px;
+}*/
+.shop_table .shop_details{
+	width:43%;
+}
+.popular-shop {
+    margin-left: 4px !important;
+}
+.detail{
+	width:40%;
+}
+.share_details {
+  
+}
+.win a {
+    width: auto;
+}
+.detail_container #detail-left{
+	width:400px;
+}
+#main #main-content .item{
+	width:170px;	
+	}
+#welcome_popular_shops img {
+    margin-left: 15px !important;
+}
+.help_heading{
+	height:45px;
+	}
+.referways,.referways.one{
+	margin-left:15px;
+	}
+.shop_table_button{
+	width:33%;
+	}			
+.coupon_actions .shop_table_button{
+	width:23%;
+	}		
+
+#app-text{
+	width:360px;
+	}	
+.home-visuals .bx-wrapper .bx-next {
+    right: -5px;
+}
+span.campaign-text{
+    
+}
+/************/
+.buy-ticket-button{
+    margin-left:23%;
+}
+.bingoballs-shelf {
+    background-size: 100% auto;
+    clear: both;
+    float: none;
+    margin: auto;
+    width: 100%;
+}
+	
+.detail {
+    width: 33%;
+}
+
+#welcome_popular_shops img {
+    margin-left: 30px !important;
+}
+.section-product{
+	margin:10px 3px 5px 0 !important;	
+	}
+
+.testimonialcontent {
+    width: 62%;
+}
+.payout_status{
+	width:100%;
+	}	
+.payout_heading,.payout_detail{
+	width:100%;
+	}	
+.payout_detail .payout_id,.payout_heading .payout_id{
+	width:7%;
+	}
+.payout_heading .payout_post,.payout_detail .payout_post{
+	width:20%;
+	}	
+.payout_heading .payout_date,.payout_detail .payout_date{
+	width:20%;
+}
+.payout_detail .payout_amount,.payout_heading .payout_amount{
+	width:17%;
+	}	
+.payout_detail .payment_status,.payout_heading .payment_status{
+	width:10%;
+	}
+.shop_cart{
+	width:90% !important;
+	}
+.search_web_shops .shop_table_text {
+    width: 47%;
+}
+.shop_table_button {
+    width: 26%;
+}
+.coupon_actions_text {
+ 	width: 70%;
+}
+.shop_disc {
+    width: 25%;
+}	
+.shop_table_discount {
+    width: 6%;
+}
+.shop_btn {
+    width: 26%;
+}
+.shop_btn {
+    width: 26%;
+}
+.detail_container #detail-left {
+    width: 100%;
+}
+.discount_detail {
+    width: 70%;
+}
+.shop_detail_cashback ul li h2{
+	width:75%;
+	}	
+.mroediscount_detail {
+    width: 40%;
+}
+a.button, .banner-button a, a.button_header, a.button1, a.button2, a.buttoncoin, a.dbtn{
+	font-size:12px;	
+	}
+#detail_sidebar{
+	width:100%;
+	}	
+#main #main-content .item {
+    width: 100%;
+}
+#app-text {
+    width: 290px;
+}	
+.search_deals .shop_table_text {
+    width: 47%;
+}
+span.campaign-text{
+   
+}
+
+#menu a {
+    padding: 0px 20px;
+}
+/*****popup************/	
+.bg-middle{
+	width:590px !important;
+	height:auto !important;
+}
+.fancybox-wrap {
+    left: 0 !important;
+    right: 0;
+    margin: auto;
+}	
+.main-title{
+	width:85% !important;
+	height:auto !important;
+	}	
+.login-container{
+	float:left !important;
+	margin-left:36px !important;
+	margin-top:20px !important;
+}
+.fancybox-inner{
+	width:590px !important;
+	overflow:visible !important;
+	height:850px !important; 
+	}
+.fancybox-skin {
+    background:none !important;
+    float: none !important;
+    height: 960px !important;
+    margin: auto !important;
+    width: 590px !important;
+	padding:0 !important;
+	}
+
+.backlink{
+	margin: 0px !important;
+	}		
+.bg{
+	width:86% !important;
+	height:auto !important;
+	float:left;
+	}
+.popup-container{
+	width:100% !important; 
+	}		
+.alert-box{
+	width:98% !important;
+	}	
+.alert-box-inner-bg{
+	width:93% !important;
+	}	
+.alert-msg{
+	width:70% !important;
+	}		
+.shadow,.shadow img{
+	width:100% !important;
+	}
+.right-container{
+	width:115px;
+	}		
+#errorbox {
+    width: 90%;
+}
+.buy-ticket-button{
+    margin-left:20%;
+}   	
+.left-container{
+	width:365px;
+}
+.right-container-last{
+	width:110px;
+}
+.banner-text div{
+	padding:10px 0;
+}
+}
+@media (max-width:800px){
+
+.leftBanner, .rightBanner{
+	width:70px;
+	height:auto;
+}
+.mainContainer {
+    margin-left: 75px;
+}
+#menu a {
+    padding: 10px 20px;
+}
+.mainContainer{
+	width:645px;
+}
+.rightBanner {
+    margin-left: 720px;
+}
+#main #main-sidebar{
+ 	margin-right:10px;
+}
+/*#main #main-content {
+    width: 440px;
+}*/
+#ranking_left, #ranking_right {
+    width: 100%;
+}
+span.sidebar_dailydeal span.price{
+	width:90px;
+}
+.box-price-orange{
+	width:120px;
+}
+.shop_table .shop_details{
+	width:34%;
+}
+#footer #footer-menu li{
+	width:100px;
+}
+.footerbanner img {
+	width:100%;
+}
+.popular-shop {
+    margin-left: 25px !important;
+}
+.bx-wrapper .bx-next{
+	right:-18px;
+}
+
+.win a img {
+	width:205px !important;
+	height:auto !important; 
+}
+.detail{
+	width:32%;
+}
+.number{
+	width:28px;
+}	
+.shop_logo{
+	width:120px;
+}
+.dealBtn{
+	margin:15px 15px 15px 0;
+}
+.share_details {
+    width: 36%;
+}
+/*.exclusive_box {
+    margin: 8px !important;
+	width:180px;
+}
+.exclusive_box a.button, .exclusive_box a.button.code{
+	width:160px;
+}*/
+#welcome_popular_shops img {
+    margin-left: 10px !important;
+}
+.section-product {
+    margin: 15px !important;
+}
+.details-pro{
+	width:100%;
+}
+.testimonialbox-img{
+	width:30%;
+}
+.testimonialbox-img img{
+	width:100%;
+}
+.discount-coupon .shop_table_links{
+	width:30%;
+	}
+.discount-coupon-text {
+    width: 70%;
+}
+.account_category .cashback,.account_heading_cashback .cashback{
+	width:14% !important;
+	}
+.account_category{
+	height:auto;
+	min-height:30px;	
+	}	
+.payout_status{
+	width:100%;
+	}	
+.payout_heading{
+	width:100%;
+	word-wrap: break-word;
+	}
+.transactie_details{
+	word-wrap:break-word;
+	min-height:35px;
+	height:auto;
+	}	
+.transactie_heading .transactie_type, .transactie_heading .transactie_credit,.transactie_details .transactie_type, .transactie_details .transactie_credit{
+	width:10% !important;
+	}	
+.transactie_heading .transactie_number,.transactie_details .transactie_number {
+    width: 10% !important;
+}
+.transactie_heading .transactie_date,.transactie_details .transactie_date {
+    width: 12% !important;
+}
+.transactie_heading .transactie_shop,.transactie_details .transactie_shop {
+    width: 15% !important;
+}
+.transactie_heading .transactie_status,.transactie_details .transactie_status {
+    width: 15% !important;
+}
+.search_web_shops .shop_table_text {
+    width: 37%;
+}
+.transactie_details span{
+	border:none;
+}
+.discount-coupon-text {
+    width: 65%;
+}
+.sohp_logo {
+    width: 27%;
+}
+.shop_disc {
+    width: 50%;
+}
+.shop_table_discount {
+    width: 10%;
+}
+.shop_btn {
+    margin-left: 5px;
+    width: 30%;
+}
+.shop_table_button {
+    width: 30%;
+}
+.mroediscount_detail {
+    width: 36%;
+}
+.mroediscount_detail {
+    width: 36%;
+}
+.shop_detail_cashback ul li h2 {
+    width: 70%;
+}
+#app-text {
+    width: 215px;
+}
+.search_deals .shop_table_text {
+    width: 40%;
+}
+.coupon_actions .shop_table_button {
+    width: 30%;
+}
+span.campaign-text{
+    width: 28%;
+}
+/************/
+.box-btn a.various{
+	margin:0;
+}
+
+.top_cash_coins{
+    display:block;
+}
+.sidebar_account{
+	    display:none;
+	}
+#header #subscribe{
+    width: 100%;
+    padding: 0;
+}
+#header{
+    /*height:150px;*/
+}
+#subscribe{
+    margin-top: 20px;
+}
+.subscribe_btns {
+    margin-right: 10px;
+}
+/****** *****/
+.buy-ticket-button{
+    margin-left:15%;
+}
+ 
+.bingoballs-shelf span{
+	width:45px;
+	height:50px;
+	line-height:45px;
+	background-size:100%;
+	margin-top:35px;
+	font-size:16px;
+}
+.banner-text{
+    font-size: 20px;
+    line-height:25px;
+}
+a.banner-button{
+    font-size: 15px;
+}
+#timer{
+	float: left;
+	clear: both;
+	text-align: left;
+	padding-top: 10px;
+}
+}
+@media (max-width:768px){
+	.tab_userdetails{
+		width:100%;	
+     }
+.RightBanImg{ float:none; width:98%; margin-right:auto; margin-left:auto; margin-top:9px;}
+.leftBanner, .rightBanner{
+	position:static;
+	margin:0;
+	width:400px;
+	height:auto;
+	margin:10px auto;
+	float:none;
+	clear:left;
+	margin-top:10px !important;
+}
+.resp_banner{
+	display:block !important;
+}
+.main_banner{
+	display:none;
+}
+.mainContainer {
+    margin: 0;
+    width: 100%;
+}
+/*#main #main-content {
+    width: 73%;
+}*/
+#ranking_left, #ranking_right {
+    width: 100%;
+}
+.box-price-orange{
+	width:185px;
+}
+.shop_table .shop_details{
+	width:45%;
+}
+#footer {
+    width: 100%;
+	margin-bottom:20px;
+}
+.footerbanner img{
+	width:auto;
+}
+#footer #footer-menu{
+	width:35%;
+}
+#footer .footer-icons{
+	width:62%;
+	margin-right:10px;
+}
+.popular-shop {
+    margin-left: 10px !important;
+}
+.win a img {
+	width:230px !important;
+	height:auto !important; 
+}
+.detail {
+    width: 45%;
+}
+.share_details {
+    width: 47%;
+}
+#welcome_popular_shops img {
+    margin-left: 6px !important;
+}
+
+.section-product {
+    margin: 10px 3px 5px 0 !important;
+}
+.details-pro {
+    width: 54%;
+}
+.discount-coupon .shop_table_links {
+    width: 25%;
+}
+.search_web_shops .shop_table_text {
+    width: 47%;
+}
+.coupon_actions_text {
+    width: 73%;
+}
+.sohp_logo {
+    width: 22%;
+}
+.shop_btn {
+    margin-left: 5px;
+    width: 24%;
+}
+.shop_disc {
+    width: 20%;
+}
+.shop_table_button {
+    width: 24%;
+}
+.mroediscount_detail {
+    width: 48%;
+}
+#app-text {
+    width: 55%;
+}
+.search_deals .shop_table_text {
+    width: 47%;
+}
+.buy-ticket-button{
+    margin-left:20%;
+}
+.top_cash_coins{
+     margin: 0 auto auto 271px; 
+}
+.bingoballs-shelf span {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    height: 70px;
+    line-height: 65px;
+    margin-top: 7px;
+    text-align: center;
+    width: 65px;
+}
+ .milestone-box,.milestone-img{
+    height: 230px;
+}
+
+/* 
+div#no-more-tables {
+    margin: 20px 0;
+}
+*/
+
+ul.cashback-tabs-btn.tabs-btn-ul{
+	border-top: 1px solid #d5d5d5;
+	margin-bottom:10px !important; 
+}
+ul.cashback-tabs-btn.tabs-btn-ul li.tab-link {
+    width: 160px;
+}
+.Steps{margin:0 10px !important; height:220px;}
+.FavShopB2{text-align:center;}
+.FavShopBox {float: none;display: inline-block;vertical-align: text-bottom;width: 180px;text-align:left;}
+.shop-main-info .shop-main-rating{margin-right:20px;}
+.product-con{text-align:center;}
+.section-product {float: none;display: inline-block;}
+.collection_pagi{text-align:center;}
+.collection_pagi a.pagi_pre,.collection_pagi a.pagi_next{float: none;margin:0 10px;}
+.shop_cart .product_results .product_remove{width: 12px;}
+.testimonial_label,.col-6 .testimonial_label, .testimonial_input,.col-6 .testimonial_input{width: 100%;font-size: 15px;}
+.bingo_dropdown{margin-bottom: 10px;}
+.cashback-tabs-btn li:first-child{border: none;}
+.cashback-tabs-btn li{padding:0 3px;}
+#refer-friends-header img{width:100%;height:auto;}
+.shop-main-alert {float: left;width: 100%;top: 0;margin-top: 10px;}
+#shop-main-button{float: left;}
+.SliderHead{line-height:30px;font-size:25px !important;}
+.place_banner-details .banner_size, .place_banner-details .banner_type{line-height:20px;}
+}
+
+@media (max-width:736px){
+
+/*#main #main-content{
+    width: 73%;
+}*/
+#ranking_left, #ranking_right {
+    width: 100%;
+}
+.shop_table .shop_details {
+    width: 44%;
+}
+.popular-shop {
+    margin-left: 5px !important;
+}
+.detail {
+    width: 42%;
+}
+.share_details {
+    width: 46%;
+}
+#welcome_popular_shops img {
+    margin-left: 35px !important;
+}
+.banner-text{
+    line-height:20px;
+    font-size: 17px;
+}
+a.banner-button{
+    font-size: 14px;
+}
+.banner-text div {
+    padding: 5px 0;
+}
+.help_heading .help_detail{
+	width: 20% !important;
+}
+.help_heading .help_replay{
+	display: none !important;
+}
+.help_heading span,.help-detail span{
+	font-size:12px;
+}
+.cat_stores_box{
+    width: 48%;
+}
+.cat_stores_box:nth-child(3n+3) {
+    margin-right: 1.5%;
+}
+.help_heading span,.help-detail span{
+	font-size:12px;
+}
+}
+@media (max-width:667px){
+/*#main #main-content {
+    width: 70%;
+}*/
+#ranking_left, #ranking_right {
+    width: 100%;
+}
+.box-price-orange {
+    width: 135px;
+}
+.shop_table .shop_details {
+    width: 36%;
+}
+#footer #footer-menu li {
+    width: 95px;
+}
+.win a img {
+    height: auto !important;
+    width: 210px !important;
+}
+.detail {
+    width: 35%;
+}
+.share_details {
+    width: 37%;
+}
+#welcome_popular_shops img {
+    margin-left: 10px !important;
+}
+.section-product {
+    margin: 15px !important;
+}
+.details-pro {
+    width: 100%;
+}
+.referways, .referways.one {
+    margin-left: 8px;
+}
+.search_web_shops .shop_table_text {
+    width: 37%;
+}
+#home-tabs .tabs-headers ul li.active2 a{
+	width:130px;
+	}
+.coupon_actions_text {
+    width: 70%;
+}
+.sohp_logo {
+    width: 26%;
+}
+.shop_disc {
+    width: 50%;
+}
+.shop_btn {
+    margin-left: 5px;
+    width: 29%;
+}
+.wishlist {
+    padding: 20px 10px;
+    width: 15%;
+}
+.discount_detail {
+    width: 65%;
+}
+.mroediscount_detail {
+    width: 36%;
+}
+.shop_table_button {
+    width: 29%;
+}
+.coupon_actions .shop_table_button {
+    width: 31%;
+}
+.coupon_actions_text {
+    width: 67%;
+}
+#main #main-sidebar{
+ 	margin-right:0px;
+}
+/**Bingo**/
+.bingoballs-shelf span{
+	width:45px;
+	height:50px;
+	line-height:45px;
+	background-size:100%;
+	margin-top:35px;
+	font-size:16px;
+}
+.hp_alldeals .hp_carousel{
+	width:185px;
+	margin: 20px 12px;
+}
+.resp_categories{
+	display:block;
+}	
+.main_categories{
+	display:none;
+}
+.my_account{
+    display: none;
+}
+.todo_account{
+    display: none;
+}
+.resp_categories .category li span{
+	padding-left: 25px;
+}
+.resp_categories .list_action.category > li{
+	padding:0;
+	float:left;
+	width:100%;
+}
+.resp_categories li a {
+    background: url("../assets/sidebar-divider.gif") repeat-x scroll center bottom rgba(0, 0, 0, 0);
+    color: #333;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 100%;
+}
+}
+@media (max-width:570px){
+#app-sidebar {    
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bodyWrapper {
+    float: none;
+    width: 98%;
+	margin:auto;
+}
+#header {
+    height: 150px;
+	position:relative;
+}
+#search{
+	margin:7px 0 0 5px;
+	width:auto;
+}
+#menu a {
+    padding: 10px 14px;
+}
+/*#main #main-content{
+    width: 100%;
+	margin:0;
+	padding:0;
+}*/
+.footerbanner {
+	width:90%;
+	float:none;
+	margin:auto;
+	clear:both; 
+}
+#ranking_left, #ranking_right {
+    width: 49%;
+}
+.box-price-orange {
+    width: 185px;
+}
+.shop_table .shop_details {
+    width: 47%;
+}
+input.search-field{
+	width:240px;
+	width:200px;	
+}
+#search-submit{
+	background:url(../assets/search-button.png) 0 0;
+	height:29px;
+}
+#search-submit:hover{
+	background: url(../assets/search-button.png) 0 -29px;
+	cursor: pointer;
+}
+#search{
+}
+.fashion_search{
+	position:static !important;
+	}
+.item, #main-content #main-sidebar .item{
+	width:100%;
+	}
+#main #main-sidebar {
+    width: 100%;
+	margin-top:20px;
+}
+#main-sidebar .item h2, #main #main-content #main-sidebar .item h2 {
+    border-radius: 5px 5px 0 0;
+    width: 98%;
+}
+#main #main-sidebar .list{
+	width:100%;
+}
+#main #main-sidebar .item li a{
+	width:100%;
+}
+#main #main-sidebar .item img{
+	display:block;
+	width:170px;
+	margin:auto;
+	text-align:center;
+}
+.sidebar-shops li{
+	width:100%;
+	float:left;
+}
+.sidebar-shops li a{
+	width:100% !important;
+}
+#footer #footer-menu {
+    width: 38%;
+}
+#footer .footer-icons {
+   width: 60%;
+}
+
+.bx-wrapper .bx-prev{
+	left:-23px;
+}
+.popular-shop {
+    margin-left: 15px !important;
+}
+.win a img {
+    height: auto !important;
+    margin-left: 30px;
+    width: 220px !important;
+}
+.detail {
+    width: 46%;
+}
+.share_details {
+    width:37%;
+}
+/*.exclusive_box {
+    margin: 15px !important;
+    width: 200px;
+}*/
+.section-product {
+    margin: 5px !important;
+}
+.details-pro {
+    width: 52%;
+}
+.referways, .referways.one {
+    margin-left: 20px;
+}
+.search_web_shops .shop_table_text {
+    width: 47%;
+}	
+.sohp_logo {
+    width: 21%;
+}
+.sohp_logo {
+    width: 21%;
+}
+.shop_disc {
+    width: 30%;
+}
+.shop_btn {
+    margin-left: 5px;
+    width: 23%;
+}
+.shop_table_discount {
+    width: 7%;
+}
+.wishlist {
+    padding: 13px 3px;
+    width: 10%;
+}
+.home-visuals .bx-wrapper .bx-prev{
+	left:-5px;
+	}
+.home-visuals .bx-wrapper .bx-next{
+	right:0px;
+	}
+.shop_table_button {
+    width: 24%;
+}
+.mroediscount_detail {
+    width: 48%;
+}	
+span.sidebar_dailydeal img{
+	float:none;
+	margin:auto;
+	width:auto;
+	}
+span.sidebar_dailydeal span.price{
+	float:left;
+	margin:0px auto;
+	}	
+.item .sidebar_dailydeal_box{
+	text-align:center;
+	}
+.search_deals .shop_table_text {
+    width: 47%;
+}	
+.label-strip{
+	float:none;
+	margin:auto;
+	}
+#main #main-sidebar .item li {
+    float: left;
+    width: 100%;
+}	
+#main #main-sidebar .item li.testimonialwrite a{
+	width:100%;
+	}
+.lottery-item, .lottery-item-right {
+    width: 47%;
+	}
+#searchList{
+	width:78%;
+	min-width:215px;
+}
+#header #subscribe{
+	min-width:190px;
+	margin-top:45px;
+}
+
+
+.flags li {
+	padding:5px !important;
+}
+#main #main-sidebar .item .sidebar_dailydeal_box{
+	margin:auto;
+}
+/******css for popup*********/
+.fancybox-skin{
+	width:95% !important;
+	}	
+.main-title{
+	width:90% !important;
+	}	
+.signup-container{
+	width:95% !important;
+	border-radius:7px !important;
+	}	
+.signup-form{
+	width:95% !important;
+	}
+.login-container{
+    width:100% !important;
+}		
+.bg-middle{
+	width:100% !important;
+	}	
+.fancybox-inner{
+	width:100% !important;
+	}	
+.advantages{
+	margin-top:0 !important;
+	}	
+
+.advantages {
+	margin-top: 85px !important;
+}	
+.fancybox-skin{
+	height:1200px !important;
+	}
+.right-container{
+	width:125px !important;
+	float:none !important;
+	margin:auto !important;
+	height:85px !important;
+	}	
+	
+.store-icon, .store-icon img{
+	width:100% !important;
+	height:auto !important;
+	}	
+	
+.close-btn-visit{
+	padding-top:15px !important;
+	padding-right:45px !important; 
+	}
+.bg_flat{
+	width:95%;
+	background-size:89% 80% !important;
+	}	
+.right-container-last{
+    float:none;
+    margin:auto;
+    clear:both;
+    width:130px;
+}	
+.visit_btn{
+    float:left;   
+}	
+.bottom-text{
+    font-size:13px;
+    width: auto;
+}
+.wordbuddie-btn{
+    margin-left: 0;
+}
+input.search-field{
+    /*height: 23px;*/ 
+}	
+.top_cash_coins {
+    margin: 0 auto auto 235px;
+}
+.bingoballs-shelf span {
+    font-size: 20px;
+    height: 70px;
+    line-height: 65px;
+    margin-top: 7px;
+    width: 65px;
+}	
+.right-container{
+	border:none;
+	box-shadow:none;
+}
+.banner-text{
+    position: static;
+    width: 100%;
+    padding:10px;
+    background: #f3f3f3;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.EmailPopup {
+    padding-top: 25px;
+}
+.popular-shop-container,.theme-page-container{
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+}
+
+@media only screen and (max-width:599px){
+.StoreBox{ width:43%;}
+.cat_stores_box{width:98%;}
+.testimonial-cont .col-6{width:100%;}
+.testimonial-comments{padding:5px 5px 5px 30px;background-position: 0 0}
+.cadeaus_shipping table{width: 100%;}
+.cadeaus_shipping table td{display: block;}
+#presents{text-align:center;}
+.giftcard_box {float: none;display: inline-block;margin: 10px 0;}
+ul.payout-list{width:100%;}
+.search_shop_label,.search_shop_input{width:100%;}
+#top-subscribe>span>div.notifi-list.top-notifi{width:305;}
+#top-subscribe>span>div{width:220px;}
+.Preference_label{width:40px !important;}
+ul.progress-indicator.custom-complex{display: block;}
+ul.progress-indicator.custom-complex li {width: 30%;display: inline-block;vertical-align: text-bottom;height: 75px;}
+#top-subscribe{margin-top:15px;}
+.popup-top{overflow:hidden;text-align:center;}
+img.popup-banner-img {float: none;}
+.popup-top .heading {width: 100% !important;}
+.fancybox-close{right:30px;}
+}	
+@media only screen and (max-width:485px){
+.StoreBox{ width:91%;}
+}
+@media (max-width:480px){
+#ranking_left, #ranking_right {
+    width: 99%;
+}
+.box-price-orange {
+    width: 150px;
+}
+.shop_table .shop_details {
+    width: 38%;
+}
+#footer #footer-menu {
+    width: 100%;
+}
+#footer #footer-menu li {
+    width: 100px;
+}
+#footer .footer-icons {/* changed 2015 */
+    width: 94%;
+	margin:5px 3%;
+}
+.search-ratings-footer {/* changed 2015 */
+	margin-left:0;
+}
+.box-left{
+	height:auto;
+}
+.box-date-exp{
+	margin-top:0;
+}
+
+.popular-shop {
+    margin-left: 40px !important;
+}
+.win a img{
+	margin-left:0;
+}
+.win a{
+	margin-right:5px !important;
+}
+.detail {
+    width: 36%;
+}
+.share_details {
+    width: 38%;
+}
+/*.exclusive_box {
+    margin: 8px !important;
+    width: 195px;
+}*/
+.section-product {
+    margin: 10px 20px !important;
+}
+.details-pro {
+    width: 99%;
+}
+.bank_label {
+    width: 98%;
+}
+.bank_input {
+    width: 98%;
+}
+.search_web_shops .shop_table_text {
+    width: 40%;
+}
+.wishlist {
+    padding: 13px 3px;
+    width: 10%;
+}
+.sohp_logo {
+    width: 25%;
+}
+.shop_disc {
+    width: 50%;
+}
+.shop_btn {
+    margin-left: 5px;
+    width: 28%;
+}
+.mroediscount_detail {
+    width: 38%;
+}
+.shop_table_button {
+    width: 29%;
+}
+.coupon_actions .shop_table_button{
+    width: 29%;
+}
+#ranking_right, #inner_ranking_right{
+	float:left;
+	}	
+.wishlist{
+	width:45%;
+	}	
+.shop_btn{
+	float:right;
+	}	
+.transactie_heading{
+	word-wrap: break-word;
+}
+span.campaign-text{
+    
+}
+.campaign-button{
+    float: right;
+}
+.flags ul {
+	width:100% !important;
+} 
+#header #subscribe{
+	margin-top:100px;
+}
+
+/* new 2015 */
+ .blog_post{/* blog overview */
+	width:96%;
+	margin:5px 2% 10px 2%;
+}
+/*********CSS FOR POPUP*******/
+.bg{
+	width:85% !important;
+	padding:10px 25px 10px 10px	
+}
+#inline_tellafriends{
+    width: 70% !important;     
+    
+}
+.alert-box {
+	width: 63% !important;
+}
+.heading{
+	width: 80% !important;
+	}
+.search_deals .shop_table_text {
+    width: 40%;
+}	
+.popup_label {
+    float: left;
+    padding:5px 0;
+    width: 40%;
+}
+.popup_input {
+    float: left;
+    width: 65%;
+}
+#forms > h2 {
+    font-size: 20px;
+}	
+.signup-container, .login-container{
+    margin-left:15px !important; 
+    }
+img.referimg{
+	float:none;
+}
+#search{
+   margin-top:23px;
+}
+.buy-ticket-button{
+    margin:auto;    
+}   
+.buy-ticket-button{
+    margin-left:15%;
+}
+
+.top_cash_coins{
+     margin: 10px auto auto; 
+}
+.bingoballs-shelf span {
+    font-size: 20px;
+    height: 60px;
+    line-height: 55px;
+    margin-top: 25px;
+    width: 55px;
+}
+table.shop_table td{
+	width: 100% !important;
+	display:block;
+}
+.jackpot-bg-container {
+    background-size: 100%;
+    height: auto;
+}
+.jackpot-counter {
+    width: 60%;
+    margin-top: 33%;
+    background-size: 100%;
+    overflow: hidden;
+}
+.jackpot-counter span {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    margin: 0 0;
+    font-size: 25px;
+    padding: 10% 0;
+}
+.jackpot-bg-container input, .claim-prise-button-down, .claim-prise-button-down,.claim-prise-button-down:hover, .claim-prise-button:hover{
+	width:130px;
+	height:80px;
+}
+.jackpot-bottom-heading{
+	margin-top:20px;
+	font-size:25px;
+}
+.counter-heading1{
+	width:100%;
+}
+.email_detail, .email_heading {font-size: 12px;}
+.milestone-box{width: 80% !important; display: block; margin:10px auto;}
+.milestone-box,.milestone-img{height: 275px;}
+table#areaborder td{display:block;width100%;}
+}
+@media (max-width:460px){
+.shop_featured {
+    padding-bottom:32px;
+}
+}
+@media (max-width: 424px){
+.jackpot-bg-container {
+    background-size: 107%;
+}
+.shop_table .shop_details {
+    width: 59%;
+}
+.popular-shop {
+    margin-left: 20px !important;
+}
+
+.email_heading .Compensation {
+	width: 18%;
+	padding: 10px 5px;
+}
+
+.win a img {
+    height: auto !important;
+    width: 183px !important;
+}
+.win a{
+	margin-right:4px !important;
+}
+.detail {
+    width: 55%;
+}
+.dealBtn{
+	float:right;
+}
+.share_details {
+    width: 62%;
+}
+/*.exclusive_box {
+    float: none;
+    margin: 15px auto !important;
+    width: 200px;
+}*/
+#welcome_popular_shops img {
+    margin-left: 50px !important;
+}
+.section-product {
+    margin: 8px !important;
+}
+.email-label, .pass_label,.pass_label{
+	width:45%;
+}
+.pass_input{
+	width:90%;
+}	
+.account_category .cashback_name,.account_heading_cashback .cashback_name{
+	width:30% !important;
+	word-wrap:break-word;
+}
+.click_heading span{
+	width:15%;
+}
+.payout_heading span, .payout_detail span{
+	padding:5px !important;
+}
+.help_heading{
+	height:55px;
+}
+.pay_info { 
+    width: 100%;
+}
+.referways, .referways.one {
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+}
+.delivery_input {
+   width: 90%;
+   text-align:left;
+}
+.delivery_label{
+	text-align:left;
+}
+.search_web_shops .shop_table_text {
+    width: 60%;
+}
+.shop_table_button {
+    float: left;
+    width: 35%;
+}	
+.shop_table_button {
+    float: right;
+    width: 33%;
+}
+.coupon_actions_text {
+    width: 62%;
+	margin-right: 10px;
+}
+.shop_btn {
+    margin-left: 5px;
+    width: 32%;
+}
+.shop_disc {
+    width: 45%;
+}
+.sohp_logo {
+    width: 29%;
+}
+.mroediscount_detail {
+    width: 60%;
+}
+#app-text {
+    width: 98%;
+}
+#app-sidebar{
+	float:none;
+	margin:auto;
+	clear:both;
+}
+.shop_btn{
+	float:right;
+	margin-right:10px;
+	}
+.search_deals .shop_table_text {
+    width: 65%;
+}
+.search_deals .shop_table_button, .search_web_shops .shop_table_button{
+	width:33% !important;
+	margin-right:5px;
+	}
+.coupon_actions .shop_table_button {
+    width: 37%;
+	margin-right:10px;
+}	
+.coupon_actions_text {
+    margin-right: 10px;
+    width: 60%;
+}	
+
+.lottery-item, .lottery-item-right {
+    width: 80%;
+}
+.box-btn a.various {
+    margin:10px 0;
+}
+.discount_detail {
+    width: 90%;
+}
+/******CSS FOR POPUP*********/
+.bg_flat{
+	width:100% !important;
+}
+.fancybox-skin{
+	padding:0 !important;
+}	
+	
+.bg_flat{
+	
+	margin-top:10px !important;
+}		
+.fancybox-inner{
+	min-height:300px !important;
+}	
+/**Bingo**/
+.bingoballs-shelf span {
+    font-size: 16px;
+    height: 50px;
+    line-height: 45px;
+    margin-top: 40px;
+    width: 45px;
+}	
+.visit_btn{
+	float:left;
+}
+.alert-box {
+    width: 77% !important;
+}
+}
+@media (max-width:400px){
+
+.shop_table .shop_details {
+    width: 59%;
+}
+.leftBanner, .rightBanner{
+	width:98%;
+}
+.email_heading .post_subject,.email_detail .post_subject {
+    width: 38%;
+}
+#welcome_popular_shops img {
+    margin-left: 30px !important;
+}
+.discount-coupon .shop_table_links {
+    width: 30%;
+}
+.discount-coupon-text {
+    width: 65%;
+}
+.winner_heading span{
+	width:25%;
+	font-size:12px;
+	}
+.winners_details span{
+	width:25%;
+	font-size:12px;
+	word-wrap:break-word;
+}
+.claim-label{
+	width:50%;
+}
+.claim-input{
+    width: 80%;
+}
+#home-tabs .tabs-headers ul li.active2 a{
+	margin-left:0;
+	margin-top:5px;
+}
+.shop_btn {
+    margin-left: 5px;
+    width: 35%;
+}
+.discount_detail {
+    width: 57%;
+}
+.transactie_heading .transactie_shop, .transactie_details .transactie_shop {
+    width: 15% !important;
+}
+.transactie_heading .transactie_number, .transactie_details .transactie_number {
+    width: 5% !important;
+}
+.transactie_heading .transactie_status, .transactie_details .transactie_status {
+    width: 13% !important;
+}
+.share_btn{
+	float:right;
+	}
+.item, #main-content #main-sidebar .item{
+	width:99%;
+}
+/*******CSS FOR POPUP********/
+.close-btn{
+	padding-right:0 !important;
+	padding-top:40px !important;
+}
+.textfield{
+	width:85%;
+	background-size:100% 100%;
+}	
+.login-container{
+	width:100% !important;
+	margin-left:15px !important;
+	background-size:100% 100%;
+}	
+.fancybox-skin {
+	height: 1240px !important;
+}	
+.alert-box {
+	width: 63% !important;
+}
+.bottom-text{
+	width:58% !important;
+	}
+.heading {
+width: 70% !important;
+}
+.naarbol-btn {
+	display:block !important;	
+	}	
+#confirmBrokenLink > div:nth-child(3) {
+    right: 50px !important;
+	top:185px !important;
+}	
+.adminbar_user-name{
+	width:120px;
+	padding:0 10px;
+}
+#store_visit_link {
+    line-height: 20px;
+    padding: 10px;
+    width: 210px;
+}
+}
+
+@media (max-width:384px){
+
+.shop_table .shop_details {
+    width: 57%;
+}
+#header img#logo{
+	width:90%;
+}
+.popular-shop {
+    margin-left: 10px !important;
+}
+.pagination a, .pagination .current{
+	word-wrap: break-word;
+	line-height:30px;
+}
+
+.email_detail .Compensation,.email_heading .Compensation {
+    padding: 10px 5px;
+    width: 19%;
+}
+
+.win a img {
+    height: auto !important;
+    width: 230px !important;
+}
+.win a{
+	margin:10px auto !important;
+	width:230px;
+	float:none;
+	display:block;
+}
+.detail {
+    width: 50%;
+}
+.share_details {
+    width: 57%;
+}
+#welcome_popular_shops img {
+    margin-left: 20px !important;
+}
+.section-product {
+    margin: 4px !important;
+}
+.contect_label{
+	width:80%;
+	}
+.contect_input{
+	width:80%;
+	}		
+.stop_label,.Preference_label{
+	width:110px;
+	}	
+.sohp_logo {
+    width: 30%;
+}
+.sohp_logo {
+    width: 30%;
+}
+.shop_btn {
+    margin-left: 5px;
+    width: 37%;
+}
+.shop_detail_cashback ul li h2 {
+    width: 60%;
+}
+.shop_table_button {
+    float: right;
+    width: 36%;
+}
+#footer .copyright,#footer .powerby{/* changed 2015 */
+	width:94%;
+	float:left;
+	margin:5px 3%;
+	}
+#main-sidebar .item h2, #main #main-content #main-sidebar .item h2{
+	width:97%;
+	}	
+.popup_input {
+    float: left;
+    width: 90%;
+}	
+#errorbox {
+    width: 85%;
+}
+.buy-ticket-button{
+    margin-left:5%;
+}
+.bingo-winnerprice{
+	width:100%;
+	margin:0;
+	background-size:100%;
+}	
+.bingobutton-bg{
+	background:none;
+}
+.jackpot-bg-container {
+    background-size: 113%;
+}
+}
+@media (max-width:375px){
+.shop_table .shop_details {
+    width: 56%;
+}
+.pagination a, .pagination .current{
+	padding:3px;
+}
+.section-product {
+     width:94%;
+	 float: none !important;
+     margin: 20px auto !important;	 
+}
+.product-bottom{
+	width:93%;	
+	}
+.section-product .various{
+	float:none;
+	margin:auto;
+	clear:left;
+	}
+.discount-coupon .shop_table_links {
+    width: 38%;
+}
+.discount-coupon-text {
+    width: 55%;
+}
+
+.main-title{
+    font-size: 20px !important;
+}
+.top_cash_coins {
+    width:118px;
+    font-size:12px;
+}
+}
+@media (max-width:360px){
+
+.shop_table .shop_details {
+    width: 54%;
+}
+.popular-shop {
+	float:none;
+    margin:10px auto !important;
+}
+
+.email_heading .Compensation{
+	width:18%;
+	padding:10px 5px;
+}
+.email_heading .post_subject, .email_detail .post_subject {
+    padding: 5px;
+    width: 39%;
+    word-wrap: break-word;
+}
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul {
+    left: 9em !important;
+    top: 0;
+}
+.account_heading_cashback .cashback_transactions,.account_category .cashback_transactions{
+	width:15% !important;
+	}
+.account_heading_cashback{
+	word-wrap:break-word;
+	}
+.cashcoin_value img{
+	width:98%;
+	text-align:center;
+	}		
+.shop_btn {
+    margin-left: 5px;
+    width: 37%;
+}
+.sohp_logo {
+    width: 32%;
+}
+.shop_disc {
+    width: 40%;
+}
+.mroediscount_detail {
+    width: 58%;
+}	
+.search_deals .shop_table_text{
+	width:55%;
+}
+.bank_input > a {
+    display: inline-block;
+}	
+/**********CSS FOR POPUP************/	
+.fancybox-wrap{
+	width:95% !important;
+	}
+.login-container input.textfield{
+	margin-left:10px;
+	}	
+.fancybox-skin{
+	height:1290px !important;
+	}	
+.backlink a span{
+	font-size:10px !important;
+	}
+
+.signup-container{
+	margin-left:15px !important;
+	}	
+.product-con-height {
+    clear: both;
+}
+#all_chars > a:last-child {
+    display: inline-block;
+    height: 13px;
+    line-height: 1;
+    width: 20px;
+}
+/***Bingo**/
+.bingoballs-shelf span {
+    width: 40px;
+	margin-top:47px;
+	font-size:12px;
+}
+.jackpot-bg-container {
+    background-size: 105%;
+}
+.jackpot-counter{
+	height:72px;
+}
+.jackpot-bg-container input, .claim-prise-button-down, .claim-prise-button-down,.claim-prise-button-down:hover, .claim-prise-button:hover{
+    width: 80px;
+    height: 50px;
+}
+.jackpot-bottom-heading{
+	font-size:17px;
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+}
+@media (max-width:320px){
+.textfield{
+     background-size:100% 100%;
+     width: 85%;
+}
+.shop_table .shop_details {
+    width: 48%;
+}
+.box-price-orange {
+    width: 135px;
+}
+
+.email_heading .post_subject, .email_detail .post_subject {
+    width: 35%;
+}
+.email_heading .Compensation,.email_detail .Compensation{
+	padding:5px;
+	width:21%;
+}
+.email_detail .post_date{
+	word-wrap:break-word;
+}
+
+
+.detail {
+    width: 44%;
+}
+.share_details {
+    width: 52%;
+}
+#welcome_popular_shops img {
+    margin-left: 10px !important;
+}
+.testimonial_input{
+	width:100%;
+	}
+.click_details{
+	font-size:12px;
+	}	
+.search_web_shops .shop_table_text {
+    width: 54%;
+}
+.shop_table_button {
+    float: right;
+    width: 42%;
+	margin-right:10px;
+}
+.coupon_actions .shop_table_button{
+    float: left;
+    width: 40%;
+}
+.coupon_actions_text {
+    margin-right: 10px;
+    width: 53%;
+}
+.sohp_logo {
+    width: 37%;
+}
+.shop_disc {
+    width: 32%;
+}
+.shop_btn {
+    margin-left: 5px;
+    width: 44%;
+}
+.mroediscount_detail {
+    width: 52%;
+}
+.discount_detail {
+    width: 90%;
+}
+.value_cashcoin{
+	width:98%;
+	max-height:310px;
+	}	
+.shop_btn {
+    margin-left: 5px;
+    width: 41%;
+}
+.box-btn{
+	width:145px;
+}
+.featured-box .dailydeal_share{
+	min-width:100px;
+}
+#ref_btn{
+	float:left;
+	margin:10px 0;
+}
+.annual_payout_status .payout_year{
+	width:30%;
+}
+/*****CSS FOR POPUP******/
+.alert-box {
+	width: 55% !important;
+}
+.alert-msg{
+	width: 93% !important;	
+	}
+.heading {
+	width: 55% !important;
+}	
+.left-container {
+	margin-left:5px !important;
+}
+.fancybox-inner{
+	height:950px !important;
+}
+
+#confirmBrokenLink > div:nth-child(3) {
+    right: 20px !important;
+	top:185px !important;
+}	
+ul.cashback-tabs-btn.tabs-btn-ul li.tab-link {
+    width: 143px;
+    word-wrap: break-word;
+    height: auto;
+    box-sizing: border-box;
+}
+
+}
+
+@media only screen and (max-width:700px){
+#signup-form {
+    float:none;
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.jackpot-bg-container{
+	width:100%;
+}
+}
+@media only screen and (max-width :960px){
+	.blogPostDes{ clear:both; width:100%;}
+	}
+
+@media only screen and (max-width :640px){
+	.BlogBox{ float:left; width:40%; height:auto; overflow:hidden; margin-right:5%; margin-left:5%; margin-bottom:20px;}  
+	.dropdown-login {background-position: 0 -12px;left: auto;margin: 10px auto auto;right: auto;}	
+	.milestone-box{width: 45%;}
+	 #refer-friends-header-text {padding:12px; font-size:22px;}
+  #top-container{
+		position: static;
+	}
+	#header {
+	    margin-top: 10px;
+	}
+	#top-subscribe>span>div.notifi-list.top-notifi{width: 310px;}
+	#account-block{display:block;}
+	}
+	 @media only screen and (max-width:767px){
+	 .BottomBar div{ display:none;}
+	.BottomBar { display:none;}
+	#BottomBar { display:none;}
+	.BarCont {display:none;}
+	}
+	
+@media only screen and (max-width :477px){
+	.BlogBox{ float:left; width:90%; height:auto; overflow:hidden; margin-right:5%; margin-left:5%; margin-bottom:20px;}
+  	.blogPostDes{ clear:both; background:#f6f6f6; width:auto;margin:1px auto; height:140px;}
+	}
+	/***********  ALL DEVICES: max width: 1024px  **********/
+    @media only screen and (min-width:320px) and (max-width:1024px){
+        .shop-main-info {
+            float: none;
+            max-width: 100%;
+            margin-right: 0px;
+            margin-top: 5px;
+        }
+        .shop-main-sidebar {
+            margin-top: 0px;
+            margin-bottom:15px;
+        }
+        .shop-main-alert {
+            position:inherit;
+            display:block;
+            line-height:21px;
+            padding-bottom:10px;
+        }
+        #all_shops.wide{
+            padding-bottom:20px;
+        }
+        #all_shops.wide .popular-shop:nth-child(5){
+            display:none;
+        }
+    }
+
+        /***********  PHONES: Min width: 480px / Max width: 650px  **********/
+        @media only screen and (min-width:320px) and (max-width:650px){
+            .shop-main-info .shop-main-rating{
+                margin-top:10px;
+                float:left;
+                clear:left;
+            }
+            .shop-main-info .shop-main-sidebar-header,
+            #shop-main-reviews .shop-main-sidebar-header {
+                height:auto;
+                line-height: 20px;
+            }
+            .shop-main-info .shop-main-rating img{
+                margin-top:0px;
+                display:block;
+            }
+            .shop-main-cashback-head-right, .shop-cb {
+                float: right;
+                width: 90px;
+                text-align: right;
+            }
+            .shop-main-info .shop-main-rating-link {
+                float: none;
+                display:block;
+            }
+            #all_shops.wide .popular-shop {
+                float: left;
+                padding: 10px 2%;
+                margin: 5px 2% 5px 2% !important;
+            }
+            .exclusive_box {
+			    margin: 10px;
+			}
+			.exclusive_box a.button{
+				position: static;
+			}
+        }
+
+        /***********  TABLETS + iphone 6 landscape: Min width: 650px / Max width: 1024px  **********/
+        @media only screen and (min-width: 650px) and (max-width: 1024px) {
+            #all_shops.wide .popular-shop {
+                float: left;
+                padding: 10px 2%;
+                margin: 5px 1% 5px 1% !important;
+            }
+            #all_shops.wide .popular-shop img{
+                max-width: 100%;
+                height: auto;
+                max-height:60px;
+            }
+            .exclusive_box {
+                float: left;
+                width: 24%;
+                padding: 10px 2%;
+                margin: 5px 2% 5px 2%;
+            }
+            .exclusive_box .exclusivedeal img{
+                max-width: 100%;
+                height: auto;
+                max-height:85px;
+            }
+            .exclusivedeal{
+                min-height:75px;
+            }
+        }
+
+/* Footer */
+@media only screen and (max-width:523px){
+	.ImgResCond{ width:100%; height:auto;}
+	}
+
+@media screen and (max-width:939px) {
+	.FooterQuickLink {float:none;clear:both; width: 100%;}
+	.FollowUs { float:none; clear:both; color: #FFF; padding-left: 22px;}
+	.SocialIcons { float:left; clear:none;}
+	.rating { float:none; clear:both; width:100%; padding: 32px 0 10px 0;}
+	.FootHead {margin-top:0px;}
+	.OtherLogo{ float:left; clear:none; padding-right:20px;}
+	}
+@media screen and (max-width: 900px) {
+	.grid li {width:44%;}
+}
+
+@media screen and (max-width: 479px) {
+	.grid li {width: 100%;}
+}
+
+@media only screen and (max-width:384px){
+.GiftTxt{ font-size:21px;}
+}
+/**** Blog categories icons ***/
+@media only screen and (max-width:991px){
+ .CatLinkItem{  width:32%;}
+ } 
+@media only screen and (max-width:598px){
+ .CatLinkItem{  width:48%;}
+ } 
+@media only screen and (max-width:417px){
+ .CatLinkItem{  width:98%; margin:3px 0.5%;}
+ .CatItemGap{ padding-left:22px;}
+ }
+ 
+ /**** Cashout blocks ***/
+ 
+ @media only screen and (max-width:1000px){
+.cashout-request{ width:90%;height: auto; overflow: hidden; margin-left:5%; margin-right:5%; text-align:center;}
+.CashOuter{ float:none; display:inline-block;width: 38%;height: auto; margin: 10px 3%; padding: 10px 1% 10px 0.5%;}
+ }
+@media only screen and (max-width:700px){
+.CashOuter{ width: 42%;height: auto; margin: 10px 1%; padding: 10px 1% 10px 0.5%;}	
+.CashoutImg img {height: 90px;}
+ }
+@media only screen and (max-width:612px){
+.CashOuter{display:block; width: 70%;height: auto; margin: 10px 10%; padding: 10px 1% 10px 0.5%;}
+ }
+ @media only screen and (max-width:428px){
+.CashOuter{display:block; width: 90%;height: auto; margin: 10px 4%; padding: 10px 1% 10px 0.5%;}		
+ }
+
+@media only screen and (max-width:384px){
+.PersonalGiftTxt{ font-size:19px;}
+.PersonalGiftImg {margin-top: 24px;}
+}
+
+@media (max-width:980px){
+	.banner-text div {
+	    padding:10px 0;
+	}
+    }
+    @media (max-width:800px){
+     .banner-text{
+        font-size: 20px;
+        line-height:25px;
+    }
+    a.banner-button{
+        font-size: 15px;
+    }
+    }
+     @media (max-width:736px){
+     .banner-text{
+        line-height:20px;
+        font-size: 17px;
+    }
+    a.banner-button{
+        font-size: 14px;
+    }
+    .banner-text div {
+        padding: 5px 0;
+    }
+    }
+    @media (max-width:570px){
+        .banner-text{
+            position: static;
+            width: 100%;
+            padding:10px;
+            background: #f3f3f3;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .filter-select div.pull-right {
+		    width: 100%;
+		    text-align: left;
+		}
+    }
+	
+	
+	
+	 /**** atif addition ***/
+	
+    @media (max-width: 768px){
+        .payout-options{
+            text-align: center;
+        }
+        .thumbnail {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+            width: 48%;
+        }
+        ul.payout-list {
+            width: 100%;
+        }
+        .py-text{
+            padding: 10px;
+        }
+        a.payout-det-btn{font-size: 13px;padding:8px 3px;}
+    }
+	
+	
+@media only screen and (max-width:749px){	
+.store-reviews .br-theme-bars-movie .br-widget a {width: 15%;}
+.shop_review_summary{ height:auto; padding:7px;}
+}
+
+@media only screen and (max-width:597px){	
+.reviews_label {float:none; clear:both;}
+.reviews_input {float:none; clear:both;}
+}
+
+    @media (max-width: 480px){
+        .thumbnail {
+            width: 98%;
+        } 
+
+    }	
+/* Messenger Whatsbroadcast */ 
+@media only screen and (max-width:767px){
+	.broadcastBox{  display: block; height: auto; overflow: hidden; margin:40px 0; }
+	.bcMessenger{ float:none; clear: both; width: 99.6%;  margin-right: 0%;}
+}
+	
+	
+@media only screen and (max-width:883px){
+	.OrangeLogo {float:none; clear:both; margin-bottom: 9px;}
+}
+@media only screen and (max-width:488px){
+	.copyRight01 { margin-left: 40px;    width:90%;}
+}
+@media only screen and (max-width:978px){
+	.FooterCatItem ul li{ width:18%; }
+	.FooterQuickLink { clear: both; float: none; width: 100%;}
+	.FollowUs { float: none; clear:both;  width: 95%;}
+}
+@media (max-width: 650px){
+div#account-block,.account-block-1, .account-block-2, .account-block-3, .account-block-4{
+    height: auto;
+}
+}
+@media only screen and (max-width:573px){
+	.FooterCatItem ul li{ width:46%; }
+}
+/*  Push browser */
+@media only screen and (max-width: 664px){.Notification{ width:96%; }}
+
+
+@media (max-width:900px){
+.cat-menu{
+    display: inline-block;
+    padding: 8px 15px;
+    background:#60a9dc;
+    color:#fff;
+    border-radius:3px;
+    cursor: pointer; 
+}
+.CatLinkCont{
+    display: none;
+}
+}
+/*  Popular Shop Logos */
+@media only screen and (max-width:940px){
+.PopLogsBox{ width:22%;height:76px;  margin-left: 1.5%; margin-right: 1.5%;}
+}
+@media only screen and (max-width:920px){
+.PopLogsBox:nth-child(8){ width:auto; }
+}
+@media only screen and (max-width:752px){
+.PopLogsBox{ width:30%;height:76px;  margin-left: 1.5%; margin-right: 1.5%;}
+}
+@media only screen and (max-width:520px){
+.PopLogsBox{ width:50%;height:76px;  margin-left:0%; margin-right:0%;  text-align:left; }
+}
+
+@media only screen and (max-width:600px){
+.DynOverlayContent{ margin-top: 14%;}
+#main #main-content {font-size: 14px;  line-height: 22px;}
+}
+
+/*  fav webshops */
+@media only screen and (max-width: 991px) {
+	.FavShopBox{width: 23.5%;}
+}
+
+@media only screen and (max-width: 716px) {
+	.FavShopBox{width: 32%;}
+}
+@media only screen and (max-width: 610px) {
+	.FavShopBox{width: 48%;}
+}
+
+@media only screen and (max-width: 510px) {
+	.FavShopBox{width: 98%;}
+}
