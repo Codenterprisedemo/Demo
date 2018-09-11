@@ -1,0 +1,875 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Untitled Document</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css" rel="stylesheet">
+<script src="js/progressbar.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default dashboardHeader">
+  <div class="dashHeader">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand dashLogo" href="index.html"><img src="images/OB-logo.png"></a>
+    </div>
+    <!-- /.navbar-header -->
+
+    <!-- /.navbar-top-links -->
+  </div>
+  <div class="container-fluid dashboardHeadRight">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <div class="dashAccount">
+            <div class=""><p>Today Closed:(London Office)</p></div>
+            <div class="dashAccountMenu">
+              <ul>
+                <li>CRM</li>
+                <li><img src="images/shops.png"><span class="badge badge-secondary dashAccBadge">15</span>Request Shops</li>
+                <li><img src="images/Deals.png"><span class="badge badge-secondary dashAccBadge">13</span>Request Deals</li>
+                <li class="dashMenuLast"><img src="images/alerts.png"><span class="badge badge-secondary dashAccBadge">0</span>Network Credit Alerts</li>
+              </ul>
+            </div>
+            <span class="loginExpiry">Welcome <b class="dashAccName">Rabab</b> your login password will expire in <b class="dashAccDays">90</b> days </span>
+            <span><button class="dashAccBtn">Reset password</button><button class="dashAccBtn">Logout</button></span>
+          </div>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="wrapper">
+  <!-- Sidebar Holder -->
+  <nav id="sidebar">
+    <ul class="list-unstyled components">
+      <li class="active">
+        <a href="#">Dashboard</a>
+      </li>
+      <li>
+        <a href="#bannersmenu" data-toggle="collapse" aria-expanded="false">Banners</a>
+        <ul class="collapse list-unstyled" id="bannersmenu">
+          <li><a href="flot.html">Homepage Takeover</a></li>
+          <li><a href="morris.html">Banners</a></li>
+          <li><a href="flot.html">Bannerkliks</a></li>
+          <li><a href="morris.html">Referral Banners</a></li>
+          <li><a href="morris.html">Banner footer message</a></li>
+          <li><a href="flot.html">Banners Calendar</a></li>
+          <li><a href="morris.html">Message Bar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#cashoutmenu"  data-toggle="collapse" aria-expanded="false">Cashouts</a>
+        <ul class="collapse list-unstyled" id="cashoutmenu">
+          <li><a href="/cashout_overview.html">cashouts Overview</a></li>
+          <li><a href="/pending_cadeus.html">Giftcard pending cashouts</a></li>
+          <li><a href="/pending_payments.html">Payment pending cashouts</a></li>
+          <li><a href="/cashout_requests.html">Pending cashouts </a></li>
+          <li><a href="/master_card_users.html">OB MasterCard orders</a></li>
+          <li><a href="/new_cashout.html">New cashouts</a></li>
+          <li><a href="/allcashouts.html">Paid cashouts</a></li>
+          <li><a href="/cashback_emails.html">Cashback Emails </a></li>
+          <li><a href="/donation_requests.html">Pending Donations</a></li>
+          <li><a href="/pending_partner_cashout_request.html">Bank Cashouts</a></li>
+          <li><a href="/pending_partner_cashout_paypal_request.html">Paypal Cashouts</a></li>
+          <li><a href="/pending_master_card_cashouts.html">MasterCard Cashouts</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#customermenu" data-toggle="collapse" aria-expanded="false">Customer Service</a>
+        <ul class="collapse list-unstyled" id="customermenu">
+          <li>
+            <a href="#ReferralSubmenu" data-toggle="collapse" aria-expanded="false">Referral Friends</a>
+            <ul class="collapse list-unstyled" id="ReferralSubmenu">
+              <li><a href="/referral_friends_request.php">Referral Requests</a></li>
+            </ul>
+          </li>
+          <li><a href="/leads.html">Leads</a></li>
+          <li><a href="/internal_tickets.html">Transaction Tickets </a></li>
+          <li><a href="/svm_order_tickets.html">SVM order tickets</a></li>
+          <li><a href="/user_tickets.html">User tickets</a></li>
+          <li><a href="/exit_clicks.html">Exit Clicks</a></li>
+          <li><a href="/whitelist.html">Ip Whitelist</a></li>
+          <li><a href="/blocklist_email.html">Email Blocklist</a></li>
+          <li><a href="/blacklist_domain.html">Blacklist Domains</a></li>
+          <li><a href="/blacklist_email.html">Email Blacklist</a></li>
+          <li><a href="/digital_customer.html">Digital Customer</a></li>
+          <li><a href="/blacklist.php">IP &amp; IBAN Blacklist</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#marketingmenu" data-toggle="collapse" aria-expanded="false">Marketing</a>
+        <ul class="collapse list-unstyled" id="marketingmenu">
+          <li><a href="/form_builder.php">Form Builder</a></li>
+          <li><a href="/custom_forms.php">Custom Forms</a></li>
+          <li><a href="/allbusinesses.php">Businesses</a></li>
+          <li><a href="/business_types.php">Business Types</a></li>
+          <li><a href="/business_banners.php">Business Banners</a></li>
+          <li><a href="/business_access.php">Business Access</a></li>
+          <li><a href="/business_donations.php">Business Donations</a></li>
+          <li><a href="/newsletter_campaigns.php">Newsletter Campaigns</a></li>
+          <li><a href="/partner_subscribers.php">Partner Subscribers</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#partnersmenu" data-toggle="collapse" aria-expanded="false">Partners</a>
+        <ul class="collapse list-unstyled" id="partnersmenu">
+          <li><a href="/partners.php">Partners</a></li>
+          <li><a href="/view_sub_partner.php">Sub-Partner</a></li>
+          <li><a href="/partner_payments.php">Payments</a></li>
+          <li><a href="/partner_helpdesk.php">Helpdesk</a></li>
+          <li><a href="/partners_mail.php">Mail settings</a></li>
+          <li><a href="/allcharity.php">Charities</a></li>
+          <li><a href="/partner_cashout_modules.php">Partner Cashout Modules</a></li>
+          <li><a href="/whitelabel_invoices.php">WhiteLabel Invoices</a></li>
+          <li><a href="/generate_tracking_url.php">Generate Tracking URL</a></li>
+          <li><a href="/charity_transactions.php">Charity Transactions</a></li>
+          <li><a href="/template_module_new.php">Monthly Account</a></li>
+          <li><a href="/store_group_categories.php">Store Group Category</a></li>
+          <li><a href="/partner_invoices.php">Partner Invoices</a></li>
+          <li><a href="/partner_email_template.php">Partner Email Templates</a></li>
+          <li><a href="/partner_modules.php">Partner Modules</a></li>
+          <li><a href="/partner_site_content.php">Partner Content Manager</a></li>
+          <li><a href="/partner_ip_whitelist.php">Partner IP White List</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#priceWinmenu" data-toggle="collapse" aria-expanded="false">Price Win</a>
+        <ul class="collapse list-unstyled" id="priceWinmenu">
+          <li><a href="/prediction_banners.php">Prediction Banners</a></li>
+          <li><a href="/prediction_banner_purge.php">Purge Prediction Banner</a></li>
+          <li><a href="/partners_campaigns.php">Campaigns</a></li>
+          <li><a href="/select_partners_campaigns.php">Setup Campaign</a></li>
+          <li><a href="/send_campaign_vouchers.php">Campaign Winners</a></li>
+          <li><a href="/cadeus_btw_calculate.php">Cadeus BTW Calculate</a></li>
+          <li><a href="/cadeaus_shipped_report.php">Shipped Cadeaus Report</a></li>
+          <li><a href="/voucher_codes.php">Voucher Codes</a></li>
+          <li><a href="/allvouchersend.php">Voucher Send</a></li>
+          <li><a href="/Predict.php">Predict Campaigns</a></li>
+          <li><a href="/predict_setup.php">Predict Joiners</a></li>
+          <li><a href="/predict_winner.php">Predict Winner</a></li>
+          <li><a href="/lottery.php">Add Lottery Campaign</a></li>
+          <li><a href="/allLotnumbes.php">Draw Lot Numbers</a></li>
+          <li><a href="/moneygrab_pending_cashback.php">Moneygrab Prize</a></li>
+          <li><a href="/lotCampaignWinner.php">Lot Campaign Winner</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#Reportsmenu" data-toggle="collapse" aria-expanded="false">Reports</a>
+        <ul class="collapse list-unstyled" id="Reportsmenu">
+          <li>
+            <a href="#AppSubmenu" data-toggle="collapse" aria-expanded="false">App Reports</a>
+            <ul class="collapse list-unstyled" id="AppSubmenu">
+              <li><a href="/pages_analytics_report.php">Pages Report</a></li>
+              <li><a href="/traffic_analytics_report.php">Traffic Report</a></li>
+              <li><a href="/whatsapp_subscribers_report.php">Whatsapp Subscribers Report</a></li>
+              <li><a href="/app_report.php">App Installs</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#CashbackSubmenu" data-toggle="collapse" aria-expanded="false">Cashback reports</a>
+            <ul class="collapse list-unstyled" id="CashbackSubmenu">
+              <li><a href="/partner_cashout_report.php">Partner Cashout Report</a></li>
+              <li><a href="/user_cashout_report.php">User Cashout Report</a></li>
+              <li><a href="/pending_cashback_report.php">Pending Cashback Report</a></li>
+              <li><a href="/transaction_report_new.php">AutoApprove Transaction</a></li>
+              <li><a href="/cashback_report.php">Cashback Report</a></li>
+              <li><a href="/outstanding_cashback_report.php">Outstanding Cashback</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#CashmailSubmenu" data-toggle="collapse" aria-expanded="false">Cashmail Reports</a>
+            <ul class="collapse list-unstyled" id="CashmailSubmenu">
+              <li><a href="/campaigns_sent_report.php">Campaigns sent Report</a></li>
+              <li><a href="/cashmail_report.php">CashMail Report / eCPC</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#CompetitorSubmenu" data-toggle="collapse" aria-expanded="false">Competitor Reports</a>
+            <ul class="collapse list-unstyled" id="CompetitorSubmenu">
+              <li><a href="/request_competitors_deals.php">Add new deal competitor</a></li>
+              <li><a href="/request_competitors_shops.php">Add new store competitor</a></li>
+              <li><a href="/competitors_deals.php">Competitors Free Deals</a></li>
+              <li><a href="/competitors_shops.php">Competitors Stores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#CreditSubmenu" data-toggle="collapse" aria-expanded="false">Credit Reports</a>
+            <ul class="collapse list-unstyled" id="CreditSubmenu">
+              <li><a href="/twinfield_stats.php">Credit Limit Stats</a></li>
+              <li><a href="/twinfield_paid_invoices.php">Invoice History</a></li>
+              <li><a style="width:100%;" href="/twinfield_transaction_report_new.php">Master-Twinfield comparison report</a></li>
+              <li><a href="/network_deals_overview_report.php">Outstanding Deals</a></li>
+              <li><a href="/twinfield_invoices.php">Outstanding Invoices</a></li>
+              <li><a href="/twinfield_reminders_log.php">Reminders Log</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#CustomerSubmenu" data-toggle="collapse" aria-expanded="false">Customer Reports</a>
+            <ul class="collapse list-unstyled" id="CustomerSubmenu">
+              <li><a href="/top_customers.php">Top 20 Customers</a></li>
+              <li><a href="/customer_feedback_report.php">Customer Ticket Feedback Report</a></li>
+              <li><a href="/user_searches_report.php">Users Searches Report</a></li>
+              <li><a href="/partner_user_kd.php">CASBO Members</a></li>
+              <li><a href="/guarantee_tickets_overview.php">Cashback guarantee tickets overview</a></li>
+              <li><a href="/partner_user.php">Check Users in all Labels</a></li>
+              <li><a href="/tickets_report.php">Label Ticket Report</a></li>
+              <li><a href="/user_missing_credits_report.php">Missing credits report</a></li>
+              <li><a href="/user_tickets_report.php">User Ticket Report</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#DashboardSubmenu" data-toggle="collapse" aria-expanded="false">Dashboards</a>
+            <ul class="collapse list-unstyled" id="DashboardSubmenu">
+              <li><a href="/admin_dashboard.php">Admin Dashboard</a></li>
+              <li><a href="/cm_dashboard.php">Country Manager Dashboard</a></li>
+              <li><a href="/de_dashboard.php">Data Entry Manager Dashboard</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#FollowUpSubmenu" data-toggle="collapse" aria-expanded="false">Follow up Reports</a>
+            <ul class="collapse list-unstyled" id="FollowUpSubmenu">
+              <li><a href="/followup_template_report.php">Follow up Report</a></li>
+              <li><a href="/bounce_report.php">QTY Bounces</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#ManagementSubmenu" data-toggle="collapse" aria-expanded="false">Management Reports</a>
+            <ul class="collapse list-unstyled" id="ManagementSubmenu">
+              <li><a href="/negative_culture_saldo_report.php">Users Negative Saldo Report</a></li>
+              <li><a href="/member_earning_report.php">SBS Member earning report </a></li>
+              <li><a href="/click_reward_report.php">Click Reward Report</a></li>
+              <li><a href="/alert_bar_report.php">Alert bar Report</a></li>
+              <li><a href="/avg_trans_per_member.php">Transactions per CBK  member</a></li>
+              <li><a href="/master_page_visits_report.php">Module usage overview</a></li>
+              <li><a href="/birthday_template_report.php">Birthday Report</a></li>
+              <li><a href="/cashout_report.php">Cashout Report</a></li>
+              <li><a href="/earning_report_month_comparison.php">Compare Revenue perMonth</a></li>
+              <li><a href="/tickets_report_new.php">Compare user tickets month</a></li>
+              <li><a href="/overview_special_deals_report.php">Pending Special Deals Report</a></li>
+              <li><a href="/cashback_compensation_report.php">Compensation Report</a></li>
+              <li><a href="/survey_ssi_report.php">Survey Report (SSI)</a></li>
+              <li><a href="/cookie_report.php">Cookie Revenue Report</a></li>
+              <li><a href="/data_entry_operator.php">Data Entry Stats</a></li>
+              <li><a href="/sales_order_report.php">IO Report</a></li>
+              <li><a href="/mobile_phone_report.php">Mobile Phone Report</a></li>
+              <li><a href="/online_panel_report.php">Online Panel Report</a></li>
+              <li><a href="/premium_membership_stats.php">Premium Membership Stats</a></li>
+              <li><a href="/tax_report.php">Tax Report</a></li>
+              <li><a href="/lottery_report.php">Win Module Report</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#MemberSubmenu" data-toggle="collapse" aria-expanded="false">Members Reports</a>
+            <ul class="collapse list-unstyled" id="MemberSubmenu">
+              <li><a href="/browser_push_subscribers_report.php">Browser Push Subscribers Report</a></li>
+              <li><a href="/unsubscribe_reason_report.php">Unsubscribe reason report</a></li>
+              <li><a href="/member_high_transaction_report.php">Member High Transaction Report</a></li>
+              <li><a href="/newsletter_subscriber_report.php">Newsletter Subscribers Report</a></li>
+              <li><a href="/transaction_per_member_report.php">Transaction Per Member Report</a></li>
+              <li><a href="/birthday_cashback_report.php">Birthday Cashback Report</a></li>
+              <li><a href="/clicks_campaign_report.php">Clicks/user Report</a></li>
+              <li><a href="/click_user_report.php">Clicked User Report</a></li>
+              <li><a href="/nonclicked_user_report.php">Non Clicked User Report</a></li>
+              <li><a href="/partner_active_user_report.php">Partner Active Members</a></li>
+              <li><a href="/users_snapshot.php">Profile snapshot</a></li>
+              <li><a href="/referal_competetion_report.php">Referal Competition Report</a></li>
+              <li><a href="/user_login_report.php">User Login Report</a></li>
+              <li><a href="/unsubscribe_report.php">Unsubscribe Report</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#NetworkSubmenu" data-toggle="collapse" aria-expanded="false">Network Reports</a>
+            <ul class="collapse list-unstyled" id="NetworkSubmenu">
+              <li><a href="/special_deals_revenue_report.php">Special Deals Revenue</a></li>
+              <li><a href="/contact_person_report.php">Contact Person Report</a></li>
+              <li><a href="/network_credit_note.php">Credit Note Report</a></li>
+              <li><a href="/network_login_report_new.php">Network Login Report</a></li>
+              <li><a href="/view_cm_networks_all.php">Network store list</a></li>
+              <li><a href="/affiliated_network_programs_snapshot.php">Network potential new stores</a></li>
+              <li><a href="/network_payment_history.php">Network Payment History</a></li>
+              <li><a href="/network_reliability_report.php">Network Reliability Report</a></li>
+              <li><a href="/network_report_new_detail.php">Partner deal details</a></li>
+              <li><a href="/network_revenue_report.php">Partner Revenue last 3M</a></li>
+              <li><a href="/partner_deals_report.php">Special Deals Report</a></li>
+              <li><a href="/network_report_new.php">Top Partner Report</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#SaleSubmenu" data-toggle="collapse" aria-expanded="false">Sales Reports</a>
+            <ul class="collapse list-unstyled" id="SaleSubmenu">
+              <li><a href="/invoiced_order.php">Invoiced Orders</a></li>
+              <li><a href="/expected_revenue_report.php">Expected Revenue </a></li>
+              <li><a href="/cbotd_report.php">CBOTD Report</a></li>
+              <li><a href="/advertising_product_report.php">Advertising Products Report New</a></li>
+              <li><a href="/obm_tracking_report.php">OBM Tracking Report</a></li>
+              <li><a href="/dblcb_report.php">Double Cashback Report</a></li>
+              <li><a href="/sales_order_special_deals_report.php">IO/Special Report</a></li>
+              <li><a href="/twinfield_purchase_costs.php">Purchase Costs Report </a></li>
+              <li><a href="/revenue_per_month_report.php">Revenue per month</a></li>
+              <li><a href="/rejected_deals_report.php">Rejected Deals Report</a></li>
+              <li><a href="/rejected_specials_report.php">Rejected Specials Report</a></li>
+              <li><a href="/rejected_io_report.php">Rejected IO Report</a></li>
+              <li><a href="/rejected_invoices_report.php">Rejected Invoices Report</a></li>
+              <li><a href="/rejection_report.php">Rejection Report</a></li>
+              <li><a href="/rejection_graph.php">Rejection Chart</a></li>
+              <li><a href="/revenue_per_channel_graph.php">Revenue Per Channel Graph</a></li>
+              <li><a href="/advertising_report.php">Advertising Product Report</a></li>
+              <li><a href="/country_sales_report.php">Country Sales Report</a></li>
+              <li><a href="/earning_report_new.php">Earning Report Total</a></li>
+              <li><a href="/earning_report.php">Earning Report By Detail</a></li>
+              <li><a href="/product_deal_report.php">Product Deal Report</a></li>
+              <li><a href="/partnerwisechannelreport.php">Revenue per channel</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#StoreSubmenu" data-toggle="collapse" aria-expanded="false">Store/Voucher Reports</a>
+            <ul class="collapse list-unstyled" id="StoreSubmenu">
+              <li><a href="/store_admin_note_api_report.php">Store With No API Check</a></li>
+              <li><a href="/store_culture_report.php">Stores in multiple culture report</a></li>
+              <li><a href="/cashback_store_without_cashback_report.php">Cashback stores without cashback</a></li>
+              <li><a href="/non_partner_stores_report.php">Non partner stores report</a></li>
+              <li><a href="/click_earn_campaigns_report.php">Click &amp; Earn Campaigns Report</a></li>
+              <li><a href="/top_store_channel.php">Top 10 stores per channel</a></li>
+              <li><a href="/store_comparison_report.php">Store comparison report</a></li>
+              <li><a href="/partner_nonpartner_stores.php">Partner &amp; Non-Partner Stores Report</a></li>
+              <li><a href="/voucher_comparison_report.php">Voucher comparison report</a></li>
+              <li><a href="/storeDetailSeoReport.php">Store detail seo report</a></li>
+              <li><a href="/duplicate_stores_list.php">Duplicate Stores</a></li>
+              <li><a href="/eCPC_report.php">eCPC Store Report</a></li>
+              <li><a href="/itune_feed_sort.php">iTunes feed sort</a></li>
+              <li><a href="/affiliated_network_programs.php">Potential New Stores</a></li>
+              <li><a href="/store_performance_report_new.php">Store Performance Report</a></li>
+              <li><a href="/single_store_report.php">Store Report PDF</a></li>
+              <li><a href="/store_voucher_report.php">Store &amp; Voucher Report</a></li>
+              <li><a href="/view_cm_shops_all.php">Top stores without voucher</a></li>
+              <li><a href="/top_store_report.php">Top 100 stores</a></li>
+              <li><a href="/trending_stores_report.php">Trending Stores</a></li>
+              <li><a href="/voucher_added_report.php">Voucher Added Report</a></li>
+          </li>
+          <li>
+            <a href="#WebsiteSubmenu" data-toggle="collapse" aria-expanded="false">Website Reports</a>
+            <ul class="collapse list-unstyled" id="WebsiteSubmenu">
+              <li><a href="/channel_per_banner_report.php">Channel Per Banner Report</a></li>
+              <li><a href="/bannerclick_report.php">Bannerclick Performance</a></li>
+              <li><a href="/delen_report.php">Sharing Performance</a></li>
+              <li><a href="/testimonial_review_report.php">Testimonial Report</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#WebsiteSubmenu" data-toggle="collapse" aria-expanded="false">Website Reports</a>
+            <ul class="collapse list-unstyled" id="WebsiteSubmenu">
+              <li><a href="/channel_per_banner_report.php">Channel Per Banner Report</a></li>
+              <li><a href="/bannerclick_report.php">Bannerclick Performance</a></li>
+              <li><a href="/delen_report.php">Sharing Performance</a></li>
+              <li><a href="/testimonial_review_report.php">Testimonial Report</a></li>
+            </ul>
+          </li>
+          <li><a href="/cashout_statement.php">Cashout Statement</a></li></ul>
+        </ul>
+      </li>
+      <li>
+        <a href="#Settingmenu"  data-toggle="collapse" aria-expanded="false">Settings</a>
+        <ul class="collapse list-unstyled" id="Settingmenu">
+          <li><a href="/system_alert_settings.php">System Alerts Settings</a></li>
+          <li><a href="/partner_reward_settings.php">Partner Reward Settings</a></li>
+          <li><a href="/holidays_calendar.php">Holidays Calendar</a></li>
+          <li><a href="/admin_user_todo.php">Admin User To dos</a></li>
+          <li><a href="/view_all_todo.php">View All Todo</a></li>
+          <li><a href="/admin_users.php">Admin Users</a></li>
+          <li><a href="/admin_roles.php">Admin Roles</a></li>
+          <li><a href="/advertising_products.php">Advertising Products</a></li>
+          <li><a href="/view_admin_module.php">Admin Menu Pages</a></li>
+          <li><a href="/allcountries.php">Countries</a></li>
+          <li><a href="/allculture.php">Cultures</a></li>
+          <li><a href="/currency_settings.php">Currency settings </a></li>
+          <li><a href="/currency_conversion.php">Currency Conversion</a></li>
+          <li><a href="/allnetworks.php">Affiliate Networks </a></li>
+          <li><a href="/users_log.php">Users log</a></li>
+          <li><a href="/admin_css.php">Admin CSS </a></li>
+          <li><a href="/email_templates.php">Email Templates</a></li>
+          <li><a href="/payment_types.php">Payment Types </a></li>
+          <li><a href="/website_settings.php">Website Settings </a></li>
+          <li><a href="/fc_targets.php">FashionCo Targets</a></li>
+          <li><a href="/culture_targets.php">Content Targets</a></li>
+          <li><a href="/sale_targets.php">Sale Targets</a></li>
+          <li><a href="/alluserteams.php">User Teams</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#Shopmenu"  data-toggle="collapse" aria-expanded="false">Shops</a>
+        <ul class="collapse list-unstyled" id="Shopmenu">
+          <li><a href="/itune_feeds_url.php">Itunes Feed URLS</a></li>
+          <li><a href="/cadeus_orders.php">Orders</a></li>
+          <li><a href="/cadeaus.php">Products</a></li>
+          <li><a href="/cadeaus_categories.php">Categories</a></li>
+          <li><a href="/allshipping.php">Shipping</a></li>
+          <li><a href="/allmargin_range.php">Margin % Range</a></li>
+          <li><a href="/daily_action.php">Daily Actions</a></li>
+          <li><a href="/deals.php">City Deals</a></li>
+          <li><a href="/allcities.php">All Cities</a></li>
+          <li><a href="/milestones.php">Milestones</a></li>
+          <li><a href="/outfits.php">Outfits</a></li>
+          <li><a href="/alloutfitevents.php">Outfit Events</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#Storemenu" data-toggle="collapse" aria-expanded="false">Store/Vouchers</a>
+        <ul class="collapse list-unstyled" id="Storemenu">
+          <li>
+            <a href="#PFSubmenu" data-toggle="collapse" aria-expanded="false">PF</a>
+            <ul class="collapse list-unstyled" id="PFSubmenu">
+              <li><a href="/view_cbk_collection.php">All Collections</a></li>
+              <li><a href="/view_cbk_collection_category.php">All Categories</a></li>
+              <li><a href="/products_collections_elastic.php">All Products</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#StoreSubmenu2" data-toggle="collapse" aria-expanded="false">Stores</a>
+            <ul class="collapse list-unstyled" id="StoreSubmenu2">
+              <li><a href="/manufacturer_brands.php">Manufacturer Brands</a></li>
+              <li><a href="/click_earn_module.php">Click &amp; Earn Stores</a></li>
+              <li><a href="/allstores.php">Stores</a></li>
+              <li><a href="/all_non_partner_shops.php">Non Partnership Stores</a></li>
+              <li><a href="/store_videos.php">Store Videos</a></li>
+              <li><a href="/view_all_pf_brands.php">Brands</a></li>
+              <li><a href="/view_all_pf_brand_style.php">Brand Styles</a></li>
+              <li><a href="/store_confirmation_rating.php">Store Confirm Ratin</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#ThemeSubmenu" data-toggle="collapse" aria-expanded="false">Theme page</a>
+            <ul class="collapse list-unstyled" id="ThemeSubmenu">
+              <li><a href="/schedule_theme.php">Schedule Theme</a></li>
+              <li><a href="/allthemecollections.php">Theme Collection</a></li>
+            </ul>
+          </li>
+          <li><a href="/blogs.php">Blogs</a></li>
+          <li><a href="/network_feeds.php">Network Feeds</a></li>
+          <li><a href="/allcategories_new.php">Top stores</a></li>
+          <li><a href="/network_vouchers.php">In-Active Vouchers</a></li>
+          <li><a href="/exclusive_deals_vouchers_calendar.php">Exclusive Deals &amp; Voucher Calendar</a></li>
+          <li><a href="/click_earn_calendar.php">Click &amp; Earn Calendar</a></li>
+          <li><a href="/replication_culture.php">Replication Culture</a></li>
+          <li><a href="/allvouchers.php">Vouchers</a></li>
+          <li><a href="/allvouchers_archieve.php">Archive Vouchers</a></li>
+          <li><a href="/allstoredeals.php">Deals</a></li>
+          <li><a href="/allcategories.php">Categories</a></li>
+          <li><a href="/allexceptiondeals.php">Exception Deals</a></li>
+          <li><a href="/pf_categories.php">Pf Categories</a></li>
+          <li><a href="/resource_browser.php">Resource Browser</a></li>
+          <li><a href="/replication.php">Replication</a></li>
+          <li><a href="/allfaqcategories.php">FAQ Categories</a></li>
+          <li><a href="/allfaqs.php">FAQs</a></li>
+          <li><a href="/shops_collections.php">Shops Collections</a></li>
+          <li><a href="/cashback_day_calendar.php">Cashback of the Day</a></li>
+          <li><a href="/double_cashback_calendar.php">Double Cashback Calendar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#Suppliermenu" data-toggle="collapse" aria-expanded="false">Supplier Data</a>
+        <ul class="collapse list-unstyled" id="Suppliermenu">
+          <li><a href="/coreg_report_data.php">Supplier Data</a></li>
+          <li><a href="/coreg_networks.php">Supplier Campaigns </a></li>
+          <li><a href="/coreg_aggr.php">Supplier Performance </a></li>
+          <li><a href="/process_coreg_leads.php">Process Co-reg Leads</a></li>
+          <li><a href="/supplier_dashboard.php">Supplier Dashboard</a></li>
+          <li><a href="/coreg_sup_report.php">Coreg Supplier Report</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#transitionmenu" data-toggle="collapse" aria-expanded="false">transitions</a>
+        <ul class="collapse list-unstyled" id="transitionmenu">
+          <li>
+            <a href="#APISubmenu" data-toggle="collapse" aria-expanded="false">API</a>
+            <ul class="collapse list-unstyled" id="APISubmenu">
+              <li><a href="/network_api_new.php">Network API</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#CashbackSubmenu2" data-toggle="collapse" aria-expanded="false">Cashback</a>
+            <ul class="collapse list-unstyled" id="CashbackSubmenu2">
+              <li><a href="/allcashbacks.php">Cashbacks</a></li>
+              <li><a href="/import_cashback_csv_new_network.php">Import Cashback CSV</a></li>
+              <li><a href="/pending_cashbacks.php">Pending cashbacks</a></li>
+              <li><a href="/auto_cashbacks.php">Autoupdate cashbacks</a></li>
+              <li><a href="/transpanel/transactions/compensate">Cashback Compensatio</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#DealSubmenu" data-toggle="collapse" aria-expanded="false">Deals</a>
+            <ul class="collapse list-unstyled" id="DealSubmenu">
+              <li><a href="/missing_api_revenue.php">Missing API Revenue</a></li>
+              <li><a href="/partner_online_panel_revenue.php">Add Online Panel Revenue</a></li>
+              <li><a href="/partner_deal_earning_new.php">Add Special Deal</a></li>
+              <li><a href="/pending_partner_deals_new.php">Pending Special deals</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#OrderSubmenu" data-toggle="collapse" aria-expanded="false">Orders</a>
+            <ul class="collapse list-unstyled" id="OrderSubmenu">
+              <li><a href="/credit_invoices.php">Credit Invoices</a></li>
+              <li><a href="/generate_new_order.php">Generate New Order</a></li>
+              <li><a href="/new_orders_archive.php">Pending Orders</a></li>
+              <li><a href="/detail_customer_orders.php">Detail Customer Orders</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#StoreSubmenu3" data-toggle="collapse" aria-expanded="false">Stores</a>
+            <ul class="collapse list-unstyled" id="StoreSubmenu3">
+              <li><a href="/partner_store_reviews_reply.php">Store reviews reply</a></li>
+              <li><a href="/partner_store_reviews.php">Store Reviews</a></li>
+              <li><a href="/partner_brand_reviews.php">Brand Reviews</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#TransactionSubmenu" data-toggle="collapse" aria-expanded="false">Transactions</a>
+            <ul class="collapse list-unstyled" id="TransactionSubmenu">
+              <li><a href="/paypal_invoices.php">Paypal Invoices</a></li>
+              <li><a href="/twinfield_paid_transactions.php">Paid Transactions</a></li>
+              <li><a href="/internal_case_tool.php">Check transactions with network</a></li>
+              <li><a href="/transaction_dashboard.php">Transaction Dashboard</a></li>
+              <li><a href="/transactions_new.php">Transactions</a></li>
+              <li><a href="/twinfield_transactions.php">Twinfield Transactions</a></li>
+              <li><a href="/platinum_transactions.php">Platinum Transactions</a></li>
+              <li><a href="/process_transaction.php">Process Transactions</a></li>
+              <li><a href="/duplicate_transaction_alerts.php">Duplicate Transactions</a></li>
+              <li><a href="/twinfield_invoices.php">Twinfield Invoices</a></li>
+            </ul>
+          </li>
+          <li><a href="/resolved_transactions.php">Resolved Transactions</a></li>
+          <li><a href="/partner_video_testimonial.php">Video Testimonials</a></li>
+          <li><a href="/add_multi_callback.php">Add multiple callbacks</a></li>
+          <li><a href="/partner_testimonial.php">Testimonials</a></li>
+          <li><a href="/twinfield_customers.php">Twinfield Customers</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Page Content Holder -->
+  <div id="content" class="col-md-12">
+    <div class="row contentTop">
+      <div class="Pageslide" id="moveRight">
+        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" onclick="buttonMove">
+          <i class="glyphicon glyphicon-align-left"></i>
+          <span>Toggle Sidebar</span>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="invoiceTabs">
+          <li class="active"><a href="#">Invoiced Orders</a></li>
+          <li><a href="#">Expected Revenue</a></li>
+          <li><a href="#">OBOTD Report</a></li>
+          <li><a href="#">Advertising Product Report New</a></li>
+          <li><a href="#">OBM Tracking Report</a></li>
+          <li><a href="#">Double Cashback Report</a></li>
+          <li><a href="#">IO/Special Report</a></li>
+          <li><a href="#">Purchase Costs Report</a></li>
+          <li><a href="#">Revnue per Month</a></li>
+          <li><a href="#">Rejected Deals Report</a></li>
+          <li><a href="#">Rejected Special Report</a></li>
+          <li><a href="#">Rejected IO Report</a></li>
+          <li><a href="#">Rejected Invoices Report</a></li>
+          <li><a href="#">Rejection Chart</a></li>
+          <li><a href="#">Revenue per Chanel Graph</a></li>
+          <li><a href="#">Advertising Product Report</a></li>
+          <li><a href="#">Country Slaes Report</a></li>
+          <li><a href="#">Earning Report Total</a></li>
+          <li><a href="#">Earning Report by detail</a></li>
+        </ul>
+      </div>
+      <div class="col-md-12 invoiceHeading">
+        <h3>Reports > Sales Reports <b> > invoiced Order Report</b></h3>
+        <p>Overview of all orders with total evenue for signed/invoiced Orders per Partner in period of 1-3-6-9-12 months.</p>
+        <b>Please enter search criteria. or, press search to view all</b>
+        <div class="col-md-12 invoiceInputs">
+          <div class="col-md-4"><input></div>
+          <div class="col-md-4"><select></select></div>
+          <div class="col-md-4"><select></select></div>
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="dashPending">
+          <div class="dashTitle">
+            <span class="dashTitleTxt">Mismatch WebshopIDs</span>
+          </div>
+          <div>
+            <div id="PendingTable24" class="pendingTable mismatchTable">
+              <table class="table table-bordered pagin-table">
+                        <thead>
+                            <tr class="pendingTableHead">
+                              <th>#</th>
+                              <th>Customer Name</th>
+                              <th>Office</th>
+                              <th>Office</th>
+                              <th>Office</th>
+                              <th>Office</th>
+                              <th>Office</th>
+                              <th>Office</th>
+                              <th>Office</th>
+                            </tr>
+                        </thead>
+                        <tbody class="dataColor pendingTabBody InvoicedOrderTable">
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#">1</td>
+                              <td data-title="Customer Name">1004-Casbo Media BV</td>
+                              <td data-title="office">OBM</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                              <td data-title="office">€0</td>
+                            </tr>
+                            <tr data-toggle="tooltip" data-placement="top" title="Drag to Compare" class="dashRow">
+                              <td data-title="#" class="orangeBackground"></td>
+                              <td data-title="Customer Name" class="orangeBackground"></td>
+                              <td data-title="office" class="orangeBackground"> Total</td>
+                              <td data-title="office">€444</td>
+                              <td data-title="office">€999</td>
+                              <td data-title="office">€333</td>
+                              <td data-title="office">€555</td>
+                              <td data-title="office">€666</td>
+                              <td data-title="office">€777</td>
+                            </tr>
+                        </tbody>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-lg-12 -->
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+    <script type="text/javascript">
+      function dashTable() {
+        document.getElementById("PendingTableTdy").style.display = "flex";
+        document.getElementById("PendingChartTdy").style.display = "none";
+        document.getElementById("PendingTable24").style.display = "flex";
+        document.getElementById("PendingChart24").style.display = "none";
+      }
+      function dashChart() {
+        document.getElementById("PendingTableTdy").style.display = "none";
+        document.getElementById("PendingChartTdy").style.display = "block";
+        document.getElementById("PendingTable24").style.display = "none";
+        document.getElementById("PendingChart24").style.display = "block";
+      }
+      function tabToday() {
+        document.getElementById("today").style.display = "block";
+        document.getElementById("hour24").style.display = "none";
+        document.getElementById("hour48").style.display = "none";
+        document.getElementById("hour72").style.display = "none";
+      }
+      function tab24() {
+        document.getElementById("today").style.display = "none";
+        document.getElementById("hour24").style.display = "block";
+        document.getElementById("hour48").style.display = "none";
+        document.getElementById("hour72").style.display = "none";
+      }
+      function tab48() {
+        document.getElementById("today").style.display = "none";
+        document.getElementById("hour24").style.display = "none";
+        document.getElementById("hour48").style.display = "block";
+        document.getElementById("hour72").style.display = "none";
+      }
+      function tab72() {
+        document.getElementById("today").style.display = "none";
+        document.getElementById("hour24").style.display = "none";
+        document.getElementById("hour48").style.display = "none";
+        document.getElementById("hour72").style.display = "block";
+      }
+
+      function buttonMove() {
+        var marg = document.getElementById("sidebar").style.marginLeft;
+        if(marg != "-180"){
+          document.getElementById("moveRight").innerHTML = "180px";
+        }
+      }
+
+    </script>
+    <script src="js/stats.js"></script>
+</body>
+</html>

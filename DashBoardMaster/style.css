@@ -23,8 +23,9 @@ a:focus {
   background: #fff;
   border: none;
   border-radius: 0;
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  min-height: 89px;
 }
 
 .navbar-btn {
@@ -146,13 +147,37 @@ a.article:hover {
 ----------------------------------------------------- */
 
 #content {
-  padding: 11px;
+  
   min-height: 100vh;
   transition: all 0.3s;
 }
 
 #content p a {
   color:
+}
+
+
+
+/* ---------------------------------------------------
+    Bootstrap classes
+----------------------------------------------------- */
+
+
+.btn-info.active.focus, .btn-info.active:focus, .btn-info.active:hover, .btn-info:active.focus, .btn-info:active:focus, .btn-info:active:hover, .open>.dropdown-toggle.btn-info.focus, .open>.dropdown-toggle.btn-info:focus, .open>.dropdown-toggle.btn-info:hover {
+    color: #fff;
+    background-color: #e18737;
+    border-color: #ff7b07;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #e18737;
+    border-color: #46b8da;
+}
+.btn-info:hover {
+    color: #fff;
+    background-color: #e18737;
+    border-color: #e18737;
 }
 
 /* ---------------------------------------------------
@@ -168,5 +193,730 @@ a.article:hover {
   }
   #sidebarCollapse span {
     display: none;
+  }
+}
+
+.Pageslide{ clear: both; height: auto; overflow: hidden;}
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'roboto', sans-serif;
+    background: #fafafa;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dashboardHeader{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboardHeader::before, .dashboardHeader::after{
+  display: none;
+}
+
+.dashboardHeadRight{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.dashLogo{
+  height: 90px;
+}
+
+.dashSidebar{
+  margin-top: 17px;
+  background-color: #333;
+  left: 0px;
+  width: 175px;
+}
+
+.dashSidebar li{
+  color: #fff;
+  border-bottom: 1px solid #666 !important;
+}
+
+.dashSidebar li a{
+  padding: 9px 5px;
+}
+
+.dashSidebar ul li a.active, .dashSidebar ul li a:hover{
+  background-color: #cc9933;
+}
+
+.dashAccount{
+  text-align: right;
+}
+
+.dashHeader{
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.dashAccountMenu{
+  padding-bottom: 5px;
+}
+
+.dashAccountMenu ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dashAccountMenu li{
+  padding: 0px 5px;
+  border-right: 1px solid black;
+}
+
+.dashMenuLast{
+  padding-right: 0px !important;
+  border-right: 0px !important;
+}
+
+.sidebar .nav-second-level li a{
+  background-color: #333;
+}
+
+.dashAccName{
+  color: #cc9933;
+}
+
+.dashAccDays{
+  color: #33cc00;
+}
+
+.dashAccBtn{
+  padding: 3px 10px;
+  background-color: #59a144;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0px 5px;
+  border: none;
+}
+
+.dashAccBtn:hover{
+  background-color: #e18737;
+  color: #fff;
+}
+
+.dashAccBadge{
+  color: #e18737;
+  background: none;
+  padding: 3px;
+}
+
+#container{
+  width: 100% !important;
+}
+
+.dashPending{
+  width: 98%;
+  margin: 0px auto;
+}
+
+.dashTitle{
+  margin: 15px 0px;
+}
+
+.dashTitleTxt{
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.dashTitleIcons{
+  float: right;
+}
+
+.dashTitleIcons img{
+  margin: 0px 10px 10px 15px;
+  cursor: pointer;
+}
+
+.durationTabs img{
+  width: 100%;
+}
+
+.dataAbrv{
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5px;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 10px 0px;
+}
+
+.dataAbrv b{
+  color: #669933;
+  margin-left: 12px;
+}
+
+.pendingTableHead th{
+  background-color: #669933;
+  color: #fff;
+  font-weight: normal;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.pendTabBox{
+  width: 49%;
+}
+
+.padding0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.pendingTable{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dataColor{
+  color: #333;
+}
+
+.pendingTabBody tr td{
+  padding-left: 10px !important;
+  font-size: 12px !important;
+  padding: 2px 4px !important;
+  font-weight: bold;
+  cursor: move;
+}
+
+#PendingChartTdy, #PendingChart24{
+  display: none;
+}
+
+.tooltip .tooltip-inner{
+  background-color:    #337ab7;
+}
+
+.table-bordered th{
+  border: none;
+}
+
+.durationTabs{
+  background: #ccccff;
+  margin-top: 10px;
+  border: 1px solid #ccccff;
+}
+
+.durationTabsInner{
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+.durationTabsInner li{
+  text-align: center;
+  width: 110px;
+  padding: 6px 10px;
+  background: #fff;
+  border-right: 1px solid #ccccff;
+  font-size: 15px;
+  font-weight: 600;
+  color: #669933;
+  cursor: pointer;
+}
+
+.durationTabsInner li.active, .durationTabsInner li:hover{
+  background: #ff9933;
+  color: #fff;
+}
+
+#today, #hour48, #hour72{
+  display: none;
+}
+
+.welcomeText{
+  font-size: 19px;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 0px
+}
+
+.welcomeText b{
+  color: #cc9933;
+}
+
+.pendingTableHead th{
+  padding: 2px 6px !important;
+}
+
+.secLevel{
+  padding-left: 20px;
+}
+
+.padBottem10{
+  display: flex;
+  height: 46px;
+  align-items: center;
+}
+
+.shopId{
+  padding: 5px;
+  background-color: #ccc;
+  float: left;
+}
+
+.shopIdBox{
+  border: 1px solid #ccc;
+  padding: 0px 5px;
+  background: #fff;
+}
+
+.shopIdImg{
+  width: 50px;
+  margin: 5px auto;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: purple;
+}
+
+.shopIdImg img{
+  width: 100%;
+}
+
+.shopIdBox p{
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 0px
+}
+
+.shopIdNum{
+  color: #006699 !important;
+  font-weight: bold;
+}
+
+.userTicket{
+  background: #006699;
+  padding: 15px;
+  min-height: 207px;
+}
+
+.userTicketBox{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #fff;
+  padding: 17px 0px;
+}
+
+.ticketImg{
+  width: 65px;
+  height: 62px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ticketImg img{
+  width: 100%;
+}
+
+.ticketText{
+  padding-left: 8px;
+}
+
+.ticketText p{
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.ticketText h2{
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.ticketStatsBox{
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background: seagreen;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.ticketStatsInner{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticketStatsImg{
+  background: #669933;
+  width: 25%;
+}
+
+.ticketStatsText{
+  background: #ccc;
+  width: 45%;
+  padding: 10px;
+}
+
+.ticketStatsText p{
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.ticketStatsNum{
+  background: #fff;
+  width: 30%;
+}
+
+.ticketStatsNum p{
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.contentTop{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px;
+  border-bottom: 1px solid #ccf;
+}
+
+.contentTop::before, .contentTop::after{
+  display: none;
+}
+
+.bg-gray{
+  background-color: #d9e4e8;
+  overflow: hidden;
+}
+.table-heading{
+  background-color: #669933;
+  color: #fff;
+  font-weight: normal;
+  text-align: left;
+  overflow:hidden;
+  padding:3px 0;
+}
+.prstats-table {
+    background: #fff;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    border: 1px solid #d4d8db;
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+.prstats-table .col-lg-6{
+  padding:5px 0;
+  border-bottom: 1px solid #d4d8db;
+}
+.prstats-table table{
+  width: 100%;
+}
+.prstats-table table td{
+  padding:5px 10px;
+  border-bottom: 1px solid #d4d8db;
+}
+.trans-label{
+  font-size: 12px;
+  color: #047aaa;
+  font-weight: bold;
+  width: 35%;
+}
+.total-trans{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/*----- InvoicedOrder -----  */
+
+.invoiceTabs{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #333;
+  padding-left: 0px;
+}
+
+.invoiceTabs li{
+  border: 1px solid #5c5c5c;
+  color: #fff;
+  padding: 6px 10px;
+}
+
+
+.invoiceTabs li.active, .invoiceTabs li:hover{
+  background: #e18737;
+  border: 1px solid #e18737;
+}
+
+.invoiceHeading h3{
+  font-size: 18px;
+}
+.invoiceHeading h3 b{
+  color: #e18737;
+}
+
+.invoiceHeading p{
+  color: #333;
+}
+
+.invoiceInputs{
+  background: #eaf1e9;
+  padding: 15px 0px;
+  overflow: hidden;
+  border:1px solid #e1e6e0;
+}
+
+.invoiceInputs input, .invoiceInputs select{
+  width: 100%;
+  padding: 3px;
+  margin: 5px 0px;
+}
+
+.invoiceInputs button{
+  margin: 15px;
+  float: right;
+  padding: 5px 15px;
+  background: #669933;
+  color: #fff;
+  border: 1px solid #669933;
+  border-radius: 3px;
+}
+
+.InvoicedOrderTable tr:last-of-type{
+  background: #669933;
+  color: #fff;
+}
+
+.orangeBackground{
+  background: #cc9933;
+  border: 1px solid #cc9933 !important;
+  color: #fff;
+}
+.grid {
+  background: #fff;
+  max-width: 100%;
+  padding-bottom: 50px;
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- .grid-item ---- */
+.grid-item {
+  float: left;
+  width: 250px;
+  height:auto;
+  background: #f8fdf6;
+  border: 1px solid #d3d8d2;
+  margin:20px 15px 0 15px;
+}
+.grid-item--width2 { width: 200px; }
+.grid-item--height2 { height:auto; }
+.grid-item-head{
+  background-color:#333;
+  padding:10px;
+}
+.grid-item-head h2{
+   font-size:16px;
+   color:#fff;
+   padding:0;
+   margin:0; 
+}
+.reports_list ul{
+  padding:0;
+  margin: 0;
+  list-style: none;
+}
+.reports_list ul li{
+  padding:10px;
+  border-bottom:1px solid #d3d8d2;
+}
+.reports_list ul li a{
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 1100px) {
+    .navbar-header{
+      width: 100%;
+    }
+    #page-wrapper{
+      margin: 6px 0px 0px 0px;
+    }
+}
+
+@media (min-width: 1100px) {
+  .navbar-collapse.collapse{
+    display:block;
+    height:auto!important;
+    padding-bottom:0;
+    overflow:visible!important;
+  }
+}
+
+@media (max-width: 991px) {
+  .head-2{display: none;}
+}
+@media (max-width: 1024px) {
+.grid-item{
+    width: 28%;
+  }
+}
+@media (max-width: 960px) {
+    .pendingTable{
+      display: block;
+    }
+    .pendTabBox{
+      width: 100%;
+    }
+    .loginExpiry {
+    display: block;
+    padding-bottom:5px;
+    }
+}
+
+@media (min-width:753px) and (max-width: 960px){
+  .padBottem10{
+    height: auto;
+  }
+}
+
+/* @media (min-width: 768px) {
+  .navbar-toggle{
+    display: none;
+  }
+} */
+
+@media (max-width: 768px) {
+  .dashboardHeader{
+    display: block !important;
+  }
+    .dashHeader{
+      display: block;
+      width: 100% !important;
+    }
+    .navbar-toggle{
+      display: block;
+    }
+    .dataAbrv{
+      justify-content: flex-start;
+    }
+    .durationTabs{
+      background: none;
+    }
+    .durationTabsInner{
+      width: 100%;
+    }
+    .durationTabsInner li{
+      width: 25%;
+    }
+    .dashAccBtn{
+      margin: 5px;
+    }
+    .dashSidebar{
+      width: 100%;
+      position: absolute;
+    }
+    .grid-item{
+      width: 45%;
+    }
+}
+
+@media (max-width: 600px){
+  .pendTabBox thead{
+    display: none;
+  }
+  .pendingTabBody tr td{
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 48% !important;
+    white-space: normal;
+    text-align: left;
+    display: block;
+    font-weight: normal;
+  }
+
+  .pendingTabBody tr td::before{
+    content: attr(data-title);
+    position: absolute;
+    top:2px;
+    left: 8px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .pendingTabBody tr:nth-child(even) {
+    background: #e4f6fa;
+  }
+  .shopId .col-xs-6, .userTicket .col-xs-6{
+    width: 100%;
+  }
+  .mismatchTable thead{
+    display: none;
+  }
+  .grid-item{
+    width: 40%;
+  }
+}
+
+@media (max-width: 424px) {
+  td.PR_bar{
+    display: none;
+  }
+  .trans-label{
+    width: 80%;
+  }
+  .grid-item{
+    width: 95%;
+  }
+}
+
+@media (max-width: 380px){
+  .durationTabsInner li{
+    font-size: 13px;
+    padding: 6px 7px;
+  }
+  .dataAbrv{
+    font-size: 12px;
   }
 }
