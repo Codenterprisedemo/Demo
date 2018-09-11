@@ -11786,7 +11786,7 @@ thead.cf{background: #59aec0; font-weight: bold; color:#fff;}
   #no-more-tables tbody,
   #no-more-tables th,
   #no-more-tables td,
-  #no-more-tables tr {display: block !important;     display: grid; text-align:left;}
+  #no-more-tables tr {display: block !important; width: 100%; text-align:left;}
    .tablebox{ clear:both; text-align:left; padding:2px 0;}
 
   /* Hide table headers (but not display: none;, for accessibility) */
