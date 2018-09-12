@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Welcome to dashboard</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="tabbable boxed parentTabs">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#set1">Chart</a>
+        </li>
+        <li><a href="#set2">Table</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="set1">
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#sub11">Toda chart</a>
+                    </li>
+                    <li><a href="#sub12">Tab 1.2</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="sub11">
+                        <p>Tab 1.1</p>
+                    </div>
+                    <div class="tab-pane fade" id="sub12">
+                        <p>Tab 1.2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="set2">
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#sub21">Tab 2.1</a>
+                    </li>
+                    <li><a href="#sub22">Tab 2.2</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="sub21">
+                        <p>Tab 2.1</p>
+                    </div>
+                    <div class="tab-pane fade" id="sub22">
+                        <p>Tab 2.2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+  $("ul.nav-tabs a").click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
+</script>
+</body>
+</html>
