@@ -1,0 +1,13 @@
+.blogNvOverviewSmll .blog_post {
+    min-height: 219px;
+}
+
+.blogNvOverview .BlogImgTrans {
+    background: rgba(7, 12, 12, 0.4);
+}
+.blogNvOverview .BlogImgTrans:hover {
+    background: rgba(0, 42, 85, 0.1); 
+    transition: 0.25s;
+}
+
+.image_text{ color:#fff; }
