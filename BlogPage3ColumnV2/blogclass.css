@@ -3,7 +3,7 @@
 }
 
 .blogNvOverview .BlogImgTrans {
-background: transparent;  
+background:url(transparentBlogBg.png) repeat-x bottom; 
   background-image:
     linear-gradient(
       to bottom, 
@@ -15,8 +15,9 @@ background: transparent;
 
 .blogNvOverviewSmll .blog_post img{ height: 219px;  }
 .blogNvOverview .BlogImgTrans:hover {
-  background: rgba(255,255,255, 0.1);  
+  
     background-image: none;
+    background:url(transparentBlogBg.png) repeat-x bottom; 
     transition: 0.25s;
 }
 
@@ -25,3 +26,13 @@ background: transparent;
      min-height: 219px;
 }
 .blogNvOverviewSmll .blog_post .image_text{ line-height: 55px; padding:0px 6px 0px 6px; }
+
+
+
+
+.blogNvOverview .blog_img img{width: 100%; height: 232px; }
+
+
+
+
+
