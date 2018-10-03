@@ -8,8 +8,7 @@ background: transparent;
     linear-gradient(
       to bottom, 
        rgba(255, 255, 255, 0.4), 
-      rgba(44, 45, 65, 0.3), 
-      rgba(36, 56, 68, 0.4), 
+      rgba(109, 109, 109, 0.4), 
       #000
     );
 }
@@ -22,3 +21,7 @@ background: transparent;
 }
 
 .image_text{ color:#fff; }
+.blogNvOverviewSmll .blog_img {
+     min-height: 219px;
+}
+.blogNvOverviewSmll .blog_post .image_text{ line-height: 55px; padding:0px 6px 0px 6px; }
