@@ -25,4 +25,8 @@ background: url(transparentBlogBg.png) repeat-x bottom;
 .blogNvOverviewSmll .blog_img {
      min-height: 219px;
 }
+.blogNvOverview .blog_img img {
+    width: 100%;
+    height: 218px;
+}
 .blogNvOverviewSmll .blog_post .image_text{ line-height: 55px; padding:0px 6px 0px 6px; }
