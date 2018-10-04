@@ -1,0 +1,5 @@
+.BolgPic { position: relative; height: 173px;  background-color: #000000;}
+.imgtxt{ position: absolute;line-height: 21px; bottom:0px; background: url(transparentBlogBg.png) repeat-x top; height: auto; min-height: 100px; overflow: hidden;}
+.ImgTxt a { bottom: 6px; left: 10px; font-size: 14px; width: 100%; color: #FFF;  bottom: 12px;  position: absolute;}
+#block-imgRes, .BolgPic { background-color: #000000; width: 308px;  overflow: visible; opacity: 0.9;}
+#block-imgRes, .BolgPic:hover {  opacity: 1;}
