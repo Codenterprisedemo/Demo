@@ -1,0 +1,28 @@
+.blogNvOverviewSmll .blog_post {
+    min-height: 219px;
+}
+
+.blogNvOverview .BlogImgTrans {
+background: url(transparentBlogBg.png) repeat-x bottom;
+  background-image:
+    linear-gradient(
+      to bottom, 
+       rgba(255, 255, 255, 0.4), 
+      rgba(109, 109, 109, 0.4), 
+      #000
+    );
+}
+
+.blogNvOverviewSmll .blog_post img{ height: 219px;  }
+.blog_post:hover .BlogImgTrans{
+  background: rgba(255,255,255, 0.1);  
+  background-image: none;
+    background: url(transparentBlogBg.png) repeat-x bottom;
+    transition: 0.25s;
+}
+
+.image_text{ color:#fff; }
+.blogNvOverviewSmll .blog_img {
+     min-height: 219px;
+}
+.blogNvOverviewSmll .blog_post .image_text{ line-height: 55px; padding:0px 6px 0px 6px; }
