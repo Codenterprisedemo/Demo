@@ -327,7 +327,7 @@ a.article:hover {
 
 
 /*  Registratie  */
- .contact-form label {font-weight: normal;  margin-top: 5px; cursor: pointer; }
+ .contact-form label {font-weight: normal;  margin-top: 5px; cursor: pointer;font-size: 17px; }
  
 /*  Contact Page  */
 .categorie-overview-list li {
