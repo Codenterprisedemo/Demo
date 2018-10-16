@@ -293,7 +293,7 @@ Is een aankoop niet zichtbaar in jouw account? Meld <a href="/user/ticket.php">h
           <div class="pull-right">
             <div class="SocialIcons"><a href="https://www.facebook.com/Shopbuddiesnl/" class="btn-social btn-outline" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
             <div class="SocialIcons"><a href="https://www.youtube.com/channel/UCA5QsEks9_h_VE52a_ibJjA" class="btn-social btn-outline" target="blank"><i class="fa fa-play-circle" aria-hidden="true"></i></a></div>
-            <div class="SocialIcons"><a href="https://plus.google.com/b/101407679265746345897/" class="btn-social btn-outline" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+            <div class="SocialIcons"><a href="" class="btn-social btn-outline" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
             <div class="SocialIcons"><a href="https://www.instagram.com/shopbuddies.nl/" class="btn-social btn-outline" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
           </div>
         </div>
@@ -321,7 +321,7 @@ Is een aankoop niet zichtbaar in jouw account? Meld <a href="/user/ticket.php">h
   </div>
 </footer>
  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="https://static.orangebuddies.nl/templates/pro.shopbuddies.nl/august2018/js/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -330,5 +330,90 @@ Is een aankoop niet zichtbaar in jouw account? Meld <a href="/user/ticket.php">h
             });
         });
     </script>
+      <script type="text/javascript">
+        $(function () {
+            // init bootstrap collapse for elements with panel-collapse class
+            $('.panel-collapse').collapse({toggle: false});
+
+            // accordian collapse logic
+            $('body').on('click', '[data-toggle=collapse-next]', function (e) {
+                // Try to close all of the collapse areas first
+                var parent_id = $(this).data('parent');
+                $(parent_id + ' .panel-collapse').collapse('hide');
+
+                // ...then open just the one we want
+                var $target = $(this).parents('.panel').find('.panel-collapse');
+                $target.collapse('toggle');
+            });
+        });
+
+
+        $(document).ready(function () {
+            var isContactForm
+            =                     0;
+                    if ($("#errorbox").length > 0) {
+                $("#smart_help_container").hide();
+                $("#contact_form_container").show();
+            }
+
+            if ($("#successbox").length > 0) {
+                $("#smart_help_container").hide();
+                $("#contact_form_container").show();
+            }
+
+            $("#button_contact").click(function (e) {
+                $("#smart_help_container").hide();
+                $("#contact_form_container").show();
+                $('html, body').animate({
+                    scrollTop: $("#contact_form_container").offset().top - $('.navbar-fixed-top').height()
+                }, 1000);
+            });
+            // Trigger the user to contact form
+            if (isContactForm) {
+                $("#button_contact").trigger('click');
+            }
+
+
+        });
+    </script>
+<style type="text/css">
+  .panel-title a {
+      display: block;
+  }
+  .panel-heading .accordion-toggle:after {
+    font-family: FontAwesome;
+    content: "\f078";
+    float: right;
+    color: #444;
+}
+ul.categorie-overview-list.clearfix {
+    padding: 0 !important;
+}
+@media only screen and (max-width: 768px) and (min-width: 570px){
+.categorie-overview-list li {
+    width: 31%;
+    margin: 5px 1%;
+}
+}
+@media only screen and (max-width: 569px) and (min-width: 481px){
+.categorie-overview-list li {
+    width: 48%;
+    margin: 5px 1%;
+}
+}
+@media (max-width:767px){
+  nav#sidebar {
+    position: absolute;
+    z-index: 999;
+    margin-top: 49px;
+}
+}
+@media (max-width: 480px){
+.categorie-overview-list li {
+    width: 100%;
+    margin: 5px 1%;
+}
+}
+    </style>
 </body>
 </html>
