@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Welcome to Shopbuddies Pro</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="Parent">
+    <div class="row">
+      <div class="goback-btn"><a href=""><i class="fa fa-reply"></i></a></div>  
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8"> 
+
+          <a href="/" rel="home" title="Grootste Cashback Community in Europa!"><img src="https://static.orangebuddies.nl/templates/pro.shopbuddies.nl/august2018/assets/shopbuddiesPro.png" alt="ShopBuddies.nl" class="logo"></a>
+          <h1>THE MARKETING PLATFORM FOR PROFESSIONALS!</h1>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="TopLinks">
+          <div class="loginBtn"><a href="/user/logout.php">Uitloggen</a></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</nav>
+<div class="wrapper">
+  <!-- Sidebar Holder -->
+  <nav id="sidebar">
+    <ul class="list-unstyled components">
+      <li  class="active">
+        <a href="/dashboard/index.php"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
+      </li>
+      <li>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-edit fa-fw"></i>Promotions</a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+          <li><a href="/dashboard/promotion/open_link.php">Search Advertiser</a></li>
+          <li><a href="/dashboard/promotion/projects.php">Projects</a></li>          
+        </ul>
+      </li>
+      <li><a href="/dashboard/user/cashback.php"><i class="fa fa-euro fa-fw"></i>Earnings</a></li>
+      <li><a href="/dashboard/user/clicks.php"><i class="fa fa-edit fa-fw"></i>Clicks</a></li>
+		<li> <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false"><i class="fa fa-user fa-fw"></i>Account</a>
+		  <ul class="collapse list-unstyled" id="homeSubmenu2">
+		    <li><a href="/dashboard/user/account_detail.php">Account Detail</a></li>
+		    <li><a href="/dashboard/user/reset_pass.php">Reset Password</a></li>
+		    <li><a href="/dashboard/user/cashout.php">Uitbetaling</a></li>
+		    <li><a href="/dashboard/user/cashbackdetails.php">Uitbetaling status</a></li>
+		  </ul>
+		</li>
+		<li> <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false"><i class="fa fa-edit fa-fw"></i>Contact us</a>
+		  <ul class="collapse list-unstyled" id="homeSubmenu3">
+		    <li><a href="/dashboard/static/contact.php">Contact us</a></li>
+		    <li><a href="/dashboard/static/faqs.php">FAQS</a></li>
+		  </ul>
+		</li>
+    </ul>
+  </nav>
+  <!-- Page Content Holder -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row contentTop">      
+      <div class="Pageslide" id="moveRight">
+       <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" onclick="buttonMove">
+          <i class="glyphicon glyphicon-align-left"></i>
+          <span>Toggle Sidebar</span>
+        </button>
+      </div>     
+    </div>
+
+
+  <!-- Add page content here -->
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <h2 class="PageHeading">Waarmee kunnen we je helpen?</h2>
+      <div class="search">
+  <form class="bs-example bs-example-form" role="form">
+    <div class="input-group">
+      <input name="q" type="text" class="form-control" placeholder="Typ het onderwerp van je vraag..." onkeyup="getFaqResults(this.value, 'faqBox', 'faq-results.php');" autocomplete="off">
+      <span class="input-group-btn">
+      <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </span>
+      <div id="faqBox"></div>
+    </div>
+  </form>
+</div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 Margin20x20">
+      <div class="padding-md">
+        <ul id="tabs" class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#tabcontent1" aria-expanded="true">Veelgestelde vragen</a></li>
+          <li class=""><a data-toggle="tab" href="#tabcontent2" aria-expanded="false">Top 10 veelgestelde vragen</a></li>
+        </ul>
+      </div>
+<div id="my-tab-content" class="tab-content">
+  <div id="tabcontent1" class="tab-pane fade active in">
+    <div class="categorie-overview">
+      <ul class="categorie-overview-list clearfix">
+        <li> <a href="/dashboard/static/faqs.php?catid=26"> <i class="icon-user-chat-2"></i>ShopBuddies Premium </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=1"> <i class="icon-user-chat-2"></i>Algemeen </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=17"> <i class="icon-user-chat-2"></i>Shoppen met cashback </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=13"> <i class="icon-user-chat-2"></i>Kortingscodes &amp; acties </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=14"> <i class="icon-user-chat-2"></i>Verdien meer cashback </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=27"> <i class="icon-user-chat-2"></i>Cashback Garantie </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=15"> <i class="icon-user-chat-2"></i>Mijn account </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=23"> <i class="icon-user-chat-2"></i>ShopBuddies Alertbar </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=18"> <i class="icon-user-chat-2"></i>Betalingen </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=19"> <i class="icon-user-chat-2"></i>Technische vragen </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=21"> <i class="icon-user-chat-2"></i>Over ShopBuddies.nl </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=24"> <i class="icon-user-chat-2"></i>CashbackCard </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=22"> <i class="icon-user-chat-2"></i>Overig </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=25"> <i class="icon-user-chat-2"></i>Zorgverzekering </a> </li>
+        <li> <a href="/dashboard/static/faqs.php?catid=29"> <i class="icon-trophy"></i>Winnen </a> </li>
+      </ul>
+    </div>
+  </div>
+  <div id="tabcontent2" class="col-md-12 tab-pane fade">
+    <h2 class="page-header">Top 10 veelgestelde vragen</h2>
+    <div class="faq panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a href="#0" class="accordion-toggle" data-toggle="collapse-next" data-parent="#accordion">Als ik twee aankopen doe bij dezelfde webshop, moet ik dan terugkomen naar ShopBuddies.nl om weer cashback te krijgen?</a> </h4>
+        </div>
+        <div class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="panel-body"> Ja, om cashback te krijgen van ShopBuddies.nl moet je bij elke (nieuwe) aankoop via ShopBuddies.nl doorklikken naar de <a href="https://www.shopbuddies.nl/shops/winkels.php">webshop</a> van jouw keuze. Je kan wel meerdere producten tegelijk bestellen en cashback krijgen, zolang het dezelfde bestelling betreft. Is jouw bestelling bij de betreffende webshop afgerond? Ga dan opnieuw via ShopBuddies.nl naar de betreffende webshop om een nieuwe order aan te maken en (opnieuw) te profiteren van de cashback van ShopBuddies.nl. </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a href="#1" class="accordion-toggle" data-toggle="collapse-next" data-parent="#accordion">Hoe meld ik mij af voor de nieuwsbrief en e-mails van ShopBuddies.nl?</a> </h4>
+        </div>
+        <div class="panel-collapse collapse" aria-expanded="false">
+          <div class="panel-body"> Wij houden onze leden graag op de hoogte van de nieuwste shops, kortingscodes en acties. Alle leden ontvangen daarom regelmatig onze nieuwsbrieven en mailings. Wil je deze updates van ShopBuddies.nl niet meer ontvangen? <a href="https://www.shopbuddies.nl/user/login.php">Log in</a> op ShopBuddies.nl en ga naar jouw account. Daar kan je bij Gegevens/E-mailvoorkeuren aangeven welke nieuwsbrieven en e-mails je van ShopBuddies.nl wel/niet wilt ontvangen. </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a href="#2" class="accordion-toggle" data-toggle="collapse-next" data-parent="#accordion">Hoe bespaar ik op mijn zorgverzekering in 2018?</a> </h4>
+        </div>
+        <div class="panel-collapse collapse" aria-expanded="false">
+          <div class="panel-body"> Vergelijk de premie van je huidige zorgverzekering met de nieuwe zorgverzekering premies voor 2018 van andere zorgverzekeraars. Bekijk in het <a href="https://www.shopbuddies.nl/shops/zorgverzekeringen">zorgverzekering overzicht van ShopBuddies</a> ook bij welke zorgverzekeraars je extra Cashback ontvangt als je overstapt. <br>
+            <br>
+            Stap via ShopBuddies over naar een nieuwe zorgverzekering voor 2018 en bespaar niet alleen op de zorgpremie, maar ontvang bovendien Cashback! </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a href="#3" class="accordion-toggle" data-toggle="collapse-next" data-parent="#accordion">Wat is ShopBuddies.nl?</a> </h4>
+        </div>
+        <div class="panel-collapse collapse" aria-expanded="false">
+          <div class="panel-body"> ShopBuddies.nl geeft Cashback op jouw online aankopen. Als je naar ShopBuddies.nl gaat, op één van de links van de aangesloten webshops klikt en daar een aankoop doet, betaalt ShopBuddies.nl een deel van jouw aankoopbedrag terug. Hiervoor moet je wel <a href="https://www.shopbuddies.nl/user/register.php">lid</a> zijn van ShopBuddies.nl. Het lidmaatschap is GRATIS. Er zijn geen verdere verplichtingen aan het lidmaatschap verbonden en je betaalt niet meer als je via ShopBuddies.nl koopt. Je kan zelfs nog meer korting krijgen met <a href="https://www.shopbuddies.nl/kortingscodes/">kortingscodes</a> en speciale acties. Bij de aangesloten webshops op ShopBuddies.nl staat aangegeven of er een kortingscode of speciale actie beschikbaar is. </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a href="#4" class="accordion-toggle" data-toggle="collapse-next" data-parent="#accordion">Hoe werkt de ShopBuddies Alertbar?</a> </h4>
+        </div>
+        <div class="panel-collapse collapse" aria-expanded="false">
+          <div class="panel-body"> Is de ShopBuddies Alertbar geïnstalleerd, dan geeft deze een melding als je een webshop bezoekt die is aangesloten bij ShopBuddies en waar je cashback kunt krijgen. De ShopBuddies Alertbar wordt geactiveerd zodra je op de button cashback activeren hebt geklikt. Er verschijnt nu een nieuwe button met de melding dat jouw cashback is geactiveerd. Doe nu direct jouw aankoop, bezoek geen andere websites en jouw cashback staat binnen 48 uur in jouw account. </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a href="#5" class="accordion-toggle" data-toggle="collapse-next" data-parent="#accordion">De status van mijn aankoop is nog steeds in behandeling. Wanneer wordt deze goedgekeurd?</a> </h4>
+        </div>
+        <div class="panel-collapse collapse" aria-expanded="false">
+          <div class="panel-body"> Aankopen krijgen de status <i>goedgekeurd</i> zodra de betreffende webshop de aankoop heeft goedgekeurd. Hoe lang dit duurt, verschilt per webshop. Sommige webshops keuren de aankopen binnen enkele dagen, terwijl het bij andere webshops enkele weken kan duren. </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a href="#6" class="accordion-toggle" data-toggle="collapse-next" data-parent="#accordion">Is er een minimum uitbetalingsbedrag?</a> </h4>
+        </div>
+        <div class="panel-collapse collapse" aria-expanded="false">
+          <div class="panel-body"> <a name="minimum"></a>Ja, uitbetaling is mogelijk zodra jouw Uit te betalen tegoed op ShopBuddies 1 of meer bedraagt. In het totale tegoed worden alleen aankopen meegerekend die de status <i>uit te betalen</i> hebben. Voor tegoeden tot 1 cashback kan geen uitbetaling worden aangevraagd. </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a href="#7" class="accordion-toggle" data-toggle="collapse-next" data-parent="#accordion">Wat kost aanmelden bij ShopBuddies.nl?</a> </h4>
+        </div>
+        <div class="panel-collapse collapse" aria-expanded="false">
+          <div class="panel-body"> <a href="http://www.shopbuddies.nl/register/">Aanmelden</a> bij ShopBuddies.nl is GRATIS. Er zijn geen verdere verplichtingen aan het lidmaatschap verbonden en na aanmelding krijg je van ShopBuddies.nl direct Cashback op je online aankopen. </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a href="#8" class="accordion-toggle" data-toggle="collapse-next" data-parent="#accordion">Ik wil mijn gegevens wijzigen. Hoe doe ik dat?</a> </h4>
+        </div>
+        <div class="panel-collapse collapse" aria-expanded="false">
+          <div class="panel-body"> <a href="https://www.shopbuddies.nl/user/login.php">Log in</a> op ShopBuddies.nl en ga naar jouw account. Daar kan je jouw persoonlijke gegevens en je inloggegevens wijzigen. </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a href="#9" class="accordion-toggle" data-toggle="collapse-next" data-parent="#accordion">Hoe werkt een kortingscode?</a> </h4>
+        </div>
+        <div class="panel-collapse collapse" aria-expanded="false">
+          <div class="panel-body"> Gebruik maken van een kortingscode en minder betalen voor je online aankopen is heel simpel. Als je online een bestelling plaatst, wordt tijdens het plaatsen van de order gevraagd of je een kortingscode - ook wel actiecode, vouchercode, promotiecode of voordeelcode genoemd - hebt. Vul de kortingscode hier in en de korting wordt direct in mindering gebracht op het totale orderbedrag. </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  
+
+ <!-- Page Content End -->
+
+    </div>
+</div>
+
+<footer>
+  <div class="footer-above">
+    <div class="container">
+      <div class="row"> </div>
+      <div class="row FooterTopBorder">
+        <div class="footer-brands col-md-6">
+          <ul class="list-inline">
+            <li><img src="https://static.orangebuddies.nl/templates/www.shopbuddies.nl/agust2016/assets/brand-comodo.png" alt="brand comodo"></li>
+            <li><img src="https://static.orangebuddies.nl/templates/www.shopbuddies.nl/agust2016/assets/brand-webshop-keurmerk.png" alt="webshop keurmerk"></li>
+            <li>officieel partner</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="RateStars pull-right">
+            <div>Beoordelingen</div>
+            <img src="https://static.orangebuddies.nl/templates/www.shopbuddies.nl/agust2016/assets/rating/table-star-8.png" title="Beoordeling : Beoordelingen" class="" data-pin-nopin="true">
+            <div class="RateBtn"><a href="/reviews/kiyoh.php">Kiyoh</a></div>
+          </div>
+          <div class="RateFig pull-right">8,6</div>
+        </div>
+        <div class="col-md-3 pull-right">
+          <div class="pull-right">
+            <div class="SocialIcons"><a href="https://www.facebook.com/Shopbuddiesnl/" class="btn-social btn-outline" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+            <div class="SocialIcons"><a href="https://www.youtube.com/channel/UCA5QsEks9_h_VE52a_ibJjA" class="btn-social btn-outline" target="blank"><i class="fa fa-play-circle" aria-hidden="true"></i></a></div>
+            <div class="SocialIcons"><a href="https://plus.google.com/b/101407679265746345897/" class="btn-social btn-outline" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+            <div class="SocialIcons"><a href="https://www.instagram.com/shopbuddies.nl/" class="btn-social btn-outline" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-below">
+      <div class="row">
+        <div class="col-md-6"> <span class="footer-logo-orangebuddies"><a href="http://www.orangebuddies.com/" target="_blank"><img src="https://static.orangebuddies.nl/templates/www.shopbuddies.nl/agust2016/assets/logo-orangebuddies-n.png" alt="Orangebuddies Media"></a></span> </div>
+        <div class="col-md-6 footer-copy"> © 2009-2018 orangebuddies.com | Powered by <a href="http://www.orangebuddies.com/" target="_blank">Orangebuddies Media</a> </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-md-10 footer-ob-info">
+          <p> ShopBuddies.nl is één van de cashback websites van OrangeBuddies Media, een online mediabedrijf dat sinds de oprichting in 2009 is uitgegroeid tot een internationaal bedrijf met kantoren in Nederland, Duitsland, Spanje, het Verenigd Koninkrijk en Canada. OrangeBuddies is actief in meer dan 18 landen en heeft inmiddels meer dan 30.000 aangesloten webshops waar 8 miljoen consumenten dagelijks met cashback shoppen. OrangeBuddies Media is gespecialiseerd in online cashback &amp; loyalty concepten. </p>
+        </div>
+        <div class="col-md-2">
+          <div class="Celebrating"> <img src="https://static.orangebuddies.nl/templates/www.shopbuddies.nl/agust2016/assets/Years10.png" alt="">
+            <p>Celebrating 10 Years in 2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
