@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #fafafa;
 }
 .TopSec{ width: 100%; height: auto; overflow: hidden; background-color: #fff; border-bottom: 1px solid #ccc; padding: 12px 0; }
@@ -10,7 +10,7 @@ p {
   color: #333;
 }
 h1{font-size: 15px; font-weight: bold; line-height: 16px;margin-top:6px;}
-.h2, h2{font-size: 19px;}
+.h2, h2{font-size: 27px;}
 
 a,
 a:hover,
@@ -24,7 +24,7 @@ a:focus {
 .page-header {padding-bottom: 9px;margin: 0px 0px 20px 0; border-bottom:none}
 .Margin20x20{ margin:20px auto;}
 
-.PageHeading{ margin-top: 20px; margin-bottom: 20px;  }
+.PageHeading{ margin-top: 20px; margin-bottom: 20px;font-family: 'Roboto Condensed', sans-serif; }
 
 .navbar {
   padding:6px 0px;
@@ -551,75 +551,23 @@ footer .footer-ob-info p{
 }
 }
 @media screen and (max-width: 767px){
-  .dashboard thead{
+ thead{
     display: none;
   }
-  .dashboard > tbody > tr > td{
+  .table > tbody > tr > td{
     width: 100%;
-    padding-left: 35%;
+    padding-left: 50%;
     display: block;
     word-break: break-word;
+  }
+  .table > tbody > tr > td::before{
+    content: attr(data-title);
+    position: absolute;
+    left: 25px;
+    font-weight: bold;
   }
   .dashboard > tbody > tr > td::before{
-    content: attr(data-title);
-    position: absolute;
-    left: 25px;
-    font-weight: bold;
-  }
-  .table-responsive > .table > tbody > tr > td{
-    white-space: normal;
-  }
-        .cashback_details thead{
-          display: none;
-        }
-        .cashback_details > tbody > tr > td{
-          width: 100%;
-          padding-left: 46%;
-          display: block;
-          word-break: break-word;
-        }
-        .cashback_details > tbody > tr > td::before{
-          content: attr(data-title);
-          position: absolute;
-          left: 25px;
-          font-weight: bold;
-        }
-        .table-responsive > .table > tbody > tr > td{
-          white-space: normal;
-        }
-        .cashback_details thead{
-          display: none;
-      }
-        .cashback_details > tbody > tr > td{
-          width: 100%;
-          padding-left: 46%;
-          display: block;
-          word-break: break-word;
-        }
-        .cashback_details > tbody > tr > td::before{
-          content: attr(data-title);
-          position: absolute;
-          left: 25px;
-          font-weight: bold;
-        }
-        .table-responsive > .table > tbody > tr > td{
-          white-space: normal;
-        }
-
-  .projects thead{
-    display: none;
-  }
-  .projects > tbody > tr > td{
-    width: 100%;
-    padding-left: 46%;
-    display: block;
-    word-break: break-word;
-  }
-  .projects > tbody > tr > td::before{
-    content: attr(data-title);
-    position: absolute;
-    left: 25px;
-    font-weight: bold;
+    left: 40px;
   }
   .table-responsive > .table > tbody > tr > td{
     white-space: normal;
