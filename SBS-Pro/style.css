@@ -250,6 +250,53 @@ a.article:hover {
 .alert-sb { background-color: #e3ecf4; border-color: #ceddec; color: #2f588e;
     margin-top: 12px; overflow: hidden; height: auto;}
 
+  .block{
+    position:relative;
+    border-radius:0;
+}
+.steps{
+    margin:30px 0 0 0;
+}
+.block:before{/*colored bored top*/
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background: #1abb9c;
+    padding:0 1px;
+    left: -1px;
+    top: -3px;
+}
+.steps .icon i{
+    color:#336699;
+}
+.steps .number {
+    background:#1abb9c;
+    color:#fff;
+    display: inline-block;
+    border-radius: 50%;
+    text-align:center;
+    padding:10px;
+    height: 46px;
+    width:46px;
+}
+.steps .number span{
+    line-height: 26px;
+    font-size: 26px;
+    width: 26px;
+    font-weight:600;
+    display:inline-block;
+}
+.icon {
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+    height: 100px;
+    width: 100px;
+}
+
 /*  DashBoard  */
    .panel-green {
       border-color: #8bb129;
@@ -493,6 +540,15 @@ footer .footer-ob-info p{
   #sidebarCollapse span {
     display: none;
   }
+  .steps .number {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -23px;
+}
+.steps .caption h2 {
+    margin: 35px 0 0 0;
+}
 }
 @media screen and (max-width: 767px){
   .dashboard thead{
