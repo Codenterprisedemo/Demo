@@ -111,8 +111,6 @@ a[aria-expanded="true"] {
   background: #e3e5e8;
 }
 
-.fa { padding-right: 22px; }
-
 a[data-toggle="collapse"] {  position: relative;}
 a[aria-expanded="false"]::before,
 a[aria-expanded="true"]::before {
